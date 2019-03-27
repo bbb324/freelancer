@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1ad3ecae30464a537530";
+/******/ 	var hotCurrentHash = "719bfb23fb43dfe1c5e1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,7 +800,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".ana-content {\\n  background-image: url(/freelancer/public/image/analysis/bg.png);\\n  height: 100vh;\\n  background-repeat: no-repeat;\\n  background-size: 100% 100%;\\n}\\n.ana-content .arrow-back {\\n  width: 12px;\\n  height: auto;\\n  float: left;\\n  margin-left: 15px;\\n  margin-top: 32px;\\n}\\n.ana-content .analysis-title {\\n  width: 100%;\\n  height: 64px;\\n  background-size: 100%;\\n  top: 0;\\n}\\n.ana-content .analysis-title .text {\\n  font-size: 12px;\\n  color: #FFFFFF;\\n  display: block;\\n  text-align: center;\\n  padding-top: 35px;\\n}\\n.ana-content .shiubeng-bg {\\n  background-image: url(/freelancer/public/image/analysis/shuibeng.png);\\n  background-repeat: no-repeat;\\n  background-size: 100% 100%;\\n  width: 70%;\\n  margin-left: 23%;\\n  height: 37vh;\\n  position: absolute;\\n  top: 18%;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/todoList/component/analysis/analysis.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".ana-content {\\n  background-image: url(/freelancer/public/image/analysis/bg.png);\\n  height: 100vh;\\n  background-repeat: no-repeat;\\n  background-size: 100% 100%;\\n}\\n.ana-content .arrow-back {\\n  width: 12px;\\n  height: auto;\\n  float: left;\\n  margin-left: 15px;\\n  margin-top: 32px;\\n}\\n.ana-content .analysis-title {\\n  width: 100%;\\n  height: 64px;\\n  background-size: 100%;\\n  top: 0;\\n}\\n.ana-content .analysis-title .text {\\n  font-size: 12px;\\n  color: #FFFFFF;\\n  display: block;\\n  text-align: center;\\n  padding-top: 35px;\\n}\\n.ana-content .shiubeng-bg {\\n  background-image: url(/freelancer/public/image/analysis/shuibeng.png);\\n  background-repeat: no-repeat;\\n  background-size: 100% 100%;\\n  width: 70%;\\n  margin-left: 23%;\\n  height: 45.3vh;\\n  position: absolute;\\n  top: 13%;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/todoList/component/analysis/analysis.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
