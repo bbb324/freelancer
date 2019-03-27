@@ -1,13 +1,1 @@
-import React from 'react';
-import './app.less'
-class App extends React.Component {
-    render() {
-        return (<div className="content">
-            <div>
-                <img className='header' src='./image/homepageImage/header.png'/>
-            </div>
-            </div>)
-    }
-}
-
-export default App;
+import React from 'react';import './app.less'class App extends React.Component {    getTabs() {        const tabs = [            {label: '综合分析', value: 'analysis.png'}        ]        let list = [];        tabs.forEach(item => {            list.push(<div>                <img src= './image/icon/analysis.png'/>                {item.label}</div>)        })        return list;    }    render() {        return (<div className="content">            <div>                <img className='header' src='./image/homepageImage/header.png'/>            </div>            <div>                {this.getTabs()}            </div>            </div>)    }}export default App;
