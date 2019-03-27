@@ -1,3 +1,5 @@
 .idea
 node_modules
-build
+build/*.hot-update.json
+build/*.hot-update.js
+build/index.html
