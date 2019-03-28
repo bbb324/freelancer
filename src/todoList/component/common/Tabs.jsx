@@ -16,10 +16,14 @@ class Tabs extends React.PureComponent {
         }
     }
 
+    jump(item) {
+        this.props.pageJump(item.url)
+    }
+
     render() {
         let list = [];
         this.props.dataSource.forEach((item, key)=> {
-            list.push(<div key={key} className="tab">
+            list.push(<div key={key} className="tab" onClick={this.props.hasPageUrl ? this.jump.bind(this, item) : null}>
                 {this.props.withInput ? this.setInput(item) : null}
                 <img className="icon" src= {`./image/icon/${item.value}`}/>
                 {item.label}
