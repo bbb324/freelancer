@@ -19,7 +19,7 @@ class ToolBar extends React.Component {
         let list = [];
         this.tabs.forEach((item, key)=> {
             list.push(<div key={key} className="toolbar">
-                <img className="icon" src= {`./image/homepageImage/${item.value}`}/>
+                <img className="icon" src= {`/public/image/homepageImage/${item.value}`}/>
                 {item.label}
             </div>)
         })

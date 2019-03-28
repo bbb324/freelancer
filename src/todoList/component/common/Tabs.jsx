@@ -25,7 +25,7 @@ class Tabs extends React.PureComponent {
         this.props.dataSource.forEach((item, key)=> {
             list.push(<div key={key} className="tab" onClick={this.props.hasPageUrl ? this.jump.bind(this, item) : null}>
                 {this.props.withInput ? this.setInput(item) : null}
-                <img className="icon" src= {`./image/icon/${item.value}`}/>
+                <img className="icon" src= {`/public/image/icon/${item.value}`}/>
                 {item.label}
             </div>)
         })
