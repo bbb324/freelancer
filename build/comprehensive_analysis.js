@@ -258,7 +258,7 @@
 /******/ 				};
 /******/ 			});
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = "pageOne";
+/******/ 			var chunkId = "comprehensive_analysis";
 /******/ 			// eslint-disable-next-line no-lone-blocks
 /******/ 			{
 /******/ 				/*globals chunkId */
@@ -788,7 +788,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./src/todoList/index.jsx")(__webpack_require__.s = "./src/todoList/index.jsx");
+/******/ 	return hotCreateRequire("./src/todoList/comprehensive_analysis.jsx")(__webpack_require__.s = "./src/todoList/comprehensive_analysis.jsx");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1106,15 +1106,15 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
-/***/ "./src/todoList/index.jsx":
-/*!********************************!*\
-  !*** ./src/todoList/index.jsx ***!
-  \********************************/
+/***/ "./src/todoList/comprehensive_analysis.jsx":
+/*!*************************************************!*\
+  !*** ./src/todoList/comprehensive_analysis.jsx ***!
+  \*************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _component_front_page_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/front-page/App */ \"./src/todoList/component/front-page/App.jsx\");\n/* harmony import */ var _component_analysis_Analysis_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/analysis/Analysis.jsx */ \"./src/todoList/component/analysis/Analysis.jsx\");\n/**\r * Created by junxie on 18/5/27.\r */\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_component_front_page_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/todoList/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _component_front_page_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/front-page/App */ \"./src/todoList/component/front-page/App.jsx\");\n/* harmony import */ var _component_analysis_Analysis_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/analysis/Analysis.jsx */ \"./src/todoList/component/analysis/Analysis.jsx\");\n/**\r\n * Created by junxie on 18/5/27.\r\n */\n\n\n\n\n/*ReactDom.render(<App />,\r\n document.getElementById('root')\r\n );*/\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_component_analysis_Analysis_jsx__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/todoList/comprehensive_analysis.jsx?");
 
 /***/ })
 

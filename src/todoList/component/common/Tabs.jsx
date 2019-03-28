@@ -4,11 +4,23 @@
 import React from 'react';
 import './tabs.less'
 
-class Tabs extends React.Component {
+class Tabs extends React.PureComponent {
+
+    setInput(item) {
+        return <input className="text-input" onChange={this.onInputChange.bind(this, item)} />
+    }
+
+    onInputChange(item, e) {
+        if(item.label === '泵排量') {
+            this.props.getValue(e.target.value);
+        }
+    }
+
     render() {
         let list = [];
         this.props.dataSource.forEach((item, key)=> {
             list.push(<div key={key} className="tab">
+                {this.props.withInput ? this.setInput(item) : null}
                 <img className="icon" src= {`./image/icon/${item.value}`}/>
                 {item.label}
             </div>)

@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         pageOne: './src/todoList/index.jsx',
+        comprehensive_analysis: './src/todoList/comprehensive_analysis.jsx',
     },
     output: {
         path: path.resolve(__dirname, 'build'),
