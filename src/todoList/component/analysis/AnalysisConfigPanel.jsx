@@ -12,9 +12,8 @@ class AnalysisConfigPanel extends React.Component {
     renderTab() {
         let list = [];
         this.props.dataSource.forEach((item, key) => {
-
             list.push(<div className='tab' style={{backgroundImage: `url(/freelancer/public/image/icon/${item.imgUrl})`}} key={key}>
-                <span className='data-display' onClick={ this.props.setData.bind(this)}>{item.value}</span>
+                <span className="data-display" > {item.value} </span>
             </div>);
         });
         return list;
