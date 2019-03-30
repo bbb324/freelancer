@@ -6,14 +6,12 @@ import './tabs.less'
 
 class Tabs extends React.PureComponent {
 
-    setInput(item) {
-        return <input className="text-input" onChange={this.onInputChange.bind(this, item)} />
+    setSpan(item) {
+        return <span className="text-input" onClick={this.showConfigPanel.bind(this, item)} />
     }
 
-    onInputChange(item, e) {
-        if(item.label === '泵排量') {
-            this.props.getValue(e.target.value);
-        }
+    showConfigPanel(item, e) {
+       this.props.showConfigPanel(true);
     }
 
     jump(item) {
@@ -24,7 +22,7 @@ class Tabs extends React.PureComponent {
         let list = [];
         this.props.dataSource.forEach((item, key)=> {
             list.push(<div key={key} className="tab" onClick={this.props.hasPageUrl ? this.jump.bind(this, item) : null}>
-                {this.props.withInput ? this.setInput(item) : null}
+                {this.props.withInput ? this.setSpan(item) : null}
                 <img className="icon" src= {`./image/icon/${item.value}`}/>
                 {item.label}
             </div>)
