@@ -6,12 +6,11 @@ import Tabs from './../common/Tabs.jsx';
 import Toolbar from './../common/ToolBar.jsx'
 import './analysis.less'
 
-class AnalysisConfigPanel extends React.PureComponent {
+class AnalysisConfigPanel extends React.Component {
 
 
     renderTab() {
         let list = [];
-
         this.props.dataSource.forEach((item, key) => {
 
             list.push(<div className='tab' style={{backgroundImage: `url(/freelancer/public/image/icon/${item.imgUrl})`}} key={key}>
@@ -22,7 +21,6 @@ class AnalysisConfigPanel extends React.PureComponent {
     }
 
     render() {
-        console.log(this.props)
        return <div className='analysis-tabs'>
            {this.renderTab()}
        </div>
