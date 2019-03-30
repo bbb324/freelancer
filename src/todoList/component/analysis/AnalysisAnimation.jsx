@@ -18,11 +18,10 @@ class AnalysisAnimation extends React.PureComponent {
             }
             this.setState({
                 cur: i
-            })
+            });
             i++
         }, 1000)
     }
-
 }
 
 export default AnalysisAnimation;
