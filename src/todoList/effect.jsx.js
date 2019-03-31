@@ -3,8 +3,8 @@
  */
 import React from 'react';
 import ReactDom from 'react-dom';
-import Purify from './component/purify/Purify.jsx';
+import Effect from './component/effect/Effect.jsx';
 
-ReactDom.render(<Purify />,
+ReactDom.render(<Effect />,
     document.getElementById('root')
 );
