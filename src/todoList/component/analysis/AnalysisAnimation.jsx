@@ -12,7 +12,7 @@ class AnalysisAnimation extends React.PureComponent {
 
     componentDidMount() {
         let i = 0;
-        setInterval(() => {
+       this.timer =  setInterval(() => {
             if(i === 6) {
                 i = 0;
             }
@@ -21,6 +21,10 @@ class AnalysisAnimation extends React.PureComponent {
             });
             i++
         }, 1000)
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.timer)
     }
 }
 

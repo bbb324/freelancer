@@ -15,7 +15,7 @@ class Tabs extends React.PureComponent {
     }
 
     jump(item) {
-        this.props.pageJump(item.url)
+        this.props.pageJump(item)
     }
 
     render() {
