@@ -38,6 +38,7 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "css-loader": "^2.1.0",
     "eslint": "^5.13.0",
     "eslint-friendly-formatter": "^4.0.1",
