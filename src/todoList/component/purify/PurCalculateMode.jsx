@@ -22,7 +22,7 @@ class Viscosity extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="Ф600" className='cal-input' ref='a'/>
+            <input type="number" placeholder="Ф600" className='cal-input' ref='a'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -49,8 +49,8 @@ class PlasticViscosity extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="Ф600" className='cal-input' ref='a'/>
-            <input placeholder="Ф300" className='cal-input' ref='b'/>
+            <input type="number" placeholder="Ф600" className='cal-input' ref='a'/>
+            <input type="number" placeholder="Ф300" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -77,8 +77,8 @@ class YieldPoint extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="Ф600" className='cal-input' ref='a'/>
-            <input placeholder="Ф300" className='cal-input' ref='b'/>
+            <input type="number" placeholder="Ф600" className='cal-input' ref='a'/>
+            <input type="number" placeholder="Ф300" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -104,8 +104,8 @@ class FreezePlastic extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="动切力(YP)" className='cal-input' ref='a'/>
-            <input placeholder="塑性粘度(VP)" className='cal-input' ref='b'/>
+            <input type="number" placeholder="动切力(YP)" className='cal-input' ref='a'/>
+            <input type="number" placeholder="塑性粘度(VP)" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -132,9 +132,9 @@ class Loop extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="泵排量" className='cal-input' ref='a'/>
-            <input placeholder="井眼直径" className='cal-input' ref='b'/>
-            <input placeholder="钻具外径" className='cal-input' ref='c'/>
+            <input type="number" placeholder="泵排量" className='cal-input' ref='a'/>
+            <input type="number" placeholder="井眼直径" className='cal-input' ref='b'/>
+            <input type="number" placeholder="钻具外径" className='cal-input' ref='c'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -161,10 +161,10 @@ class SlipSpeed extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="岩屑直径" className='cal-input' ref='a'/>
-            <input placeholder="岩屑密度" className='cal-input' ref='b'/>
-            <input placeholder="钻井液密度" className='cal-input' ref='c'/>
-            <input placeholder="有效视粘度" className='cal-input' ref='d'/>
+            <input type="number" placeholder="岩屑直径" className='cal-input' ref='a'/>
+            <input type="number" placeholder="岩屑密度" className='cal-input' ref='b'/>
+            <input type="number" placeholder="钻井液密度" className='cal-input' ref='c'/>
+            <input type="number" placeholder="有效视粘度" className='cal-input' ref='d'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -191,8 +191,8 @@ class RisingSpeed extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="环空返速" className='cal-input' ref='a'/>
-            <input placeholder="岩屑滑落速度" className='cal-input' ref='b'/>
+            <input type="number" placeholder="环空返速" className='cal-input' ref='a'/>
+            <input type="number" placeholder="岩屑滑落速度" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -219,8 +219,8 @@ class FlowIndex extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="Ф600" className='cal-input' ref='a'/>
-            <input placeholder="Ф300" className='cal-input' ref='b'/>
+            <input type="number" placeholder="Ф600" className='cal-input' ref='a'/>
+            <input type="number" placeholder="Ф300" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -247,8 +247,8 @@ class Coefficient extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="Ф600" className='cal-input' ref='a'/>
-            <input placeholder="Ф300" className='cal-input' ref='b'/>
+            <input type="number" placeholder="Ф600" className='cal-input' ref='a'/>
+            <input type="number" placeholder="Ф300" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value} </span>
@@ -275,8 +275,8 @@ class Ability extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="岩屑净上升速度" className='cal-input' ref='a'/>
-            <input placeholder="环空返速" className='cal-input' ref='b'/>
+            <input type="number" placeholder="岩屑净上升速度" className='cal-input' ref='a'/>
+            <input type="number" placeholder="环空返速" className='cal-input' ref='b'/>
             <div>
                 <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
                 <span> {this.state.value}%</span>
