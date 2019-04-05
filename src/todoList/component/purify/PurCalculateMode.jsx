@@ -14,7 +14,8 @@ class Viscosity extends React.Component {
     }
     calculate() {
         // Ф600 / 2
-        let value = get(this.refs.a) / 2
+        let value = get(this.refs.a) / 2;
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -40,7 +41,8 @@ class PlasticViscosity extends React.Component {
     }
     calculate() {
         // Ф600 / 2
-        let value = get(this.refs.a) - get(this.refs.b)
+        let value = get(this.refs.a) - get(this.refs.b);
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -67,7 +69,8 @@ class YieldPoint extends React.Component {
     }
     calculate() {
         // 0.479 * (2*Ф300-Ф600)
-        let value = 0.479 * (2 * get(this.refs.b) - get(this.refs.b))
+        let value = 0.479 * (2 * get(this.refs.b) - get(this.refs.b));
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -94,6 +97,7 @@ class FreezePlastic extends React.Component {
     calculate() {
         //  动切力 / 动塑比
         let value = get(this.refs.a) / get(this.refs.b);
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -120,7 +124,8 @@ class Loop extends React.Component {
     }
     calculate() {
         //  1.2732 * Math.pow(10, 3) *泵排量 / (Math.pow(井眼直径, 2) - Math.pow(钻具外径, 2))
-        let value =1.2732 * Math.pow(10, 3) * get(this.refs.a) / (Math.pow(get(this.refs.b), 2) - Math.pow(get(this.refs.c), 2))
+        let value =1.2732 * Math.pow(10, 3) * get(this.refs.a) / (Math.pow(get(this.refs.b), 2) - Math.pow(get(this.refs.c), 2));
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -149,6 +154,7 @@ class SlipSpeed extends React.Component {
     calculate() {
         //  0.071*岩屑直径*(岩屑密度-钻井液密度)^0.667/(钻井液密度*有效视粘度)^0.333
         let value = 0.071 * get(this.refs.a) * Math.pow((get(this.refs.b) - get(this.refs.c)), 0.667) / Math.pow(( get(this.refs.c) * get(this.refs.d)), 0.333);
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -177,7 +183,8 @@ class RisingSpeed extends React.Component {
     }
     calculate() {
         //  环空返速-岩屑滑落速度
-        let value = get(this.refs.a) - get(this.refs.b)
+        let value = get(this.refs.a) - get(this.refs.b);
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -205,6 +212,7 @@ class FlowIndex extends React.Component {
     calculate() {
         //  3.322 * Math.log10(Ф600 / Ф300)
         let value = 3.322 * Math.log10(get(this.refs.a) / get(this.refs.b));
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -231,7 +239,8 @@ class Coefficient extends React.Component {
     }
     calculate() {
         //  (0.511 * Ф300) / Math.pow(511, 3.322 * Math.log10(Ф600 / Ф300))
-        let value =(0.511 * get(this.refs.b)) / Math.pow(511, 3.322 * Math.log10( get(this.refs.a) / get(this.refs.b)))
+        let value =(0.511 * get(this.refs.b)) / Math.pow(511, 3.322 * Math.log10( get(this.refs.a) / get(this.refs.b)));
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
@@ -258,7 +267,8 @@ class Ability extends React.Component {
     }
     calculate() {
         //  岩屑净上升速度/环空返速*100%
-        let value =get(this.refs.a) / get(this.refs.b) * 100
+        let value =get(this.refs.a) / get(this.refs.b) * 100;
+        this.props.setValue(value, this.props.code, this.props.side);
         this.setState({
             value: value
         });
