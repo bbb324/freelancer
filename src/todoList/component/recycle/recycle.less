@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height:100%;
+}
+
+.recycle-bg {
+  background-image: url(/freelancer/public/image/recycle/recycle-bg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 149% 94%;
+  text-align: center;
+  .open-config {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    color: white;
+    font-size: 12px;
+  }
+  //  ‰»Îøÿ÷∆∞Â
+  .configPanel {
+    .config {
+      background: #FFFFFF;
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      top: -8%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding: 4% 5%;
+      overflow: scroll;
+      .config-unit {
+        margin: 5% 0;
+        list-style-type: none;
+        font-size: 12px;
+        border-bottom: 1px solid #e3e3e3;
+        .config-formula {
+          display: block;
+          padding-left: 5%;
+        }
+        .formula-2 {
+          margin-top: 10px;
+        }
+        .config-title {
+          display: block;
+          text-align: left;
+          vertical-align: middle;
+        }
+        .config-control {
+          display: block;
+          vertical-align: middle;
+          .math-params {
+            text-align: left;
+            padding-left: 5%;
+            margin-bottom: 5%;
+            .cal-input {
+              margin: 2% 0;
+              display: block;
+              -webkit-appearance:none;
+              outline: none;
+              text-indent: 10px;
+              width: -webkit-fill-available;
+              line-height: 1.5;
+              font-size: 14px;
+              width: 60%;
+            }
+            .cal-btn {
+              background: #0266b4;
+              color: white;
+              font-size: 12px;
+              width: 60px;
+              text-align: center;
+              padding: 5px;
+              margin-top: 10px;
+              margin-right: 10px;
+              display: inline-block;
+            }
+          }
+
+        }
+      }
+      .btn-div {
+        width: 80%;
+        margin: 15% auto 0;
+        text-align: center;
+        span {
+          display: inline-block;
+          margin: 0 10%;
+          border: 1px solid #0266b4;
+          padding: 1% 5%;
+          border-radius: 5px;
+        }
+        .confirm {
+          background: #0266b4;
+          color: white;
+        }
+      }
+    }
+  }
+  .low-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  .param-div {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #FFFFFF;
+    background-image: url(/freelancer/public/image/recycle/rule.png);
+    height: 82%;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    .config-unit {
+      text-align: left;
+      margin-left: 11px;
+      margin-top: 11.3%;
+      .config-control {
+        margin-top: 4px;
+        font-size: 17px;
+      }
+    }
+    .config-unit:first-child {
+      margin-top: 0;
+    }
+  }
+  .recycle-div {
+    position: absolute;
+    top: 66.5%;
+    right: 15px;
+    color: #FFFFFF;
+    background: rgba(6, 57, 119, 0.1);
+    .title {
+      font-size: 12px;
+      background: rgba(6, 57, 119, 0.1);
+      height: 27px;
+      line-height: 27px;
+    }
+    .num-div {
+      .block {
+        display: inline-block;
+        border: 1px solid #063977;
+        padding: 25px 7px;
+        margin: 15px 2px;
+        font-weight: bold;
+      }
+      .block:first-child {
+        margin-left: 20px;
+      }
+      .block:last-child {
+        margin-right: 20px;
+      }
+
+    }
+  }
+}
+
+
+
+@media (max-height :680px) and (min-width: 413px) {
+
+}
