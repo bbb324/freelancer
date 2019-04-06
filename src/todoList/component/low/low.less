@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height:100%;
+}
+
+.low-bg {
+  background-image: url(/freelancer/public/image/low/low-bg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  .open-config {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    color: white;
+    font-size: 12px;
+  }
+  //  ‰»Îøÿ÷∆∞Â
+  .configPanel {
+    .config {
+      background: #FFFFFF;
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      top: -8%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding: 4% 5%;
+      overflow: scroll;
+      .config-unit {
+        margin: 5% 0;
+        list-style-type: none;
+        font-size: 12px;
+        border-bottom: 1px solid #e3e3e3;
+        .config-formula {
+          display: block;
+          padding-left: 5%;
+        }
+        .formula-2 {
+          margin-top: 10px;
+        }
+        .config-title {
+          display: block;
+          text-align: left;
+          vertical-align: middle;
+        }
+        .config-control {
+          display: block;
+          vertical-align: middle;
+          .math-params {
+            text-align: left;
+            padding-left: 5%;
+            margin-bottom: 5%;
+            .cal-input {
+              margin: 2% 0;
+              display: block;
+              -webkit-appearance:none;
+              outline: none;
+              text-indent: 10px;
+              width: -webkit-fill-available;
+              line-height: 1.5;
+              font-size: 14px;
+              width: 60%;
+            }
+            .cal-btn {
+              background: #0266b4;
+              color: white;
+              font-size: 12px;
+              width: 60px;
+              text-align: center;
+              padding: 5px;
+              margin-top: 10px;
+              margin-right: 10px;
+              display: inline-block;
+            }
+          }
+
+        }
+      }
+      .btn-div {
+        width: 80%;
+        margin: 15% auto 0;
+        text-align: center;
+        span {
+          display: inline-block;
+          margin: 0 10%;
+          border: 1px solid #0266b4;
+          padding: 1% 5%;
+          border-radius: 5px;
+        }
+        .confirm {
+          background: #0266b4;
+          color: white;
+        }
+      }
+    }
+  }
+  .low-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  .param-div {
+    position: absolute;
+    top: 58%;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    height: 33vh;
+    .config-unit {
+      background: rgba(255, 255, 255, 0.1);
+      width: 92vw;
+      height: 40px;
+      margin: 5px auto;
+      color: white;
+      font-size:12px;
+      .config-title {
+        display: inline-block;
+        vertical-align: super;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 10px;
+      }
+      .config-control {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 2.7vw;
+      }
+    }
+  }
+}
+
+
+
+@media (max-height :680px) and (min-width: 413px) {
+
+}
