@@ -72,7 +72,8 @@ class WaterPower extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 0
+            value: 0,
+            initNozzleValue: ''
         }
     }
     calculate() {
@@ -81,7 +82,6 @@ class WaterPower extends React.Component {
         this.props.setValue(value, this.props.code);
         this.setState({
             value: value,
-            initNozzleValue: ''
         });
     }
     render() {
