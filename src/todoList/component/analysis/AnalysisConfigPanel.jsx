@@ -8,11 +8,14 @@ import './analysis.less'
 
 class AnalysisConfigPanel extends React.Component {
 
+    openSetting(item) {
+        this.props.openSetting(item);
+    }
 
     renderTab() {
         let list = [];
         this.props.dataSource.forEach((item, key) => {
-            list.push(<div className='tab' style={{backgroundImage: `url(/freelancer/public/image/icon/${item.imgUrl})`}} key={key}>
+            list.push(<div className='tab' style={{backgroundImage: `url(/freelancer/public/image/icon/${item.imgUrl})`}} key={key} onClick={this.openSetting.bind(this, item)}>
                 <span className="data-display" > {item.value} </span>
             </div>);
         });
