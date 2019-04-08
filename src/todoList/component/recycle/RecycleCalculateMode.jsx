@@ -98,49 +98,6 @@ class Drill extends React.Component {
     }
 }
 
-// 循环总压耗
-class Cycle extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: 0
-        }
-    }
-    calculate() {
-        // v1 地面管汇压耗 = 地面管汇摩阻系数*钻井液密度*（泵排量/100）^1.86*9.818
-        let v1 = get(this.refs.e) * get(this.refs.b) * Math.pow((get(this.refs.a) / 100), 1.86) * 9.818;
-        // v2 钻铤段的内压耗 = 7628 * 塑性粘度^0.2*钻井液密度^0.8*泵排量^1.8* ((钻具长度/钻具内径)^4.82)
-        let v2 = 7628 * Math.pow(get(this.refs.c), 0.2) * Math.pow(get(this.refs.b), 0.8) * Math.pow(get(this.refs.a), 1.8) * get(this.refs.j) / Math.pow(get(this.refs.f), 4.82);
-        // v3 钻杆段的内压耗
-        let v3 = '';
-
-        // v4 钻铤段环空压耗
-        // v5 钻杆段环空压耗
-
-
-        this.state = {
-            value: v1 + v2
-        }
-    }
-    render() {
-        return <div className="math-params">
-            <input placeholder="泵排量" className='cal-input' ref='a'/>
-            <input placeholder="钻井液密度" className='cal-input' ref='b'/>
-            <input placeholder="塑性粘度" className='cal-input' ref='c'/>
-            <input placeholder="井眼直径" className='cal-input' ref='d'/>
-            <input placeholder="地面管汇摩阻系数" className='cal-input' ref='e'/>
-            <input placeholder="钻杆加重钻杆钻铤内径" className='cal-input' ref='f'/>
-            <input placeholder="钻杆加重钻杆钻铤外径" className='cal-input' ref='g'/>
-            <input placeholder="钻杆接箍外径" className='cal-input' ref='h'/>
-            <input placeholder="钻杆加重钻杆钻铤长度" className='cal-input' ref='j'/>
-            <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
-            </div>
-        </div>
-    }
-}
-
 // 钻杆环空压耗
 class BodyCycle extends React.Component {
     constructor(props) {
@@ -179,7 +136,6 @@ class BodyCycle extends React.Component {
 
 module.exports = {
     Drill,
-    Cycle,
     Pipe,
     InnerCycle,
     BodyCycle
