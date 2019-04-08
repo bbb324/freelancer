@@ -4,6 +4,7 @@ function get(ref) {
     return ref.value;
 }
 
+var event = document.createEvent('HTMLEvents')
 
 // 水力功率
 class Power extends React.Component {
@@ -45,6 +46,11 @@ class Nozzle extends React.Component {
         // 喷嘴压降*泵排量
         let value = get(this.refs.a) * get(this.refs.b);
         this.props.setValue(value, this.props.code);
+
+        event.initEvent("triggerNozzle", true, true);
+        event.nozzleValue = value;
+        document.dispatchEvent(event);
+
         this.setState({
             value: value
         });
@@ -74,12 +80,13 @@ class WaterPower extends React.Component {
         let value = get(this.refs.a) * 1000/ (Math.PI * get(this.refs.b) * get(this.refs.c)/4)
         this.props.setValue(value, this.props.code);
         this.setState({
-            value: value
+            value: value,
+            initNozzleValue: ''
         });
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="喷嘴水功率" className='cal-input' ref='a'/>
+            <input type="number" placeholder="喷嘴水功率" className='cal-input' ref='a' defaultValue={this.state.initNozzleValue}/>
             <input type="number" placeholder="钻头直径" className='cal-input' ref='b'/>
             <input type="number" placeholder="钻头直径" className='cal-input' ref='c'/>
             <div>
@@ -87,6 +94,17 @@ class WaterPower extends React.Component {
                 <span> {this.state.value} </span>
             </div>
         </div>
+    }
+
+    componentDidMount() {
+        this.eventListener = document.addEventListener('triggerNozzle', event => {
+            this.setState({
+                initNozzleValue: event.nozzleValue
+            })
+        }, false);
+    }
+    componentWillUnMount() {
+        document.removeEventListener(this.eventListener);
     }
 }
 // 钻头压降
