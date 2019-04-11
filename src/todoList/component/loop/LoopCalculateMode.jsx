@@ -27,7 +27,7 @@ class Loop extends React.Component {
             <Input name={'井眼直径'} code={'b'} ref={'b'} />
             <Input name={'钻具外径'} code={'c'} ref={'c'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>

@@ -26,7 +26,7 @@ class Power extends React.Component {
             <Input name={'泵压'} code={'a'} ref={'a'}/>
             <Input name={'泵排量'} code={'b'} ref={'b'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
 
@@ -60,7 +60,7 @@ class Nozzle extends React.Component {
             <Input name={'喷嘴压降'} code={'a'} ref={'a'}/>
             <Input name={'泵排量'} code={'b'} ref={'b'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -89,7 +89,7 @@ class WaterPower extends React.Component {
             <Input name={'喷嘴水功率'} code={'a'} ref={'a'} defaultValue={this.state.initNozzleValue}/>
             <Input name={'钻头直径'} code={'b'} ref={'b'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
 
@@ -128,7 +128,7 @@ class Pressure extends React.Component {
             <Input name={'泵压'} code={'a'} ref={'a'} />
             <Input name={'循环压耗'} code={'b'} ref={'b'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -158,7 +158,7 @@ class Pump extends React.Component {
             <Input name={'冲数'} code={'d'} ref='d'/>
             <Input name={'上水效率'} code={'e'} ref='e'/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -198,7 +198,7 @@ class Drop extends React.Component {
             <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
             <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
 
@@ -240,7 +240,7 @@ class Jet extends React.Component {
             <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
             <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
 
@@ -281,7 +281,7 @@ class Speed extends React.Component {
             <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
             <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -310,7 +310,7 @@ class Loop extends React.Component {
             <Input name={'井眼直径'} code={'b'} ref={'b'}/>
             <Input name={'钻具外径'} code={'c'} ref={'c'}/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>

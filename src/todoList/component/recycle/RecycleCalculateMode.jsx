@@ -26,7 +26,7 @@ class Pipe extends React.Component {
             <Input name={'钻井液密度'} code={'b'} ref={'b'} />
             <Input name={'泵排量'} code={'c'} ref={'c'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -58,7 +58,7 @@ class InnerCycle extends React.Component {
             <Input name={'钻具长度'} code={'d'} ref={'d'} />
             <Input name={'钻具内径'} code={'e'} ref={'e'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -89,7 +89,7 @@ class Drill extends React.Component {
             <Input name={'泵压'} code={'a'} ref={'a'}/>
             <Input name={'循环压耗'} code={'b'} ref={'b'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
@@ -125,7 +125,7 @@ class BodyCycle extends React.Component {
             <Input name={'井眼直径'} code={'e'} ref={'e'} />
             <Input name={'钻具外径'} code={'f'} ref={'f'} />
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>

@@ -38,7 +38,7 @@ class Volumn extends React.Component {
             <Input name={'光钻杆下深'} code={'depth'} ref={'i'} onChange={this.onInputChange.bind(this)}/>
             <Input name={'堵漏浆内外高差'} code={'difference'} ref={'j'} onChange={this.onInputChange.bind(this)}/>
             <div>
-                <span className='result'> 结果： {this.state.value}% </span>
+                <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
