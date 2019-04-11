@@ -1,9 +1,8 @@
 import React from 'react';
-
+import Input from '../common/Input.jsx';
 function get(ref) {
-    return ref.value;
+    return +ref.refs[Object.keys(ref.refs)[0]].value
 }
-
 var event = document.createEvent('HTMLEvents')
 
 // 水力功率
@@ -24,12 +23,13 @@ class Power extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="泵压" className='cal-input' ref='a'/>
-            <input type="number" placeholder="泵排量" className='cal-input' ref='b'/>
+            <Input name={'泵压'} code={'a'} ref={'a'}/>
+            <Input name={'泵排量'} code={'b'} ref={'b'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
+
         </div>
     }
 }
@@ -57,11 +57,11 @@ class Nozzle extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="喷嘴压降" className='cal-input' ref='a'/>
-            <input type="number" placeholder="泵排量" className='cal-input' ref='b'/>
+            <Input name={'喷嘴压降'} code={'a'} ref={'a'}/>
+            <Input name={'泵排量'} code={'b'} ref={'b'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -86,13 +86,13 @@ class WaterPower extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="喷嘴水功率" className='cal-input' ref='a' defaultValue={this.state.initNozzleValue}/>
-            <input type="number" placeholder="钻头直径" className='cal-input' ref='b'/>
-            <input type="number" placeholder="钻头直径" className='cal-input' ref='c'/>
+            <Input name={'喷嘴水功率'} code={'a'} ref={'a'} defaultValue={this.state.initNozzleValue}/>
+            <Input name={'钻头直径'} code={'b'} ref={'b'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
+
         </div>
     }
 
@@ -125,11 +125,11 @@ class Pressure extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="泵压" className='cal-input' ref='a'/>
-            <input type="number" placeholder="循环压耗" className='cal-input' ref='b'/>
+            <Input name={'泵压'} code={'a'} ref={'a'} />
+            <Input name={'循环压耗'} code={'b'} ref={'b'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -152,14 +152,14 @@ class Pump extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="管套直径" className='cal-input' ref='a'/>
-            <input placeholder="活塞冲程" className='cal-input' ref='b'/>
-            <input placeholder="缸套数" className='cal-input' ref='c'/>
-            <input placeholder="冲数" className='cal-input' ref='d'/>
-            <input placeholder="上水效率" className='cal-input' ref='e'/>
+            <Input name={'管套直径'} code={'a'} ref={'a'} />
+            <Input name={'活塞冲程'} code={'b'} ref='b'/>
+            <Input name={'缸套数'} code={'c'} ref='c'/>
+            <Input name={'冲数'} code={'d'} ref='d'/>
+            <Input name={'上水效率'} code={'e'} ref='e'/>
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} %</span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -186,20 +186,22 @@ class Drop extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="钻井液密度" className='cal-input' ref='a'/>
-            <input type="number" placeholder="泵排量" className='cal-input' ref='b'/>
-            <input type="number" placeholder="喷嘴1" className='cal-input' ref='c'/>
-            <input type="number" placeholder="喷嘴2" className='cal-input' ref='d'/>
-            <input type="number" placeholder="喷嘴3" className='cal-input' ref='e'/>
-            <input type="number" placeholder="喷嘴4" className='cal-input' ref='f'/>
-            <input type="number" placeholder="喷嘴5" className='cal-input' ref='g'/>
-            <input type="number" placeholder="喷嘴6" className='cal-input' ref='h'/>
-            <input type="number" placeholder="喷嘴7" className='cal-input' ref='i'/>
-            <input type="number" placeholder="喷嘴8" className='cal-input' ref='j'/>
+
+            <Input name={'钻井液密度'} code={'a'} ref={'a'}/>
+            <Input name={'泵排量'} code={'b'} ref={'b'}/>
+            <Input name={'喷嘴1'} code={'c'} ref={'c'}/>
+            <Input name={'喷嘴2'} code={'d'} ref={'d'}/>
+            <Input name={'喷嘴3'} code={'e'} ref={'e'}/>
+            <Input name={'喷嘴4'} code={'f'} ref={'f'}/>
+            <Input name={'喷嘴5'} code={'g'} ref={'g'}/>
+            <Input name={'喷嘴6'} code={'h'} ref={'h'}/>
+            <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
+            <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
+
         </div>
     }
 }
@@ -226,20 +228,22 @@ class Jet extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="钻井液密度" className='cal-input' ref='a'/>
-            <input type="number" placeholder="泵排量" className='cal-input' ref='b'/>
-            <input type="number" placeholder="喷嘴1" className='cal-input' ref='c'/>
-            <input type="number" placeholder="喷嘴2" className='cal-input' ref='d'/>
-            <input type="number" placeholder="喷嘴3" className='cal-input' ref='e'/>
-            <input type="number" placeholder="喷嘴4" className='cal-input' ref='f'/>
-            <input type="number" placeholder="喷嘴5" className='cal-input' ref='g'/>
-            <input type="number" placeholder="喷嘴6" className='cal-input' ref='h'/>
-            <input type="number" placeholder="喷嘴7" className='cal-input' ref='i'/>
-            <input type="number" placeholder="喷嘴8" className='cal-input' ref='j'/>
+
+            <Input name={'钻井液密度'} code={'a'} ref={'a'}/>
+            <Input name={'泵排量'} code={'b'} ref={'b'}/>
+            <Input name={'喷嘴1'} code={'c'} ref={'c'}/>
+            <Input name={'喷嘴2'} code={'d'} ref={'d'}/>
+            <Input name={'喷嘴3'} code={'e'} ref={'e'}/>
+            <Input name={'喷嘴4'} code={'f'} ref={'f'}/>
+            <Input name={'喷嘴5'} code={'g'} ref={'g'}/>
+            <Input name={'喷嘴6'} code={'h'} ref={'h'}/>
+            <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
+            <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
+
         </div>
     }
 }
@@ -266,19 +270,19 @@ class Speed extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="钻井液密度" className='cal-input' ref='a'/>
-            <input type="number" placeholder="泵排量" className='cal-input' ref='b'/>
-            <input type="number" placeholder="喷嘴1" className='cal-input' ref='c'/>
-            <input type="number" placeholder="喷嘴2" className='cal-input' ref='d'/>
-            <input type="number" placeholder="喷嘴3" className='cal-input' ref='e'/>
-            <input type="number" placeholder="喷嘴4" className='cal-input' ref='f'/>
-            <input type="number" placeholder="喷嘴5" className='cal-input' ref='g'/>
-            <input type="number" placeholder="喷嘴6" className='cal-input' ref='h'/>
-            <input type="number" placeholder="喷嘴7" className='cal-input' ref='i'/>
-            <input type="number" placeholder="喷嘴8" className='cal-input' ref='j'/>
+            <Input name={'钻井液密度'} code={'a'} ref={'a'}/>
+            <Input name={'泵排量'} code={'b'} ref={'b'}/>
+            <Input name={'喷嘴1'} code={'c'} ref={'c'}/>
+            <Input name={'喷嘴2'} code={'d'} ref={'d'}/>
+            <Input name={'喷嘴3'} code={'e'} ref={'e'}/>
+            <Input name={'喷嘴4'} code={'f'} ref={'f'}/>
+            <Input name={'喷嘴5'} code={'g'} ref={'g'}/>
+            <Input name={'喷嘴6'} code={'h'} ref={'h'}/>
+            <Input name={'喷嘴7'} code={'i'} ref={'i'}/>
+            <Input name={'喷嘴8'} code={'j'} ref={'j'}/>
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -302,13 +306,12 @@ class Loop extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="泵排量" className='cal-input' ref='a'/>
-            <input placeholder="井眼直径" className='cal-input' ref='b'/>
-            <input placeholder="钻具外径" className='cal-input' ref='c'/>
-
+            <Input name={'泵排量'} code={'a'} ref={'a'}/>
+            <Input name={'井眼直径'} code={'b'} ref={'b'}/>
+            <Input name={'钻具外径'} code={'c'} ref={'c'}/>
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
