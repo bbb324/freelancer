@@ -19,7 +19,8 @@ class Input extends React.Component {
     hasNumber(e) {
         this.setState({
             showClear: e.target.value !== ''
-        })
+        });
+        this.props.onChange && this.props.onChange(this.props.code, e.target.value);
     }
 
     render() {
