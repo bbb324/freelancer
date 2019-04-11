@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Input from '../common/Input.jsx';
 function get(ref) {
-    return ref.value;
+    return +ref.refs[Object.keys(ref.refs)[0]].value
 }
 
 // 地面管汇压耗
@@ -22,13 +22,12 @@ class Pipe extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="地面管汇摩阻系数" className='cal-input' ref='a'/>
-            <input placeholder="钻井液密度" className='cal-input' ref='b'/>
-            <input placeholder="泵排量" className='cal-input' ref='c'/>
-
+            <Input name={'地面管汇摩阻系数'} code={'a'} ref={'a'}/>
+            <Input name={'钻井液密度'} code={'b'} ref={'b'} />
+            <Input name={'泵排量'} code={'c'} ref={'c'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -52,15 +51,15 @@ class InnerCycle extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="塑性粘度" className='cal-input' ref='a'/>
-            <input placeholder="钻井液密度" className='cal-input' ref='b'/>
-            <input placeholder="泵排量" className='cal-input' ref='c'/>
-            <input placeholder="钻具长度" className='cal-input' ref='d'/>
-            <input placeholder="钻具内径" className='cal-input' ref='e'/>
 
+            <Input name={'塑性粘度'} code={'a'} ref={'a'}/>
+            <Input name={'钻井液密度'} code={'b'} ref={'b'} />
+            <Input name={'泵排量'} code={'c'} ref={'c'} />
+            <Input name={'钻具长度'} code={'d'} ref={'d'} />
+            <Input name={'钻具内径'} code={'e'} ref={'e'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -87,12 +86,11 @@ class Drill extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="泵压" className='cal-input' ref='a'/>
-            <input placeholder="循环压耗" className='cal-input' ref='b'/>
-
+            <Input name={'泵压'} code={'a'} ref={'a'}/>
+            <Input name={'循环压耗'} code={'b'} ref={'b'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
@@ -119,15 +117,16 @@ class BodyCycle extends React.Component {
 
     render() {
         return <div className="math-params">
-            <input placeholder="塑性粘度" className='cal-input' ref='a'/>
-            <input placeholder="钻井液密度" className='cal-input' ref='b'/>
-            <input placeholder="泵排量" className='cal-input' ref='c'/>
-            <input placeholder="钻具长度" className='cal-input' ref='d'/>
-            <input placeholder="井眼直径" className='cal-input' ref='e'/>
-            <input placeholder="钻具外径" className='cal-input' ref='f'/>
+
+            <Input name={'塑性粘度'} code={'a'} ref={'a'}/>
+            <Input name={'钻井液密度'} code={'b'} ref={'b'} />
+            <Input name={'泵排量'} code={'c'} ref={'c'} />
+            <Input name={'钻具长度'} code={'d'} ref={'d'} />
+            <Input name={'井眼直径'} code={'e'} ref={'e'} />
+            <Input name={'钻具外径'} code={'f'} ref={'f'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
