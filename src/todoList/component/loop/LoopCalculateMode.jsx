@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Input from '../common/Input.jsx';
 function get(ref) {
-    return ref.value;
+    return +ref.refs[Object.keys(ref.refs)[0]].value
 }
 
 // 环空返速计算公式
@@ -22,13 +22,13 @@ class Loop extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input placeholder="泵排量" className='cal-input' ref='a'/>
-            <input placeholder="井眼直径" className='cal-input' ref='b'/>
-            <input placeholder="钻具外径" className='cal-input' ref='c'/>
 
+            <Input name={'泵排量'} code={'a'} ref={'a'}/>
+            <Input name={'井眼直径'} code={'b'} ref={'b'} />
+            <Input name={'钻具外径'} code={'c'} ref={'c'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
