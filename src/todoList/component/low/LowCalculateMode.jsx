@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Input from '../common/Input.jsx';
 function get(ref) {
-    return ref.value;
+    return +ref.refs[Object.keys(ref.refs)[0]].value
 }
 
 // 钻井液替量计算公式
@@ -26,19 +26,20 @@ class Volumn extends React.Component {
     }
     render() {
         return <div className="math-params">
-            <input type="number" placeholder="泵入堵漏浆量" className='cal-input' ref='a' onChange={this.onInputChange.bind(this, 'plasma-volume')} />
-            <input type="number" placeholder="井眼直径" className='cal-input' ref='b' onChange={this.onInputChange.bind(this, 'diameter')} />
-            <input type="number" placeholder="钻杆1外径" className='cal-input' ref='c' onChange={this.onInputChange.bind(this, 'external-diameter-1')} />
-            <input type="number" placeholder="钻杆1内径" className='cal-input' ref='d' onChange={this.onInputChange.bind(this, 'inner-diameter-1')} />
-            <input type="number" placeholder="钻杆1长度" className='cal-input' ref='e' onChange={this.onInputChange.bind(this, 'length-1')} />
-            <input type="number" placeholder="钻杆2外径" className='cal-input' ref='f' onChange={this.onInputChange.bind(this, 'external-diameter-2')} />
-            <input type="number" placeholder="钻杆2内径" className='cal-input' ref='g' onChange={this.onInputChange.bind(this, 'inner-diameter-2')} />
-            <input type="number" placeholder="钻杆2长度" className='cal-input' ref='h' onChange={this.onInputChange.bind(this, 'length-2')} />
-            <input type="number" placeholder="光钻杆下深" className='cal-input' ref='i' onChange={this.onInputChange.bind(this, 'depth')} />
-            <input type="number" placeholder="堵漏浆内外高差" className='cal-input' ref='j' onChange={this.onInputChange.bind(this, 'difference')} />
+
+            <Input name={'泵入堵漏浆量'} code={'a'} ref={'a'} />
+            <Input name={'井眼直径'} code={'b'} ref={'b'} />
+            <Input name={'钻杆1外径'} code={'c'} ref={'c'} />
+            <Input name={'钻杆1内径'} code={'d'} ref={'d'} />
+            <Input name={'钻杆1长度'} code={'e'} ref={'e'} />
+            <Input name={'钻杆2外径'} code={'f'} ref={'f'} />
+            <Input name={'钻杆2内径'} code={'g'} ref={'g'} />
+            <Input name={'钻杆2长度'} code={'h'} ref={'h'} />
+            <Input name={'光钻杆下深'} code={'i'} ref={'i'} />
+            <Input name={'堵漏浆内外高差'} code={'j'} ref={'j'} />
             <div>
-                <span className='cal-btn' onClick={this.calculate.bind(this)}>计算</span>
-                <span> {this.state.value} </span>
+                <span className='result'> 结果： {this.state.value}% </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
             </div>
         </div>
     }
