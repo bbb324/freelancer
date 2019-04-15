@@ -97,7 +97,7 @@ class Real extends React.Component {
             value: value.toFixed(2)
         });
     }
-    
+
     render() {
         return <div className="math-params">
 
