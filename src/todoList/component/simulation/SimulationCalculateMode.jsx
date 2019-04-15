@@ -5,8 +5,8 @@ function get(ref) {
 }
 var event = document.createEvent('HTMLEvents')
 
-// 重浆密度计算公式
-class Density extends React.Component {
+// 漏层承压能力计算公式
+class Load extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,28 +15,26 @@ class Density extends React.Component {
         }
     }
     calculate() {
-        //重浆密度 = 环空压耗/（9.8*垂深高度）+钻井液密度
-        let value = get(this.refs.a) / (9.8 * get(this.refs.b)) + get(this.refs.c);
+        //重浆密度 = 堵漏浆密度*g*预计水泥塞长+堵漏时钻井液密度*g*（漏层垂深 - （（堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）））
+        let value = get(this.refs.a) * 9.8 * get(this.refs.b) + get(this.refs.c) * 9.8 * (get(this.refs.d) - ((get(this.refs.e) - get(this.refs.f)) / (1/4 * Math.PI * get(this.refs.g))))
         this.props.setValue(this.props.code, value.toFixed(2));
-
-        event.initEvent("triggerDensity", true, true);
-        event.densityValue = value.toFixed(2);
-        document.dispatchEvent(event);
 
         this.setState({
             value: value.toFixed(2)
         });
     }
 
-    onInputChange(code, value) {
-        this.props.setValue(code, value)
-    }
+
     render() {
         return <div className="math-params">
 
-            <Input name={'环空压耗'} code={'loop'} ref={'a'} onChange={this.onInputChange.bind(this)}/>
-            <Input name={'垂深高度'} code={'depth'} ref={'b'} onChange={this.onInputChange.bind(this)} defaultValue={this.state.initDepthValue}/>
-            <Input name={'钻井液密度'} code={'liquid-density'} ref={'c'} onChange={this.onInputChange.bind(this)}/>
+            <Input name={'堵漏浆密度'} code={'density'} ref={'a'} />
+            <Input name={'预计水泥塞长'} code={'length'} ref={'b'} />
+            <Input name={'堵漏时钻井液密度'} code={'liquid-density'} ref={'c'} />
+            <Input name={'漏层垂深'} code={'depth'} ref={'d'} />
+            <Input name={'堵漏浆方量'} code={'leaking-stop'} ref={'e'} />
+            <Input name={'挤水泥方量'} code={'water'} ref={'f'} />
+            <Input name={'井眼直径的平方'} code={'diameter'} ref={'g'} />
             <div>
                 <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
@@ -44,18 +42,10 @@ class Density extends React.Component {
         </div>
     }
 
-    componentDidMount() {
-        this.eventListener = document.addEventListener('triggerDepth', event => {
-            console.log(event.depthValue)
-            this.setState({
-                initDepthValue: event.depthValue
-            })
-        }, false);
-    }
 }
 
-// 垂深高度计算公式
-class Depth extends React.Component {
+// 预计水泥塞长计算公式
+class Predict extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -64,29 +54,22 @@ class Depth extends React.Component {
         }
     }
     calculate() {
-        //垂深高度 = 环空压耗/(9.8*(重浆密度 - 钻井液密度))
-        let value = get(this.refs.a) / 9.8 * (get(this.refs.b) - get(this.refs.c));
+        //预计水泥塞长 = （堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）-新环空静液面高度
+        let value = (get(this.refs.a) - get(this.refs.b)) / (1/4 * Math.PI * get(this.refs.c))- get(this.refs.d)
         this.props.setValue(this.props.code, value.toFixed(2));
-
-        event.initEvent("triggerDepth", true, true);
-        event.depthValue = value.toFixed(2);
-        document.dispatchEvent(event);
 
         this.setState({
             value: value.toFixed(2)
         });
     }
 
-    onInputChange(code, value) {
-        this.props.setValue(code, value)
-
-    }
     render() {
         return <div className="math-params">
 
-            <Input name={'环空压耗'} code={'loop'} ref={'a'} onChange={this.onInputChange.bind(this)}/>
-            <Input name={'重浆密度'} code={'heavy-pulp-density'} ref={'b'} onChange={this.onInputChange.bind(this)} defaultValue={this.state.initDensityValue}/>
-            <Input name={'钻井液密度'} code={'liquid-density'} ref={'c'} onChange={this.onInputChange.bind(this)}/>
+            <Input name={'堵漏浆方量'} code={'leaking-stop'} ref={'a'} />
+            <Input name={'挤水泥方量'} code={'water'} ref={'b'} />
+            <Input name={'井眼直径的平方'} code={'diameter'} ref={'c'}/>
+            <Input name={'新环空静液面高度'} code={'height'} ref={'d'}/>
             <div>
                 <span className='result'> 结果： {this.state.value} </span>
                 <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
@@ -94,15 +77,43 @@ class Depth extends React.Component {
         </div>
     }
 
-    componentDidMount() {
-        this.eventListener = document.addEventListener('triggerDensity', event => {
-            this.setState({
-                initDensityValue: event.densityValue
-            })
-        }, false);
+}
+
+// 实际水泥塞长计算公式
+class Real extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 0,
+            initDensityValue: 0
+        }
+    }
+    calculate() {
+        //预计水泥塞长 = （堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）-新环空静液面高度
+        let value = (get(this.refs.a) - get(this.refs.b)) / (1/4 * Math.PI * get(this.refs.c))- get(this.refs.d)
+        this.props.setValue(this.props.code, value.toFixed(2));
+
+        this.setState({
+            value: value.toFixed(2)
+        });
+    }
+    
+    render() {
+        return <div className="math-params">
+
+            <Input name={'堵漏浆方量'} code={'leaking-stop'} ref={'a'} />
+            <Input name={'挤水泥方量'} code={'water'} ref={'b'} />
+            <Input name={'井眼直径的平方'} code={'diameter'} ref={'c'} />
+            <Input name={'新环空静液面高度'} code={'height'} ref={'d'} />
+            <div>
+                <span className='result'> 结果： {this.state.value} </span>
+                <div className='cal-btn' onClick={this.calculate.bind(this)}>计算</div>
+            </div>
+        </div>
     }
 }
 module.exports = {
-    Density,
-    Depth
+    Load,
+    Predict,
+    Real
 };
