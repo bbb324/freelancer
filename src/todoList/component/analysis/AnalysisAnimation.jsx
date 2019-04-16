@@ -7,13 +7,14 @@ class AnalysisAnimation extends React.PureComponent {
         }
     }
     render() {
-        return <img className="water-tower" src={`./image/analysis/animate-${this.state.cur+1}.png`} />
+        console.log(this.state.cur+1)
+        return <img className="water-tower" src={`./image/analysis/animate-ext-${this.state.cur+1}.png`} />
     }
 
     componentDidMount() {
         let i = 0;
        this.timer =  setInterval(() => {
-            if(i === 6) {
+            if(i === 7) {
                 i = 0;
             }
             this.setState({
