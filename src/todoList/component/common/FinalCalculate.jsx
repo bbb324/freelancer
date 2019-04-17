@@ -70,7 +70,7 @@ class FinalCalculate extends React.Component {
                 {this.setOutput()}
             </div>
             <div className='btn-div'>
-                <span className='confirm' onClick={this.confirm.bind(this)}>确定</span>
+                <span className='confirm' onClick={this.confirm.bind(this)}>计算</span>
             </div>
         </div>
     }
