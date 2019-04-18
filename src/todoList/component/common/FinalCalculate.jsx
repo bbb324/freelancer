@@ -55,6 +55,8 @@ class FinalCalculate extends React.Component {
     }
 
     confirm() {
+        // window.localStorage.set
+        console.log(this.state.inputParams)
         this.props.setValue(this.state.inputParams);
     }
 
