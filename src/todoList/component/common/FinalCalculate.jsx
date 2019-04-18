@@ -31,7 +31,7 @@ class FinalCalculate extends React.Component {
     setInput() {
         let list = [];
         this.state.inputParams.forEach(item => {
-            list.push(<div key={item.label} >
+            list.push(<div key={item.label} className="input-option">
                 <label className='input-label'> {item.label}： </label>
                 <div className='input-div'>
                     <input className='input-value' onChange={this.hasNumber.bind(this, item.code)} type="number" placeholder={`请输入${item.label}`}/>
@@ -44,7 +44,7 @@ class FinalCalculate extends React.Component {
     setOutput() {
         let list = [];
         this.props.outputParams.forEach(item => {
-            list.push(<div key={item.label}>
+            list.push(<div key={item.label}  className="output-option">
                 <label className='input-label'> {item.label}： </label>
                 <div className='input-div'>
                     <span> {item.value} </span>
@@ -69,7 +69,7 @@ class FinalCalculate extends React.Component {
     render() {
         return <div className='input-field'>
             <div className="title"> {this.props.title} </div>
-            <div className="result">输入</div>
+            <div className="IO">输入</div>
 
             <div className="result-panel">
                 {this.setInput()}
