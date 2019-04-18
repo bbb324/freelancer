@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "34811da8949a311dba11";
+/******/ 	var hotCurrentHash = "ffa9bc2235298f199ecd";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,7 +800,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".input-field {\\n  margin: 15px 0;\\n  font-size: 14px;\\n}\\n.input-field .input-div {\\n  display: inline-block;\\n  height: 20px;\\n  position: relative;\\n}\\n.input-field .input-div .clear-icon {\\n  display: inline-block;\\n  width: 16px;\\n  height: 16px;\\n  right: 16px;\\n  position: absolute;\\n  top: 50%;\\n  transform: translateY(-50%);\\n}\\n.input-field .input-value {\\n  border: none;\\n  outline: none;\\n  line-height: 20px;\\n  font-size: 15px;\\n}\\n.input-field .input-value::-webkit-input-placeholder {\\n  color: #c5c8ce;\\n}\\n.input-field:first-child {\\n  margin-top: 0;\\n}\\n.input-unit {\\n  margin: 15px 0;\\n}\\n.result {\\n  text-align: left;\\n  margin: 30px;\\n}\\n.result-panel {\\n  text-align: left;\\n  margin: 10px 0 0 30px;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/todoList/component/common/common.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".input-field {\\n  margin: 15px 0;\\n  font-size: 14px;\\n}\\n.input-field .title {\\n  font-size: 18px;\\n}\\n.input-field .input-div {\\n  display: inline-block;\\n  height: 20px;\\n  position: relative;\\n}\\n.input-field .input-div .clear-icon {\\n  display: inline-block;\\n  width: 16px;\\n  height: 16px;\\n  right: 16px;\\n  position: absolute;\\n  top: 50%;\\n  transform: translateY(-50%);\\n}\\n.input-field .input-value {\\n  border: none;\\n  outline: none;\\n  line-height: 20px;\\n  font-size: 15px;\\n}\\n.input-field .input-value::-webkit-input-placeholder {\\n  color: #c5c8ce;\\n}\\n.input-field:first-child {\\n  margin-top: 0;\\n}\\n.input-unit {\\n  margin: 15px 0;\\n}\\n.result {\\n  text-align: left;\\n  margin: 30px;\\n}\\n.result-panel {\\n  text-align: left;\\n  margin: 10px 0 0 30px;\\n}\\n.config-formula {\\n  padding-left: 5%;\\n  padding-right: 5%;\\n  text-align: left;\\n  font-size: 12px;\\n  color: #eb6100;\\n  margin-top: 20px;\\n}\\n.config-formula p {\\n  margin: 10px;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/todoList/component/common/common.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 

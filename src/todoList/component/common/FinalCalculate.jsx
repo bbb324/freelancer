@@ -34,7 +34,7 @@ class FinalCalculate extends React.Component {
             list.push(<div key={item.label} >
                 <label className='input-label'> {item.label}： </label>
                 <div className='input-div'>
-                    <input className='input-value' onChange={this.hasNumber.bind(this, item.code)} type="number" />
+                    <input className='input-value' onChange={this.hasNumber.bind(this, item.code)} type="number" placeholder={`请输入${item.label}`}/>
                 </div>
             </div>)
         });
@@ -58,8 +58,17 @@ class FinalCalculate extends React.Component {
         this.props.setValue(this.state.inputParams);
     }
 
+    renderFormula() {
+        let list = [];
+        this.props.formula.forEach((item, key) => {
+            list.push(<p key={key}> {item} </p>)
+        });
+        return list;
+    }
+
     render() {
         return <div className='input-field'>
+            <div className="title"> {this.props.title} </div>
             <div className="result">输入</div>
 
             <div className="result-panel">
@@ -68,6 +77,9 @@ class FinalCalculate extends React.Component {
             <div className="result">结果</div>
             <div className="result-panel">
                 {this.setOutput()}
+            </div>
+            <div className="config-formula">
+                {this.renderFormula()}
             </div>
             <div className='btn-div'>
                 <span className='confirm' onClick={this.confirm.bind(this)}>计算</span>
