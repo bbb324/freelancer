@@ -17,10 +17,10 @@ class FinalCalculate extends React.Component {
         })
     }
 
-    hasNumber(code, e) {
+    hasNumber(label, e) {
         const inputs = Object.assign(this.state.inputParams, []);
         let cur = inputs.filter(item => {
-            return item.code === code
+            return item.label === label
         });
         cur[0].value = Number(e.target.value);
         this.setState({
@@ -34,7 +34,7 @@ class FinalCalculate extends React.Component {
             list.push(<div key={item.label} className="input-option">
                 <label className='input-label'> {item.label}： </label>
                 <div className='input-div'>
-                    <input className='input-value' onChange={this.hasNumber.bind(this, item.code)} type="number" placeholder={`请输入${item.label}`}/>
+                    <input className='input-value' onChange={this.hasNumber.bind(this, item.label)} type="number" placeholder={`请输入${item.label}`} defaultValue={item.value}/>
                 </div>
             </div>)
         });
@@ -55,8 +55,9 @@ class FinalCalculate extends React.Component {
     }
 
     confirm() {
-        // window.localStorage.set
-        console.log(this.state.inputParams)
+        this.state.inputParams.forEach(item => {
+            window.localStorage.setItem(item.label, item.value);
+        });
         this.props.setValue(this.state.inputParams);
     }
 
