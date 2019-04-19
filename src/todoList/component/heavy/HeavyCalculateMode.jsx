@@ -117,6 +117,8 @@ class Total extends React.Component {
             output: [
                 {label: '重浆密度', value: 0 },
                 {label: '垂深高度', value: 0 },
+                {label: '环空压耗', value: 0 },
+                {label: '钻井液密度', value: 0 },
             ]
         };
         this.formula = [
@@ -155,6 +157,8 @@ class Total extends React.Component {
 
         outputs[0].value = this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度')
         outputs[1].value = this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度')))
+        outputs[2].value = this.getValue('环空压耗');
+        outputs[3].value = this.getValue('钻井液密度');
 
         outputs.forEach(item => {
             window.localStorage.setItem(item.label, item.value);

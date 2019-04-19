@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../common/Input.jsx';
+import FinalCalculate from '../common/FinalCalculate.jsx';
 function get(ref) {
     return +ref.refs[Object.keys(ref.refs)[0]].value
 }
@@ -45,7 +46,92 @@ class Volumn extends React.Component {
     }
 }
 
+class Total extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: [
+                {label: '泵入堵漏浆量', value: ''},
+                {label: '井眼直径', value: ''},
+                {label: '钻杆1外径', value: ''},
+                {label: '钻杆1内径', value: ''},
+                {label: '钻杆1长度', value: ''},
+                {label: '钻杆2外径', value: ''},
+                {label: '钻杆2内径', value: ''},
+                {label: '钻杆2长度', value: ''},
+                {label: '光钻杆下深', value: ''},
+                {label: '堵漏浆内外高差', value: ''}
+            ],
+            output: [
+                {label: '泵入堵漏浆量', value: 0 },
+                {label: '井眼直径', value: 0 },
+                {label: '光钻杆下深', value: 0 },
+                {label: '堵漏浆内外高差', value: 0 },
+                {label: '钻井液替量', value: 0 }
+            ]
+        };
+        this.formula = [
+            '环空返高 = (泵入堵漏浆量 * 4 / π - 钻杆2内径平方 * 堵漏浆内外高差) / 井眼直径平方',
+            '钻井液替量 = π / 4 * 钻杆1内径平方 * 钻杆1长度 + π / 4 * 钻杆2内径平方 * (钻杆2长度 - 堵漏浆内外高差 - 环空返高)',
+        ];
 
+    }
+
+    componentWillMount() {
+        let inputs = Object.assign(this.state.input, []);
+        let outputs = Object.assign(this.state.output, []);
+        inputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        })
+        outputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        });
+        this.setState({
+            input: inputs,
+            output: outputs
+        });
+    }
+
+
+    getValue(label) {
+        let unit = this.totalParams.filter(item => {
+            return item.label === label;
+        });
+        return unit[0].value
+    }
+
+    setValue(inputParams) {
+        this.totalParams = inputParams;
+        const outputs = Object.assign(this.state.output, []);
+
+        outputs[0].value = this.getValue('泵入堵漏浆量');
+        outputs[1].value = this.getValue('井眼直径');
+        outputs[2].value = this.getValue('光钻杆下深');
+        outputs[3].value = this.getValue('堵漏浆内外高差');
+
+        // v1： 钻杆1内径平方
+        let v1 = this.getValue('钻杆1内径') * this.getValue('钻杆1内径');
+
+        // v2： 钻杆2内径平方
+        let v2 = this.getValue('钻杆2内径') * this.getValue('钻杆2内径');
+        // v3：环空返高
+        let v3 = (this.getValue('泵入堵漏浆量') * 4 / Math.PI - v1 * this.getValue('堵漏浆内外高差')) / Math.pow(this.getValue('井眼直径'), 2);
+        outputs[4].value = Math.PI / 4 * v1 * this.getValue('钻杆1长度') + Math.PI / 4 * v2 * (this.getValue('钻杆2长度') - this.getValue('堵漏浆内外高差') - v3);
+
+        outputs.forEach(item => {
+            window.localStorage.setItem(item.label, item.value);
+        });
+
+        this.setState({
+            output: outputs
+        });
+        this.props.setBack(outputs);
+    }
+    render() {
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'环空返速'} formula={this.formula}/>
+    }
+}
 module.exports = {
-    Volumn
+    Volumn,
+    Total
 };
