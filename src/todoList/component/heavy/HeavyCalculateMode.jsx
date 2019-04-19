@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../common/Input.jsx';
+import FinalCalculate from '../common/FinalCalculate.jsx';
 function get(ref) {
     return +ref.refs[Object.keys(ref.refs)[0]].value
 }
@@ -102,7 +103,74 @@ class Depth extends React.Component {
         }, false);
     }
 }
+
+class Total extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: [
+                {label: '环空压耗', value: ''},
+                {label: '钻井液密度', value: ''},
+                {label: '重浆密度', value: ''},
+                {label: '垂深高度', value: ''},
+            ],
+            output: [
+                {label: '重浆密度', value: 0 },
+                {label: '垂深高度', value: 0 },
+            ]
+        };
+        this.formula = [
+            '重浆密度 = 环空压耗/（9.8*垂深高度）+钻井液密度',
+            '垂深高度 = 环空压耗/(9.8*(重浆密度 - 钻井液密度))',
+        ];
+
+    }
+
+    componentWillMount() {
+        let inputs = Object.assign(this.state.input, []);
+        let outputs = Object.assign(this.state.output, []);
+        inputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        })
+        outputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        });
+        this.setState({
+            input: inputs,
+            output: outputs
+        });
+    }
+
+
+    getValue(label) {
+        let unit = this.totalParams.filter(item => {
+            return item.label === label;
+        });
+        return unit[0].value
+    }
+
+    setValue(inputParams) {
+        this.totalParams = inputParams;
+        const outputs = Object.assign(this.state.output, []);
+
+        outputs[0].value = this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度')
+        outputs[1].value = this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度')))
+
+        outputs.forEach(item => {
+            window.localStorage.setItem(item.label, item.value);
+        });
+
+        this.setState({
+            output: outputs
+        });
+        this.props.setBack(outputs);
+    }
+    render() {
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'环空返速'} formula={this.formula}/>
+    }
+}
 module.exports = {
     Density,
-    Depth
+    Depth,
+    Total
 };
