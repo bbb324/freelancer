@@ -432,7 +432,7 @@ class Total extends React.Component {
         this.props.setBack(outputs);
     }
     render() {
-        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'环空返速'} formula={this.formula}/>
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'钻头水功率'} formula={this.formula}/>
     }
 }
 

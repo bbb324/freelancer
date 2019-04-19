@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../common/Input.jsx';
+import FinalCalculate from '../common/FinalCalculate.jsx';
 function get(ref) {
     return +ref.refs[Object.keys(ref.refs)[0]].value
 }
@@ -112,8 +113,112 @@ class Real extends React.Component {
         </div>
     }
 }
+
+class Total extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: [
+                {label: '井眼直径', value: ''},
+                {label: '漏失时钻井液密度', value: ''},
+                {label: '漏层垂深', value: ''},
+                {label: '环空静液面高度', value: ''},
+                {label: '堵漏浆密度', value: ''},
+                {label: '堵漏浆方量', value: ''},
+                {label: '堵漏时钻井液密度', value: ''},
+                {label: '挤水泥方量', value: ''},
+                {label: '漏层平均井斜角', value: ''},
+                {label: '实际水泥塞长', value: ''},
+            ],
+            output: [
+                {label: '漏层承压能力', value: 0 },
+                {label: '直井段预计水泥塞长', value: 0 },
+                {label: '斜井段预计水泥塞长', value: 0 },
+                {label: '水平段预计水泥塞长', value: 0 },
+                {label: '实际水泥塞长', value: 0 },
+
+            ]
+        };
+        this.formula = [
+            '漏层承压能力 = 漏失时钻井液密度*g*(漏层垂深 - 环空静液面高度)',
+
+            '直井段： 预计水泥塞长 = (漏层承压能力 - 堵漏时钻井液密度*g*（漏层垂深 - ((堵漏浆方量 - 挤水泥方量)/(1/4π井眼直径的平方)))) / (堵漏浆密度*g)',
+            '斜井段： 预计水泥塞长 = (漏层承压能力 - 堵漏时钻井液密度*g*(漏层垂深 - ((堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方))*cos漏层平均井斜角))/ (g * 堵漏浆密度 * cos漏层平均井斜角)',
+            '新环空静液面高度 = 漏层承压能力/(堵漏时钻井液密度*g) - 漏层垂深',
+            '水平段： 预计水泥塞长=（堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）-新环空静液面高度',
+            '实际水泥塞长 = 实际水泥塞长',
+
+        ];
+
+    }
+
+    componentWillMount() {
+        let inputs = Object.assign(this.state.input, []);
+        let outputs = Object.assign(this.state.output, []);
+        inputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        })
+        outputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        });
+        this.setState({
+            input: inputs,
+            output: outputs
+        });
+    }
+
+
+    getValue(label) {
+        let unit = this.totalParams.filter(item => {
+            return item.label === label;
+        });
+        return unit[0].value
+    }
+
+    setValue(inputParams) {
+        this.totalParams = inputParams;
+
+
+        const outputs = Object.assign(this.state.output, []);
+
+        // v: 漏层承压能力
+        let v = this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - this.getValue('环空静液面高度'));
+
+        // v2: 井眼直径的平方
+        let v2 = this.getValue('井眼直径') * this.getValue('井眼直径');
+
+        // v3: 新环空静液面高度
+        let v3 = v / (this.getValue('漏失时钻井液密度') * 9.8) - this.getValue('漏层垂深');
+
+        outputs[0].value = v;
+        outputs[1].value = (v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)))) / (9.8 * this.getValue('堵漏浆密度'));
+        outputs[2].value = (v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/ (1/4 * Math.PI * v2) * Math.cos(this.getValue('漏层平均井斜角')))) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角'))));
+        outputs[3].value = (v -  this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)- v3;
+        outputs[4].value = this.getValue('实际水泥塞长');
+
+
+
+        outputs.forEach(item => {
+            window.localStorage.setItem(item.label, item.value);
+        });
+
+
+        this.setState({
+            output: outputs
+        });
+        this.props.setBack(outputs);
+    }
+
+
+
+
+    render() {
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'堵漏效果模拟'} formula={this.formula}/>
+    }
+}
 module.exports = {
     Load,
     Predict,
-    Real
+    Real,
+    Total
 };
