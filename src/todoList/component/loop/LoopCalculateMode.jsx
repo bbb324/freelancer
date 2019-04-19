@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../common/Input.jsx';
+import FinalCalculate from '../common/FinalCalculate.jsx';
 function get(ref) {
     return +ref.refs[Object.keys(ref.refs)[0]].value
 }
@@ -34,7 +35,76 @@ class Loop extends React.Component {
     }
 }
 
+class Total extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: [
+                {label: '泵排量', value: ''},
+                {label: '井眼直径', value: ''},
+                {label: '钻具外径', value: ''}
+            ],
+            output: [
+                {label: '环空返速', value: 0 }
+            ]
+        };
+        this.formula = [
+            '1.2732 * Math.pow(10, 3) *泵排量 / (Math.pow(井眼直径, 2) - Math.pow(钻具外径, 2))',
+        ];
+
+    }
+
+    componentWillMount() {
+        let inputs = Object.assign(this.state.input, []);
+        let outputs = Object.assign(this.state.output, []);
+        inputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        })
+        outputs.forEach(item => {
+            item.value = window.localStorage.getItem(item.label);
+        });
+        this.setState({
+            input: inputs,
+            output: outputs
+        });
+    }
+
+
+    getValue(label) {
+        let unit = this.totalParams.filter(item => {
+            return item.label === label;
+        });
+        return unit[0].value
+    }
+
+    setValue(inputParams) {
+        this.totalParams = inputParams;
+
+
+        const outputs = Object.assign(this.state.output, []);
+
+        // v: 环空返速
+        outputs[0].value = 1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻具外径'), 2));
+
+
+
+        outputs.forEach(item => {
+            window.localStorage.setItem(item.label, item.value);
+        });
+
+
+        this.setState({
+            output: outputs
+        });
+        this.props.setBack(outputs);
+    }
+    render() {
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'循环压耗'} formula={this.formula}/>
+    }
+}
+
 
 module.exports = {
-    Loop
+    Loop,
+    Total
 };
