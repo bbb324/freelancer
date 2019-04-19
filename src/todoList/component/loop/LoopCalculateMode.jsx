@@ -79,11 +79,7 @@ class Total extends React.Component {
 
     setValue(inputParams) {
         this.totalParams = inputParams;
-
-
         const outputs = Object.assign(this.state.output, []);
-
-        // v: 环空返速
         outputs[0].value = 1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻具外径'), 2));
 
 
@@ -99,7 +95,7 @@ class Total extends React.Component {
         this.props.setBack(outputs);
     }
     render() {
-        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'循环压耗'} formula={this.formula}/>
+        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'环空返速'} formula={this.formula}/>
     }
 }
 
