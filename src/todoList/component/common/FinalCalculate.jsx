@@ -27,7 +27,6 @@ class FinalCalculate extends React.Component {
             inputParams: inputs
         })
     }
-
     setInput() {
         let list = [];
         this.state.inputParams.forEach(item => {
