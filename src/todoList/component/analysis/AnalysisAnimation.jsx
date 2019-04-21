@@ -7,7 +7,6 @@ class AnalysisAnimation extends React.PureComponent {
         }
     }
     render() {
-        console.log(this.state.cur+1)
         return <img className="water-tower" src={`./image/analysis/animate-ext-${this.state.cur+1}.png`} />
     }
 
