@@ -117,8 +117,8 @@ class Total extends React.Component {
             output: [
                 {label: '重浆密度', value: 0 },
                 {label: '垂深高度', value: 0 },
-                {label: '环空压耗', value: 0 },
-                {label: '钻井液密度', value: 0 },
+                {label: '环空压耗', value: 0, ext: 'hide' },
+                {label: '钻井液密度', value: 0, ext: 'hide' },
             ]
         };
         this.formula = [

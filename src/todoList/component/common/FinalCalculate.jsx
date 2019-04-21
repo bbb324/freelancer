@@ -22,7 +22,7 @@ class FinalCalculate extends React.Component {
         let cur = inputs.filter(item => {
             return item.label === label
         });
-        cur[0].value = Number(e.target.value);
+        cur[0].value = this.getValidate(Number(e.target.value));
         this.setState({
             inputParams: inputs
         })
@@ -30,7 +30,7 @@ class FinalCalculate extends React.Component {
 
     // 如果算不出来，返回1
     getValidate(val) {
-        if(val === 'NaN'|| val === 'Infinity') {
+        if(isNaN(val) || val === Infinity) {
             return 1;
         }
         return val;
@@ -38,12 +38,12 @@ class FinalCalculate extends React.Component {
     setInput() {
         let list = [];
         this.state.inputParams.forEach(item => {
-            list.push(<div key={item.label} className="input-option">
-                <label className='input-label'> {item.label}： </label>
-                <div className='input-div'>
-                    <input className='input-value' onChange={this.hasNumber.bind(this, item.label)} type="number" placeholder={`请输入${item.label}`} defaultValue={item.value}/>
-                </div>
-            </div>)
+                list.push(<div key={item.label} className="input-option">
+                    <label className='input-label'> {item.label}： </label>
+                    <div className='input-div'>
+                        <input className='input-value' onChange={this.hasNumber.bind(this, item.label)} type="number" placeholder={`请输入${item.label}`} defaultValue={item.value}/>
+                    </div>
+                </div>)
         });
         return list;
     }
@@ -51,12 +51,14 @@ class FinalCalculate extends React.Component {
     setOutput() {
         let list = [];
         this.props.outputParams.forEach(item => {
-            list.push(<div key={item.label}  className="output-option">
-                <label className='input-label'> {item.label}： </label>
-                <div className='input-div'>
-                    <span> {item.value} </span>
-                </div>
-            </div>)
+            if(item.ext!== 'hide') {
+                list.push(<div key={item.label}  className="output-option">
+                    <label className='input-label'> {item.label}： </label>
+                    <div className='input-div'>
+                        <span> {item.value} </span>
+                    </div>
+                </div>)
+            }
         });
         return list;
     }
@@ -65,7 +67,7 @@ class FinalCalculate extends React.Component {
         this.state.inputParams.forEach(item => {
             window.localStorage.setItem(item.label, this.getValidate(item.value));
         });
-        this.props.setValue(this.getValidate(this.state.inputParams));
+        this.props.setValue(this.state.inputParams);
     }
 
     renderFormula() {
