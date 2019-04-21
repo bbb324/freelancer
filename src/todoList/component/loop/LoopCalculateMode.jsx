@@ -77,12 +77,18 @@ class Total extends React.Component {
         return unit[0].value
     }
 
+    // 如果算不出来，返回1
+    getValidate(val) {
+        if(isNaN(val) || val === Infinity) {
+            return 1;
+        }
+        return val;
+    }
+
     setValue(inputParams) {
         this.totalParams = inputParams;
         const outputs = Object.assign(this.state.output, []);
-        outputs[0].value = 1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻具外径'), 2));
-
-
+        outputs[0].value = this.getValidate(1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻具外径'), 2)));
 
         outputs.forEach(item => {
             window.localStorage.setItem(item.label, item.value);

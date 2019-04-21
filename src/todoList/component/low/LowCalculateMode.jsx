@@ -92,6 +92,13 @@ class Total extends React.Component {
         });
     }
 
+    // 如果算不出来，返回1
+    getValidate(val) {
+        if(isNaN(val) || val === Infinity) {
+            return 1;
+        }
+        return val;
+    }
 
     getValue(label) {
         let unit = this.totalParams.filter(item => {
@@ -104,10 +111,10 @@ class Total extends React.Component {
         this.totalParams = inputParams;
         const outputs = Object.assign(this.state.output, []);
 
-        outputs[0].value = this.getValue('泵入堵漏浆量');
-        outputs[1].value = this.getValue('井眼直径');
-        outputs[2].value = this.getValue('光钻杆下深');
-        outputs[3].value = this.getValue('堵漏浆内外高差');
+        outputs[0].value = this.getValidate(this.getValue('泵入堵漏浆量'));
+        outputs[1].value = this.getValidate(this.getValue('井眼直径'));
+        outputs[2].value = this.getValidate(this.getValue('光钻杆下深'));
+        outputs[3].value = this.getValidate(this.getValue('堵漏浆内外高差'));
 
         // v1： 钻杆1内径平方
         let v1 = this.getValue('钻杆1内径') * this.getValue('钻杆1内径');
@@ -116,7 +123,7 @@ class Total extends React.Component {
         let v2 = this.getValue('钻杆2内径') * this.getValue('钻杆2内径');
         // v3：环空返高
         let v3 = (this.getValue('泵入堵漏浆量') * 4 / Math.PI - v1 * this.getValue('堵漏浆内外高差')) / Math.pow(this.getValue('井眼直径'), 2);
-        outputs[4].value = Math.PI / 4 * v1 * this.getValue('钻杆1长度') + Math.PI / 4 * v2 * (this.getValue('钻杆2长度') - this.getValue('堵漏浆内外高差') - v3);
+        outputs[4].value = this.getValidate(Math.PI / 4 * v1 * this.getValue('钻杆1长度') + Math.PI / 4 * v2 * (this.getValue('钻杆2长度') - this.getValue('堵漏浆内外高差') - v3));
 
         outputs.forEach(item => {
             window.localStorage.setItem(item.label, item.value);

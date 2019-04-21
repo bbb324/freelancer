@@ -175,6 +175,14 @@ class Total extends React.Component {
         return unit[0].value
     }
 
+    // 如果算不出来，返回1
+    getValidate(val) {
+        if(isNaN(val) || val === Infinity) {
+            return 1;
+        }
+        return val;
+    }
+
     setValue(inputParams) {
         this.totalParams = inputParams;
 
@@ -190,11 +198,11 @@ class Total extends React.Component {
         // v3: 新环空静液面高度
         let v3 = v / (this.getValue('漏失时钻井液密度') * 9.8) - this.getValue('漏层垂深');
 
-        outputs[0].value = v;
-        outputs[1].value = (v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)))) / (9.8 * this.getValue('堵漏浆密度'));
-        outputs[2].value = (v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/ (1/4 * Math.PI * v2) * Math.cos(this.getValue('漏层平均井斜角')))) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角'))));
-        outputs[3].value = (v -  this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)- v3;
-        outputs[4].value = this.getValue('实际水泥塞长');
+        outputs[0].value = this.getValidate(v);
+        outputs[1].value = this.getValidate((v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)))) / (9.8 * this.getValue('堵漏浆密度')));
+        outputs[2].value = this.getValidate((v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/ (1/4 * Math.PI * v2) * Math.cos(this.getValue('漏层平均井斜角')))) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角')))));
+        outputs[3].value = this.getValidate((v -  this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)- v3);
+        outputs[4].value = this.getValidate(this.getValue('实际水泥塞长'));
 
 
 
