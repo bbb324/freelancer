@@ -27,6 +27,14 @@ class FinalCalculate extends React.Component {
             inputParams: inputs
         })
     }
+
+    // 如果算不出来，返回1
+    getValidate(val) {
+        if(val === 'NaN'|| val === 'Infinity') {
+            return 1;
+        }
+        return val;
+    }
     setInput() {
         let list = [];
         this.state.inputParams.forEach(item => {
@@ -55,9 +63,9 @@ class FinalCalculate extends React.Component {
 
     confirm() {
         this.state.inputParams.forEach(item => {
-            window.localStorage.setItem(item.label, item.value);
+            window.localStorage.setItem(item.label, this.getValidate(item.value));
         });
-        this.props.setValue(this.state.inputParams);
+        this.props.setValue(this.getValidate(this.state.inputParams));
     }
 
     renderFormula() {
