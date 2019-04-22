@@ -143,6 +143,13 @@ class Total extends React.Component {
         });
     }
 
+    // 如果算不出来，返回1
+    getValidate(val) {
+        if(isNaN(val) || val === Infinity) {
+            return 1;
+        }
+        return val;
+    }
 
     getValue(label) {
         let unit = this.totalParams.filter(item => {
@@ -155,10 +162,10 @@ class Total extends React.Component {
         this.totalParams = inputParams;
         const outputs = Object.assign(this.state.output, []);
 
-        outputs[0].value = this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度')
-        outputs[1].value = this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度')))
-        outputs[2].value = this.getValue('环空压耗');
-        outputs[3].value = this.getValue('钻井液密度');
+        outputs[0].value = this.getValidate(this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度'));
+        outputs[1].value = this.getValidate(this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度'))));
+        outputs[2].value = this.getValidate(this.getValue('环空压耗'));
+        outputs[3].value = this.getValidate(this.getValue('钻井液密度'));
 
         outputs.forEach(item => {
             window.localStorage.setItem(item.label, item.value);
