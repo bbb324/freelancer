@@ -7,6 +7,7 @@ class FinalCalculate extends React.Component {
         this.state = {
             showClear: false,
             inputParams: this.props.inputParams,
+            isShrink: true
         }
     }
 
@@ -78,6 +79,12 @@ class FinalCalculate extends React.Component {
         return list;
     }
 
+    toggleFormula() {
+        this.setState({
+            isShrink: !this.state.isShrink
+        })
+    }
+
     render() {
         return <div className='input-field'>
             <div className="title"> {this.props.title} </div>
@@ -90,7 +97,8 @@ class FinalCalculate extends React.Component {
             <div className="result-panel">
                 {this.setOutput()}
             </div>
-            <div className="config-formula">
+            <div className={`config-formula ${this.state.isShrink === true ? 'shrink' : ''}`}>
+                <div className={`triangle ${this.state.isShrink === true ? '' : 'isOpen'}`} onClick={this.toggleFormula.bind(this)}></div>
                 {this.renderFormula()}
             </div>
             <div className='btn-div'>
