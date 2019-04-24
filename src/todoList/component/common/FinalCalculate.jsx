@@ -98,9 +98,14 @@ class FinalCalculate extends React.Component {
                 {this.setOutput()}
             </div>
             <div className={`config-formula ${this.state.isShrink === true ? 'shrink' : 'isOpen'}`}>
-                <div onClick={this.toggleFormula.bind(this)}>
-                    <div className={`triangle ${this.state.isShrink === true ? '' : 'isOpen'}`}></div>
-                    <div className={"expand-formula"}>计算公式</div>
+                <div className={"expand-formula"} onClick={this.toggleFormula.bind(this)}>
+                    <div className={"expand-formula-text"}>计算公式</div>
+                    <div className={"triangle"}>
+                        {this.state.isShrink === true ?
+                         <img src='./image/icon/up.png' /> :
+                          <img src='./image/icon/down.png' />
+                        }
+                    </div>
                 </div>
                 {this.renderFormula()}
             </div>
