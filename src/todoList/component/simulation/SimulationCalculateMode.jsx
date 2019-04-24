@@ -172,7 +172,7 @@ class Total extends React.Component {
         let unit = this.totalParams.filter(item => {
             return item.label === label;
         });
-        return unit[0].value
+        return +unit[0].value
     }
 
     // 如果算不出来，返回1

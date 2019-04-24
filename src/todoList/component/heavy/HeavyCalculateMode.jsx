@@ -111,8 +111,8 @@ class Total extends React.Component {
             input: [
                 {label: '环空压耗', value: ''},
                 {label: '钻井液密度', value: ''},
-                {label: '重浆密度', value: ''},
                 {label: '垂深高度', value: ''},
+                {label: '重浆密度', value: ''},
             ],
             output: [
                 {label: '重浆密度', value: 0 },
@@ -155,15 +155,24 @@ class Total extends React.Component {
         let unit = this.totalParams.filter(item => {
             return item.label === label;
         });
-        return unit[0].value
+        return +unit[0].value
     }
 
     setValue(inputParams) {
         this.totalParams = inputParams;
         const outputs = Object.assign(this.state.output, []);
+        if (this.getValue('重浆密度') === 0) {
+            outputs[1].value = 0;
+        } else {
+            outputs[1].value = this.getValidate(this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度'))));
+        }
 
-        outputs[0].value = this.getValidate(this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度'));
-        outputs[1].value = this.getValidate(this.getValue('环空压耗')/(9.8*(this.getValue('重浆密度') - this.getValue('钻井液密度'))));
+        if (this.getValue('垂深高度') === 0) {
+            outputs[0].value = 0;
+        } else {
+            outputs[0].value = this.getValidate(this.getValue('环空压耗')/(9.8 * this.getValue('垂深高度'))+ this.getValue('钻井液密度'));
+        }
+
         outputs[2].value = this.getValidate(this.getValue('环空压耗'));
         outputs[3].value = this.getValidate(this.getValue('钻井液密度'));
 
