@@ -24,8 +24,7 @@ class Input extends React.Component {
     }
 
     render() {
-        console.log()
-        return <div className='input-field'>
+        return <div className='input-field-option'>
             <label className='input-label'> {this.props.name}： </label>
             <div className='input-div'>
                 <input className='input-value' onChange={this.hasNumber.bind(this)} type="number" placeholder={`请输入${this.props.name}`} ref={this.props.code} defaultValue={this.props.defaultValue || ''}/>
