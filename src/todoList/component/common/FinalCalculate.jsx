@@ -98,7 +98,10 @@ class FinalCalculate extends React.Component {
                 {this.setOutput()}
             </div>
             <div className={`config-formula ${this.state.isShrink === true ? 'shrink' : 'isOpen'}`}>
-                <div className={`triangle ${this.state.isShrink === true ? '' : 'isOpen'}`} onClick={this.toggleFormula.bind(this)}></div>
+                <div onClick={this.toggleFormula.bind(this)}>
+                    <div className={`triangle ${this.state.isShrink === true ? '' : 'isOpen'}`}></div>
+                    <div className={"expand-formula"}>计算公式</div>
+                </div>
                 {this.renderFormula()}
             </div>
             <div className='btn-div'>
