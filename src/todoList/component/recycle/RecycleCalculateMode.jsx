@@ -214,6 +214,9 @@ class Total extends React.Component {
         // v1: 循环压耗
         let v1 = 7628 *  Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度')/Math.pow(this.getValue('钻杆加重钻杆钻铤内径'),4.82);
 
+        // v2: 环空压耗
+        let v2 = 7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8)
+
         // 地面管汇压耗
         outputs[0].value = this.getValue('地面管汇摩阻系数') * this.getValue('钻井液密度') * Math.pow((this.getValue('泵排量') / 100), 1.86)*9.818;
         // 钻杆加重钻杆钻铤内循环压耗
@@ -222,11 +225,11 @@ class Total extends React.Component {
         outputs[3].value =  this.getValidate(v1);
         outputs[4].value = this.getValidate(this.getValue('泵压') - v1);
 
-        outputs[5].value =  this.getValidate(7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8));
-        outputs[6].value =  this.getValidate(7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8));
-        outputs[7].value =  this.getValidate(7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8));
-        outputs[8].value =  this.getValidate(7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8));
-        outputs[9].value =  this.getValidate(7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8));
+        outputs[5].value =  this.getValidate(v2);
+        outputs[6].value =  this.getValidate(v2);
+        outputs[7].value =  this.getValidate(v2);
+        outputs[8].value =  this.getValidate(v2);
+        outputs[9].value =  this.getValidate(v2);
 
 
 
