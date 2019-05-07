@@ -161,7 +161,8 @@ class Total extends React.Component {
                 {label: '加重钻杆环空压耗', value: 0 },
                 {label: '钻铤环空压耗', value: 0 },
                 {label: '钻杆接箍环空压耗', value: 0 },
-                {label: '加重钻杆接箍环空压耗', value: 0 }
+                {label: '加重钻杆接箍环空压耗', value: 0 },
+                {label: '总循环压耗', value: 0 }
             ]
         };
         this.formula = [
@@ -230,6 +231,15 @@ class Total extends React.Component {
         outputs[7].value =  this.getValidate(v2);
         outputs[8].value =  this.getValidate(v2);
         outputs[9].value =  this.getValidate(v2);
+
+        // v3：总循环压耗
+        let v3 = 0;
+        outputs.forEach(item => {
+            if(item.label !== '钻头压降' && item.label !== '总循环压耗') {
+                v3 += +item.value
+            }
+        });
+        outputs[10].value = v3;
 
 
 
