@@ -329,7 +329,7 @@ class Total extends React.Component {
                 {label: '钻铤外径', value: ''},
                 {label: '钻杆外径', value: ''},
                 {label: '钻井液密度', value: ''},
-                {label: '井眼直径', value: ''},
+                // {label: '井眼直径', value: ''},
                 {label: '喷嘴1', value: ''},
                 {label: '喷嘴2', value: ''},
                 {label: '喷嘴3', value: ''},
@@ -417,6 +417,8 @@ class Total extends React.Component {
         // v4: 喷嘴水功率
         let v4 = v3 * this.getValue('泵排量');
 
+        // v5: 井眼直径
+        let v5 = +window.localStorage.getItem('井眼直径');
 
 
         outputs[0].value = this.getValidate(this.getValue('泵压') * this.getValue('泵排量'));
@@ -425,8 +427,8 @@ class Total extends React.Component {
         outputs[3].value = this.getValidate(v4 * 1000 / (Math.PI * this.getValue('钻头直径') * this.getValue('钻头直径')/4));
         outputs[4].value = this.getValidate(1273 * this.getValue('钻井液密度') * this.getValue('泵排量') * this.getValue('泵排量')/ v2);
         outputs[5].value = this.getValidate(1273 * this.getValue('泵排量') / v2);
-        outputs[6].value = this.getValidate(1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻杆外径'), 2)));
-        outputs[7].value = this.getValidate(1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(this.getValue('井眼直径'), 2) - Math.pow(this.getValue('钻铤外径'), 2)));
+        outputs[6].value = this.getValidate(1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(v5, 2) - Math.pow(this.getValue('钻杆外径'), 2)));
+        outputs[7].value = this.getValidate(1.2732 * Math.pow(10, 3) * this.getValue('泵排量') / (Math.pow(v5, 2) - Math.pow(this.getValue('钻铤外径'), 2)));
 
 
 
