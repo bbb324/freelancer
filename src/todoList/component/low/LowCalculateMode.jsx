@@ -71,7 +71,8 @@ class Total extends React.Component {
             ]
         };
         this.formula = [
-            '环空返高 = (泵入堵漏浆量 * 4 / π - 钻杆2内径平方 * 堵漏浆内外高差) / 井眼直径平方',
+
+            '环空返高 = (泵入堵漏浆量 - π/4*钻杆2内径*钻杆2内径*内外高差)/ (π/4*井眼直径*井眼直径)',
             '钻井液替量 = π / 4 * 钻杆1内径平方 * 钻杆1长度 + π / 4 * 钻杆2内径平方 * (钻杆2长度 - 堵漏浆内外高差 - 环空返高)',
         ];
 
@@ -116,13 +117,18 @@ class Total extends React.Component {
         outputs[2].value = this.getValidate(this.getValue('光钻杆下深'));
         outputs[3].value = this.getValidate(this.getValue('堵漏浆内外高差'));
 
+        // v0: 井眼直径平方
+        let v0 =  this.getValue('井眼直径') * this.getValue('井眼直径');
+
         // v1： 钻杆1内径平方
         let v1 = this.getValue('钻杆1内径') * this.getValue('钻杆1内径');
 
         // v2： 钻杆2内径平方
         let v2 = this.getValue('钻杆2内径') * this.getValue('钻杆2内径');
-        // v3：环空返高
-        let v3 = (this.getValue('泵入堵漏浆量') * 4 / Math.PI - v1 * this.getValue('堵漏浆内外高差')) / Math.pow(this.getValue('井眼直径'), 2);
+
+        // v3：环空返高 = (泵入堵漏浆量 - π/4*钻杆2内径*钻杆2内径*内外高差)/ (π/4*井眼直径*井眼直径)
+        let v3 = (this.getValue('泵入堵漏浆量') - Math.PI /4 * v2 * this.getValue('堵漏浆内外高差')) / (Math.PI /4 * v0);
+
         outputs[4].value = this.getValidate(Math.PI / 4 * v1 * this.getValue('钻杆1长度') + Math.PI / 4 * v2 * (this.getValue('钻杆2长度') - this.getValue('堵漏浆内外高差') - v3));
 
         outputs.forEach(item => {
