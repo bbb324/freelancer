@@ -148,7 +148,7 @@ class Total extends React.Component {
         if(isNaN(val) || val === Infinity) {
             return 1;
         }
-        return val;
+        return (+val).toFixed(2);
     }
 
     getValue(label) {
