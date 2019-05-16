@@ -203,7 +203,7 @@ class Total extends React.Component {
         if(isNaN(val) || val === Infinity) {
             return 1;
         }
-        return val;
+        return (+val).toFixed(2);
     }
 
     setValue(inputParams) {
@@ -218,13 +218,15 @@ class Total extends React.Component {
         // v2: 环空压耗
         let v2 = 7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8)
 
-        // 地面管汇压耗
-        outputs[0].value = this.getValue('地面管汇摩阻系数') * this.getValue('钻井液密度') * Math.pow((this.getValue('泵排量') / 100), 1.86)*9.818;
+        // v0: 地面管汇压耗
+        let v0 = this.getValue('地面管汇摩阻系数') * this.getValue('钻井液密度') * Math.pow((this.getValue('泵排量') / 100), 1.86)*9.818;
+        outputs[0].value = this.getValidate(v0);
         // 钻杆加重钻杆钻铤内循环压耗
         outputs[1].value =  this.getValidate(v1);
         outputs[2].value =  this.getValidate(v1);
         outputs[3].value =  this.getValidate(v1);
-        outputs[4].value = this.getValidate(this.getValue('泵压') - v1);
+        let res = this.getValue('泵压') - v1;
+        outputs[4].value = this.getValidate(res);
 
         outputs[5].value =  this.getValidate(v2);
         outputs[6].value =  this.getValidate(v2);
@@ -239,7 +241,7 @@ class Total extends React.Component {
                 v3 += +item.value
             }
         });
-        outputs[10].value = v3;
+        outputs[10].value = this.getValidate(v3);
 
 
 
