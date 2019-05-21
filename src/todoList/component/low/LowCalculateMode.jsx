@@ -63,10 +63,10 @@ class Total extends React.Component {
                 {label: '堵漏浆内外高差', value: ''}
             ],
             output: [
-                {label: '泵入堵漏浆量', value: 0 },
-                {label: '井眼直径', value: 0 },
-                {label: '光钻杆下深', value: 0 },
-                {label: '堵漏浆内外高差', value: 0 },
+                {label: '泵入堵漏浆量', value: 0, ext: 'hide' },
+                {label: '井眼直径', value: 0, ext: 'hide' },
+                {label: '光钻杆下深', value: 0, ext: 'hide' },
+                {label: '堵漏浆内外高差', value: 0, ext: 'hide' },
                 {label: '钻井液替量', value: 0 }
             ]
         };
