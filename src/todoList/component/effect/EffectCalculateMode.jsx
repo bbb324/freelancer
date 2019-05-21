@@ -401,7 +401,7 @@ class Total extends React.Component {
         // v: 7628 * 塑性粘度^0.2*钻井液密度^0.8 * 泵排量^1.8 * 钻具长度/钻具内径^4.82
         let v = '';
 
-        // v2: 喷嘴1*喷嘴1+喷嘴2*喷嘴2+喷嘴3*喷嘴3+喷嘴4*喷嘴4+喷嘴5*喷嘴5+喷嘴6*喷嘴6+喷嘴7*喷嘴7+喷嘴8*喷嘴8)*(喷嘴1*喷嘴1+喷嘴2*喷嘴2+喷嘴3*喷嘴3+喷嘴4*喷嘴4+喷嘴5*喷嘴5+喷嘴6*喷嘴6+喷嘴7*喷嘴7+喷嘴8*喷嘴8
+        // v2: (喷嘴1*喷嘴1+喷嘴2*喷嘴2+喷嘴3*喷嘴3+喷嘴4*喷嘴4+喷嘴5*喷嘴5+喷嘴6*喷嘴6+喷嘴7*喷嘴7+喷嘴8*喷嘴8)*(喷嘴1*喷嘴1+喷嘴2*喷嘴2+喷嘴3*喷嘴3+喷嘴4*喷嘴4+喷嘴5*喷嘴5+喷嘴6*喷嘴6+喷嘴7*喷嘴7+喷嘴8*喷嘴8
         let v2 = this.getValue('喷嘴1') * this.getValue('喷嘴1') +
             this.getValue('喷嘴2') * this.getValue('喷嘴2') +
             this.getValue('喷嘴3') * this.getValue('喷嘴3') +
@@ -412,7 +412,7 @@ class Total extends React.Component {
             this.getValue('喷嘴8') * this.getValue('喷嘴8');
 
         // v3: 喷嘴压降
-        let v3 = 810 * this.getValue('钻井液密度') * this.getValue('泵排量') * this.getValue('泵排量') / (0.98 * 0.98 * v2);
+        let v3 = 810 * this.getValue('钻井液密度') * this.getValue('泵排量') * this.getValue('泵排量') / (0.98 * 0.98 * v2 * v2);
 
         // v4: 喷嘴水功率
         let v4 = v3 * this.getValue('泵排量');
