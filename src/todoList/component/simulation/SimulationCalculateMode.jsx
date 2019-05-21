@@ -144,7 +144,6 @@ class Total extends React.Component {
 
             '直井段： 预计水泥塞长 = (漏层承压能力 - 堵漏时钻井液密度*g*（漏层垂深 - ((堵漏浆方量 - 挤水泥方量)/(1/4*π*井眼直径的平方)))) / (堵漏浆密度*g)',
             '斜井段： 预计水泥塞长 = (漏层承压能力 - 堵漏时钻井液密度*g*(漏层垂深 - ((堵漏浆方量 - 挤水泥方量）/(1/4*π*井眼直径的平方))*cos漏层平均井斜角))/ (g * 堵漏浆密度 * cos漏层平均井斜角)',
-            '新环空静液面高度 = 漏层承压能力/(堵漏时钻井液密度*g) - 漏层垂深',
             '水平段： 预计水泥塞长=（堵漏浆方量 - 挤水泥方量）/(1/4*π*井眼直径的平方）-新环空静液面高度',
             '实际水泥塞长 = 实际水泥塞长',
 
@@ -195,13 +194,21 @@ class Total extends React.Component {
         // v2: 井眼直径的平方
         let v2 = this.getValue('井眼直径') * this.getValue('井眼直径');
 
-        // v3: 新环空静液面高度
-        let v3 = v / (this.getValue('漏失时钻井液密度') * 9.8) - this.getValue('漏层垂深');
 
         outputs[0].value = this.getValidate(v);
-        outputs[1].value = this.getValidate((v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)))) / (9.8 * this.getValue('堵漏浆密度')));
-        outputs[2].value = this.getValidate((v - this.getValue('漏失时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量'))/ (1/4 * Math.PI * v2) * Math.cos(this.getValue('漏层平均井斜角')))) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角')))));
-        outputs[3].value = this.getValidate((v -  this.getValue('挤水泥方量'))/(1/4 * Math.PI * v2)- v3);
+
+        //tmp1: 堵漏时钻井液密度*g*（漏层垂深 - （（堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）））
+        let tmp1 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2) ));
+        outputs[1].value = this.getValidate((v - tmp1) / (9.8 * this.getValue('堵漏浆密度')));
+
+        // tmp2: 堵漏时钻井液密度*g*（漏层垂深 - （（堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方））*cos漏层平均井斜角）
+        let tmp2 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2)) * Math.cos(this.getValue('漏层平均井斜角')));
+        outputs[2].value = this.getValidate((v - tmp2) / 9.8 * (this.getValue('堵漏浆密度')  * Math.cos(this.getValue('漏层平均井斜角'))));
+
+        // tmp3: （堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）
+        let tmp3 =(v - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2);
+        outputs[3].value = this.getValidate(tmp3 - this.getValue('环空静液面高度'));
+
         outputs[4].value = this.getValidate(this.getValue('实际水泥塞长'));
 
 
