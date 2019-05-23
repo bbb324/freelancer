@@ -93,10 +93,10 @@ class Total extends React.Component {
         });
     }
 
-    // 如果算不出来，返回1
+    // 如果算不出来，返回0
     getValidate(val) {
         if(isNaN(val) || val === Infinity) {
-            return 1;
+            return 0;
         }
         return (+val).toFixed(2);
     }
