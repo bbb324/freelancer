@@ -295,9 +295,9 @@ class Total extends React.Component {
         outputs[7].value =  this.getValidate(v7); // 钻铤环空压耗
         outputs[8].value =  this.getValidate(v8); // 钻杆接箍环空压耗
         outputs[9].value =  this.getValidate(v9); // 加重钻杆接箍环空压耗
-
+        console.log()
         // v3：总循环压耗
-        let v10 = v1 + v2 + v3 + v5 + v6 + v7 + v8 + v9;
+        let v10 = this.getValidate(+this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
         outputs[10].value = this.getValidate(v10);
 
 
