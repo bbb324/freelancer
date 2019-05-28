@@ -200,7 +200,8 @@ class Total extends React.Component {
         let tmp1 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2)));
         outputs[1].value = this.getValidate((v - tmp1) / (9.8 * this.getValue('堵漏浆密度')));
 
-        // tmp2: 堵漏时钻井液密度*g*(漏层垂深 - ((堵漏浆方量 - 挤水泥方量) / (1/4 *π *井眼直径的平方)) * cos漏层平均井斜角)
+
+        // tmp2: 堵漏时钻井液密度 * g * (漏层垂深 - ((堵漏浆方量 - 挤水泥方量) / (1/4 *π *井眼直径的平方)) * cos漏层平均井斜角))
         let tmp2 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2)) * Math.cos(this.getValue('漏层平均井斜角')));
         outputs[2].value = this.getValidate((v - tmp2) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角'))));
         // tmp3: （堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）
