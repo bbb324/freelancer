@@ -287,8 +287,7 @@ class Total extends React.Component {
         outputs[1].value =  this.getValidate(v1); // 钻杆内循环压耗
         outputs[2].value =  this.getValidate(v2); // 加重钻杆内循环压耗
         outputs[3].value =  this.getValidate(v3); // 钻铤内循环压耗
-        let res = this.getValue('泵压') - v1;
-        outputs[4].value = this.getValidate(res); // 钻头压降
+
 
         outputs[5].value =  this.getValidate(v5); // 钻杆环空压耗
         outputs[6].value =  this.getValidate(v6); // 加重钻杆环空压耗
@@ -300,7 +299,8 @@ class Total extends React.Component {
         let v10 = this.getValidate(+this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
         outputs[10].value = this.getValidate(v10);
 
-
+        let res = this.getValue('泵压') - v10;
+        outputs[4].value = this.getValidate(res); // 钻头压降
 
         outputs.forEach(item => {
             window.localStorage.setItem(item.label, item.value);
