@@ -329,7 +329,7 @@ class Total extends React.Component {
                 {label: '钻铤外径', value: ''},
                 {label: '钻杆外径', value: ''},
                 {label: '钻井液密度', value: ''},
-                // {label: '井眼直径', value: ''},
+                {label: '井眼直径', value: ''},
                 {label: '喷嘴1', value: ''},
                 {label: '喷嘴2', value: ''},
                 {label: '喷嘴3', value: ''},
@@ -418,7 +418,8 @@ class Total extends React.Component {
         let v4 = v3 * this.getValue('泵排量');
 
         // v5: 井眼直径
-        let v5 = +window.localStorage.getItem('井眼直径');
+        // let v5 = +window.localStorage.getItem('井眼直径');
+        let v5 = this.getValue('井眼直径');
 
 
         outputs[0].value = this.getValidate(this.getValue('泵压') * this.getValue('泵排量'));
