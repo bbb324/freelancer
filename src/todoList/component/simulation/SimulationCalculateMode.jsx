@@ -202,11 +202,15 @@ class Total extends React.Component {
 
 
         // tmp2: 堵漏时钻井液密度 * g * (漏层垂深 - ((堵漏浆方量 - 挤水泥方量) / (1/4 *π *井眼直径的平方)) * cos漏层平均井斜角))
-        let tmp2 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2)) * Math.cos(this.getValue('漏层平均井斜角')));
-        outputs[2].value = this.getValidate((v - tmp2) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(this.getValue('漏层平均井斜角'))));
+        let tmp2 = this.getValue('堵漏时钻井液密度') * 9.8 * (this.getValue('漏层垂深') - ((this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2)) * Math.cos(2 * Math.PI / 360 * this.getValue('漏层平均井斜角')));
+        outputs[2].value = this.getValidate((v - tmp2) / (9.8 * this.getValue('堵漏浆密度') * Math.cos(2 * Math.PI / 360 * this.getValue('漏层平均井斜角'))));
+
         // tmp3: （堵漏浆方量 - 挤水泥方量）/(1/4π井眼直径的平方）
         let tmp3 =(this.getValue('堵漏浆方量') - this.getValue('挤水泥方量')) / (1/4 * Math.PI * v2);
-        outputs[3].value = this.getValidate(tmp3 - this.getValue('环空静液面高度'));
+
+        // tmp4: 新环空静液面高度 = 漏层承压能力 / (堵漏时钻井液密度*g*) - 漏层垂深
+        let tmp4 = this.getValue('漏层垂深') - v / (this.getValue('堵漏时钻井液密度') * 9.8);
+        outputs[3].value = this.getValidate(tmp3 - tmp4);
 
         outputs[4].value = this.getValidate(this.getValue('实际水泥塞长'));
 
