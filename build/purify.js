@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "209eb26a4aefd9da6387";
+/******/ 	var hotCurrentHash = "af46df7ca83870faee55";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -26229,7 +26229,7 @@ function (_React$Component) {
     }
   }, {
     key: "hasNumber",
-    value: function hasNumber(label, e) {
+    value: function hasNumber(label, specialControl, e) {
       var inputs = Object.assign(this.state.inputParams, []);
       var cur = inputs.filter(function (item) {
         return item.label === label;
@@ -26238,6 +26238,11 @@ function (_React$Component) {
       this.setState({
         inputParams: inputs
       });
+      var specialControlList = ['m', 'n', 'p', 'q'];
+
+      if (specialControl && specialControlList.indexOf(specialControl) >= 0) {
+        this.props && this.props.setControl(specialControl, e.target.value);
+      }
     } // 如果算不出来，返回1
 
   }, {
@@ -26248,6 +26253,35 @@ function (_React$Component) {
       }
 
       return val;
+    }
+  }, {
+    key: "renderIn",
+    value: function renderIn(item) {
+      if (item.specialControl === 'p') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.P_value
+        });
+      } else if (item.specialControl === 'q') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.Q_value
+        });
+      }
+
+      return _react2.default.createElement("input", {
+        className: "input-value",
+        onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+        type: "number",
+        placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+        defaultValue: item.value
+      });
     }
   }, {
     key: "setInput",
@@ -26263,13 +26297,7 @@ function (_React$Component) {
           className: "input-label"
         }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
           className: "input-div"
-        }, _react2.default.createElement("input", {
-          className: "input-value",
-          onChange: _this2.hasNumber.bind(_this2, item.label),
-          type: "number",
-          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
-          defaultValue: item.value
-        }))));
+        }, _this2.renderIn(item))));
       });
       return list;
     }

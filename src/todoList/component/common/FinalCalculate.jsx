@@ -18,7 +18,7 @@ class FinalCalculate extends React.Component {
         })
     }
 
-    hasNumber(label, e) {
+    hasNumber(label, specialControl, e) {
         const inputs = Object.assign(this.state.inputParams, []);
         let cur = inputs.filter(item => {
             return item.label === label
@@ -27,6 +27,10 @@ class FinalCalculate extends React.Component {
         this.setState({
             inputParams: inputs
         })
+        let specialControlList = ['m', 'n', 'p', 'q'];
+        if(specialControl && specialControlList.indexOf(specialControl) >= 0) {
+            this.props && this.props.setControl(specialControl, e.target.value);
+        }
     }
 
     // 如果算不出来，返回1
@@ -36,13 +40,23 @@ class FinalCalculate extends React.Component {
         }
         return val;
     }
+
+    renderIn(item) {
+        if(item.specialControl === 'p' ) {
+            return <input className='input-value' onChange={this.hasNumber.bind(this, item.label, item.specialControl)} type="number" placeholder={`请输入${item.label}`} value={this.props.P_value}/>
+        } else if(item.specialControl === 'q') {
+            return <input className='input-value' onChange={this.hasNumber.bind(this, item.label, item.specialControl)} type="number" placeholder={`请输入${item.label}`} value={this.props.Q_value}/>
+        }
+        return <input className='input-value' onChange={this.hasNumber.bind(this, item.label, item.specialControl)} type="number" placeholder={`请输入${item.label}`} defaultValue={item.value}/>
+    }
+
     setInput() {
         let list = [];
         this.state.inputParams.forEach(item => {
                 list.push(<div key={item.label} className="input-option">
                     <label className='input-label'> {item.label}： </label>
                     <div className='input-div'>
-                        <input className='input-value' onChange={this.hasNumber.bind(this, item.label)} type="number" placeholder={`请输入${item.label}`} defaultValue={item.value}/>
+                        {this.renderIn(item)}
                     </div>
                 </div>)
         });

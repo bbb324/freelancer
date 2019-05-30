@@ -156,21 +156,12 @@ class Total extends React.Component {
                 {label: '钻杆接箍外径' , value: ''},
                 {label: '加重钻杆接箍外径' , value: ''},
 
-                {label: '钻杆长度' , value: ''},
-                {label: '加重钻杆长度' , value: ''},
+                {label: '钻杆长度' , value: '', specialControl: 'm'},
+                {label: '加重钻杆长度' , value: '', specialControl: 'n'},
                 {label: '钻铤长度' , value: ''},
-                {label: '钻杆接箍长度' , value: ''},
-                {label: '加重钻杆接箍长度' , value: ''},
+                {label: '钻杆接箍长度' , value: '', specialControl: 'p'},
+                {label: '加重钻杆接箍长度' , value: '', specialControl: 'q'},
 
-
-
-
-
-
-             /*   {label: '钻杆加重钻杆钻铤内径', value: ''},
-                {label: '钻杆加重钻杆钻铤外径', value: ''},
-                {label: '钻杆接箍外径', value: ''},
-                {label: '钻杆加重钻杆钻铤长度', value: ''},*/
                 {label: '泵压', value: ''}
             ],
             output: [
@@ -187,7 +178,9 @@ class Total extends React.Component {
                 {label: '钻杆接箍环空压耗', value: 0 },
                 {label: '加重钻杆接箍环空压耗', value: 0 },
                 {label: '总循环压耗', value: 0 }
-            ]
+            ],
+            P_value: '',
+            Q_value: ''
         };
         this.formula = [
             '地面管汇压耗 = 地面管汇摩阻系数*钻井液密度*（泵排量/100）^1.86*9.818',
@@ -257,7 +250,7 @@ class Total extends React.Component {
 
         // v1: 钻杆内循环压耗
         let v1 = this.getRecycle(this.getValue('钻杆长度'),this.getValue('钻杆内径'));
-        console.log(v1)
+
         // v2: 加重钻杆内循环压耗
         let v2 = this.getRecycle(this.getValue('加重钻杆长度'),this.getValue('加重钻杆内径'));
 
@@ -273,11 +266,13 @@ class Total extends React.Component {
         // v7: 钻铤环空压耗
         let v7 = this.getPressure(this.getValue('钻铤长度'),this.getValue('钻铤外径'));
 
-        // v8: 钻杆接箍环空压耗
-        let v8 = this.getPressure(this.getValue('钻杆接箍长度'),this.getValue('钻杆接箍外径'));
+        // v8: 钻杆接箍环空压耗, lenP: 钻杆接箍长度，计算公式为 钻杆长度/9.5 * 0.5
+        let lenP = this.state.P_value;
+        let v8 = this.getPressure(lenP,this.getValue('钻杆接箍外径'));
 
-        // v9: 加重钻杆接箍环空压耗
-        let v9 = this.getPressure(this.getValue('加重钻杆接箍长度'),this.getValue('加重钻杆接箍外径'));
+        // v9: 加重钻杆接箍环空压耗,  lenQ: 加重钻杆接箍，计算公式为 加重钻杆长度/9.5 * 0.5
+        let lenQ = this.state.Q_value;
+        let v9 = this.getPressure(lenQ, this.getValue('加重钻杆接箍外径'));
 
 
         // v0: 地面管汇压耗
@@ -294,7 +289,7 @@ class Total extends React.Component {
         outputs[7].value =  this.getValidate(v7); // 钻铤环空压耗
         outputs[8].value =  this.getValidate(v8); // 钻杆接箍环空压耗
         outputs[9].value =  this.getValidate(v9); // 加重钻杆接箍环空压耗
-        console.log()
+
         // v3：总循环压耗
         let v10 = this.getValidate(+this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
         outputs[10].value = this.getValidate(v10);
@@ -313,11 +308,37 @@ class Total extends React.Component {
         this.props.setBack(outputs);
     }
 
-
+    setControl(specialControl, value) {
+        if(specialControl === 'm') {
+            this.setState({
+                P_value: this.getValidate(value / 9.5 * 0.5)
+            })
+        } else if(specialControl === 'n') {
+            this.setState({
+                Q_value: this.getValidate(value / 9.5 * 0.5)
+            })
+        } else if(specialControl === 'p') {
+            this.setState({
+                P_value: value
+            })
+        } else if(specialControl === 'q') {
+            this.setState({
+                Q_value: value
+            })
+        }
+    }
 
 
     render() {
-        return <FinalCalculate inputParams={this.state.input} outputParams={this.state.output} setValue={this.setValue.bind(this)} title={'循环压耗'} formula={this.formula}/>
+        return <FinalCalculate inputParams={this.state.input}
+                               outputParams={this.state.output}
+                               setValue={this.setValue.bind(this)}
+                               title={'循环压耗'}
+                               formula={this.formula}
+                               setControl={this.setControl.bind(this)}
+                               P_value={this.state.P_value}
+                               Q_value={this.state.Q_value}
+            />
     }
 }
 

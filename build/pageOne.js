@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "209eb26a4aefd9da6387";
+/******/ 	var hotCurrentHash = "af46df7ca83870faee55";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -27123,10 +27123,10 @@ function (_React$Component2) {
 
       var v6 = this.getPressure(get(this.refs.o), get(this.refs.k)); // v7: 钻杆接箍环空压耗, lenP: 钻杆接箍长度，计算公式为 钻杆长度/9.5 * 0.5
 
-      var lenP = getValidate(get(this.refs.m) / 9.5 * 0.5);
+      var lenP = +this.state.P_value;
       var v7 = this.getPressure(lenP, get(this.refs.l)); // v8: 加重钻杆接箍环空压耗, lenQ: 加重钻杆接箍，计算公式为 加重钻杆长度/9.5 * 0.5
 
-      var lenQ = getValidate(get(this.refs.n) / 9.5 * 0.5);
+      var lenQ = +this.state.Q_value;
       var v8 = this.getPressure(lenQ, get(this.refs.r));
       var value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8;
       this.props.setValue(getValidate(value), this.props.code);
@@ -28317,7 +28317,7 @@ function (_React$Component) {
     }
   }, {
     key: "hasNumber",
-    value: function hasNumber(label, e) {
+    value: function hasNumber(label, specialControl, e) {
       var inputs = Object.assign(this.state.inputParams, []);
       var cur = inputs.filter(function (item) {
         return item.label === label;
@@ -28326,6 +28326,11 @@ function (_React$Component) {
       this.setState({
         inputParams: inputs
       });
+      var specialControlList = ['m', 'n', 'p', 'q'];
+
+      if (specialControl && specialControlList.indexOf(specialControl) >= 0) {
+        this.props && this.props.setControl(specialControl, e.target.value);
+      }
     } // 如果算不出来，返回1
 
   }, {
@@ -28336,6 +28341,35 @@ function (_React$Component) {
       }
 
       return val;
+    }
+  }, {
+    key: "renderIn",
+    value: function renderIn(item) {
+      if (item.specialControl === 'p') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.P_value
+        });
+      } else if (item.specialControl === 'q') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.Q_value
+        });
+      }
+
+      return _react2.default.createElement("input", {
+        className: "input-value",
+        onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+        type: "number",
+        placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+        defaultValue: item.value
+      });
     }
   }, {
     key: "setInput",
@@ -28351,13 +28385,7 @@ function (_React$Component) {
           className: "input-label"
         }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
           className: "input-div"
-        }, _react2.default.createElement("input", {
-          className: "input-value",
-          onChange: _this2.hasNumber.bind(_this2, item.label),
-          type: "number",
-          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
-          defaultValue: item.value
-        }))));
+        }, _this2.renderIn(item))));
       });
       return list;
     }
@@ -34078,25 +34106,24 @@ function (_React$Component5) {
         value: ''
       }, {
         label: '钻杆长度',
-        value: ''
+        value: '',
+        specialControl: 'm'
       }, {
         label: '加重钻杆长度',
-        value: ''
+        value: '',
+        specialControl: 'n'
       }, {
         label: '钻铤长度',
         value: ''
       }, {
         label: '钻杆接箍长度',
-        value: ''
+        value: '',
+        specialControl: 'p'
       }, {
         label: '加重钻杆接箍长度',
-        value: ''
-      },
-      /*   {label: '钻杆加重钻杆钻铤内径', value: ''},
-         {label: '钻杆加重钻杆钻铤外径', value: ''},
-         {label: '钻杆接箍外径', value: ''},
-         {label: '钻杆加重钻杆钻铤长度', value: ''},*/
-      {
+        value: '',
+        specialControl: 'q'
+      }, {
         label: '泵压',
         value: ''
       }],
@@ -34133,7 +34160,9 @@ function (_React$Component5) {
       }, {
         label: '总循环压耗',
         value: 0
-      }]
+      }],
+      P_value: '',
+      Q_value: ''
     };
     _this5.formula = ['地面管汇压耗 = 地面管汇摩阻系数*钻井液密度*（泵排量/100）^1.86*9.818', '钻具循环压耗 = 7628 * 塑性粘度^0.2*钻井液密度^0.8 * 泵排量^1.8 * 钻具长度/钻具内径^4.82', '钻具环空压耗 = 7628 * 塑性粘度^0.2*钻井液密度^0.8 * 泵排量^1.8 * 钻具长度/(井眼直径-钻具外径)^3/(井眼直径+钻具外径)^1.8', '钻头压降 = 泵压 - 循环压耗', '公式中钻具指的就是钻杆、加重钻杆、钻铤、钻杆接箍、加重钻杆接箍'];
     return _this5;
@@ -34197,8 +34226,7 @@ function (_React$Component5) {
       */
       // v1: 钻杆内循环压耗
 
-      var v1 = this.getRecycle(this.getValue('钻杆长度'), this.getValue('钻杆内径'));
-      console.log(v1); // v2: 加重钻杆内循环压耗
+      var v1 = this.getRecycle(this.getValue('钻杆长度'), this.getValue('钻杆内径')); // v2: 加重钻杆内循环压耗
 
       var v2 = this.getRecycle(this.getValue('加重钻杆长度'), this.getValue('加重钻杆内径')); // v3: 钻铤内循环压耗
 
@@ -34208,11 +34236,13 @@ function (_React$Component5) {
 
       var v6 = this.getPressure(this.getValue('加重钻杆长度'), this.getValue('加重钻杆外径')); // v7: 钻铤环空压耗
 
-      var v7 = this.getPressure(this.getValue('钻铤长度'), this.getValue('钻铤外径')); // v8: 钻杆接箍环空压耗
+      var v7 = this.getPressure(this.getValue('钻铤长度'), this.getValue('钻铤外径')); // v8: 钻杆接箍环空压耗, lenP: 钻杆接箍长度，计算公式为 钻杆长度/9.5 * 0.5
 
-      var v8 = this.getPressure(this.getValue('钻杆接箍长度'), this.getValue('钻杆接箍外径')); // v9: 加重钻杆接箍环空压耗
+      var lenP = this.state.P_value;
+      var v8 = this.getPressure(lenP, this.getValue('钻杆接箍外径')); // v9: 加重钻杆接箍环空压耗,  lenQ: 加重钻杆接箍，计算公式为 加重钻杆长度/9.5 * 0.5
 
-      var v9 = this.getPressure(this.getValue('加重钻杆接箍长度'), this.getValue('加重钻杆接箍外径')); // v0: 地面管汇压耗
+      var lenQ = this.state.Q_value;
+      var v9 = this.getPressure(lenQ, this.getValue('加重钻杆接箍外径')); // v0: 地面管汇压耗
 
       var v0 = this.getValue('地面管汇摩阻系数') * this.getValue('钻井液密度') * Math.pow(this.getValue('泵排量') / 100, 1.86) * 9.818;
       outputs[0].value = this.getValidate(v0); // 钻杆加重钻杆钻铤内循环压耗
@@ -34232,8 +34262,7 @@ function (_React$Component5) {
       outputs[8].value = this.getValidate(v8); // 钻杆接箍环空压耗
 
       outputs[9].value = this.getValidate(v9); // 加重钻杆接箍环空压耗
-
-      console.log(); // v3：总循环压耗
+      // v3：总循环压耗
 
       var v10 = this.getValidate(+this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
       outputs[10].value = this.getValidate(v10);
@@ -34249,6 +34278,27 @@ function (_React$Component5) {
       this.props.setBack(outputs);
     }
   }, {
+    key: "setControl",
+    value: function setControl(specialControl, value) {
+      if (specialControl === 'm') {
+        this.setState({
+          P_value: this.getValidate(value / 9.5 * 0.5)
+        });
+      } else if (specialControl === 'n') {
+        this.setState({
+          Q_value: this.getValidate(value / 9.5 * 0.5)
+        });
+      } else if (specialControl === 'p') {
+        this.setState({
+          P_value: value
+        });
+      } else if (specialControl === 'q') {
+        this.setState({
+          Q_value: value
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react2.default.createElement(_FinalCalculate2.default, {
@@ -34256,7 +34306,10 @@ function (_React$Component5) {
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
         title: '循环压耗',
-        formula: this.formula
+        formula: this.formula,
+        setControl: this.setControl.bind(this),
+        P_value: this.state.P_value,
+        Q_value: this.state.Q_value
       });
     }
   }]);
