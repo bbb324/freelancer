@@ -6,6 +6,10 @@ function get(ref) {
     return +ref.refs[Object.keys(ref.refs)[0]].value
 }
 
+function getRound(v) {
+    return Math.round(v*100) / 100;
+}
+
 // 地面管汇压耗
 class Pipe extends React.Component {
     constructor(props) {
@@ -291,7 +295,9 @@ class Total extends React.Component {
         outputs[9].value =  this.getValidate(v9); // 加重钻杆接箍环空压耗
 
         // v3：总循环压耗
-        let v10 = this.getValidate(+this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
+        // let v10 = this.getValidate(+this.getValidate(v0) + +this.getValidate(v1) + +this.getValidate(v2) + +this.getValidate(v3) + +this.getValidate(v5) + +this.getValidate(v6) + +this.getValidate(v7) + +this.getValidate(v8) + +this.getValidate(v9));
+        let v10 = getRound(v0) + getRound(v1) + getRound(v2) + getRound(v3) +  getRound(v5) + getRound(v6) + getRound(v7) + getRound(v8) + getRound(v9)
+
         outputs[10].value = this.getValidate(v10);
 
         let res = this.getValue('泵压') - v10;
