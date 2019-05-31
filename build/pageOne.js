@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "164a561fdd89b7cbe100";
+/******/ 	var hotCurrentHash = "43c3576f8961bb488929";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -27159,7 +27159,26 @@ function (_React$Component2) {
       outputs[9].value = getValidate(value);
       outputs.forEach(function (item) {
         window.localStorage.setItem(item.label, item.value);
-      });
+      }); //存入輸入值到localStorage
+
+      window.localStorage.setItem('泵排量', getValidate(get(this.refs.a)));
+      window.localStorage.setItem('钻井液密度', getValidate(get(this.refs.b)));
+      window.localStorage.setItem('塑性粘度', getValidate(get(this.refs.c)));
+      window.localStorage.setItem('井眼直径', getValidate(get(this.refs.d)));
+      window.localStorage.setItem('地面管汇摩阻系数', getValidate(get(this.refs.e)));
+      window.localStorage.setItem('钻杆内径', getValidate(get(this.refs.f)));
+      window.localStorage.setItem('加重钻杆内径', getValidate(get(this.refs.g)));
+      window.localStorage.setItem('钻铤内径', getValidate(get(this.refs.h)));
+      window.localStorage.setItem('钻杆外径', getValidate(get(this.refs.i)));
+      window.localStorage.setItem('加重钻杆外径', getValidate(get(this.refs.j)));
+      window.localStorage.setItem('钻铤外径', getValidate(get(this.refs.k)));
+      window.localStorage.setItem('钻杆接箍外径', getValidate(get(this.refs.l)));
+      window.localStorage.setItem('加重钻杆接箍外径', getValidate(get(this.refs.r)));
+      window.localStorage.setItem('钻杆长度', getValidate(get(this.refs.m)));
+      window.localStorage.setItem('加重钻杆长度', getValidate(get(this.refs.n)));
+      window.localStorage.setItem('钻铤长度', getValidate(get(this.refs.o)));
+      window.localStorage.setItem('钻杆接箍长度', getValidate(get(this.refs.p)));
+      window.localStorage.setItem('加重钻杆接箍长度', getValidate(get(this.refs.q)));
       this.setState({
         output: outputs
       });
@@ -27238,8 +27257,6 @@ function (_React$Component2) {
   }, {
     key: "onChange",
     value: function onChange(code, value) {
-      console.log(code);
-
       if (code === 'm') {
         this.setState({
           P_value: getValidate(value / 9.5 * 0.5)
@@ -27261,7 +27278,6 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      console.log(this.state.P_value);
       return _react2.default.createElement("div", {
         className: "math-params"
       }, _react2.default.createElement("div", {
