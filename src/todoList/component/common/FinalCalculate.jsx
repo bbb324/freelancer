@@ -24,6 +24,21 @@ class FinalCalculate extends React.Component {
             return item.label === label
         });
         cur[0].value = this.getValidate(Number(e.target.value));
+
+        if(specialControl === 'm') {
+            let targetItem = inputs.filter(item =>{
+                return item.specialControl === 'p'
+            });
+            targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 *100) / 100;
+        }
+
+        if(specialControl === 'n') {
+            let targetItem = inputs.filter(item =>{
+                return item.specialControl === 'q'
+            });
+            targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 *100) / 100;
+        }
+
         this.setState({
             inputParams: inputs
         })

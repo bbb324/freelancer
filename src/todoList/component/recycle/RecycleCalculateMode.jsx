@@ -201,13 +201,15 @@ class Total extends React.Component {
         let outputs = Object.assign(this.state.output, []);
         inputs.forEach(item => {
             item.value = window.localStorage.getItem(item.label);
-        })
+        });
         outputs.forEach(item => {
             item.value = window.localStorage.getItem(item.label);
         });
         this.setState({
             input: inputs,
-            output: outputs
+            output: outputs,
+            P_value: +window.localStorage.getItem('钻杆接箍长度') || 0,
+            Q_value: +window.localStorage.getItem('加重钻杆接箍长度') || 0
         });
     }
 

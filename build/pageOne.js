@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1eaf19630bc534c4ad18";
+/******/ 	var hotCurrentHash = "164a561fdd89b7cbe100";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -26890,7 +26890,7 @@ function get(ref) {
 var event = document.createEvent('HTMLEvents');
 
 function getDefaultValue(label) {
-  return +window.localStorage.getItem(label) || '';
+  return +window.localStorage.getItem(label) || 0;
 }
 
 function getRound(v) {
@@ -27157,7 +27157,9 @@ function (_React$Component2) {
       outputs[8].value = getValidate(v8); // 加重钻杆接箍环空压耗
 
       outputs[9].value = getValidate(value);
-      window.localStorage.setItem('循环压耗', outputs[9].value);
+      outputs.forEach(function (item) {
+        window.localStorage.setItem(item.label, item.value);
+      });
       this.setState({
         output: outputs
       });
@@ -28358,6 +28360,22 @@ function (_React$Component) {
         return item.label === label;
       });
       cur[0].value = this.getValidate(Number(e.target.value));
+
+      if (specialControl === 'm') {
+        var targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'p';
+        });
+        targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
+      if (specialControl === 'n') {
+        var _targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'q';
+        });
+
+        _targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
       this.setState({
         inputParams: inputs
       });
@@ -34220,7 +34238,9 @@ function (_React$Component5) {
       });
       this.setState({
         input: inputs,
-        output: outputs
+        output: outputs,
+        P_value: +window.localStorage.getItem('钻杆接箍长度') || 0,
+        Q_value: +window.localStorage.getItem('加重钻杆接箍长度') || 0
       });
     }
   }, {

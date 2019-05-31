@@ -1,22 +1,249 @@
-webpackHotUpdate("pageOne",{
+webpackHotUpdate("purify",{
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less":
-/*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less ***!
-  \**********************************************************************************************************************************/
+/***/ "./src/todoList/component/common/FinalCalculate.jsx":
+/*!**********************************************************!*\
+  !*** ./src/todoList/component/common/FinalCalculate.jsx ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
-// Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
-var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/analysis/bg.png */ "./src/todoList/image/analysis/bg.png"));
-var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../image/recycle/rule.png */ "./src/todoList/image/recycle/rule.png"));
-
-// Module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  height: 100%;\n}\n.recycle-bg {\n  background-image: url(" + ___CSS_LOADER_URL___0___ + ");\n  height: 100vh;\n  background-repeat: no-repeat;\n  background-size: 149% 100%;\n  text-align: center;\n}\n.recycle-bg .open-config {\n  position: absolute;\n  top: 3%;\n  right: 5%;\n  color: white;\n  font-size: 12px;\n}\n.recycle-bg .configPanel .config {\n  background: #FFFFFF;\n  width: 92%;\n  height: 84%;\n  position: absolute;\n  top: -8%;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  z-index: 1;\n  -webkit-border-radius: 5px;\n  -moz-border-radius: 5px;\n  border-radius: 5px;\n  overflow: scroll;\n}\n.recycle-bg .configPanel .config .close {\n  display: block;\n  width: 18px;\n  height: auto;\n  position: fixed;\n  top: 35px;\n  right: 25px;\n}\n.recycle-bg .configPanel .config .config-unit {\n  margin: 5% 0;\n  list-style-type: none;\n  font-size: 14px;\n}\n.recycle-bg .configPanel .config .config-unit .config-formula {\n  display: block;\n  padding-left: 5%;\n  padding-right: 5%;\n  text-align: left;\n  font-size: 12px;\n  color: #eb6100;\n  margin-top: 20px;\n}\n.recycle-bg .configPanel .config .config-unit .config-formula p {\n  margin: 10px;\n}\n.recycle-bg .configPanel .config .config-unit .config-title {\n  display: block;\n  text-align: center;\n  vertical-align: middle;\n}\n.recycle-bg .configPanel .config .config-unit .config-title .config-label {\n  font-size: 18px;\n}\n.recycle-bg .configPanel .config .config-unit .config-control {\n  display: block;\n  vertical-align: middle;\n}\n.recycle-bg .configPanel .config .config-unit .config-control .math-params {\n  text-align: left;\n  padding-left: 24px;\n  padding-right: 24px;\n  margin-bottom: 5%;\n  padding-top: 15px;\n}\n.recycle-bg .configPanel .config .config-unit .config-control .math-params .cal-btn {\n  background: #eb6100;\n  color: white;\n  font-size: 18px;\n  width: 80%;\n  height: 42px;\n  line-height: 42px;\n  text-align: center;\n  margin: 20px auto;\n  -webkit-border-radius: 5px;\n  -moz-border-radius: 5px;\n  border-radius: 5px;\n}\n.recycle-bg .configPanel .config .btn-div {\n  text-align: center;\n}\n.recycle-bg .configPanel .config .btn-div .confirm {\n  display: inline-block;\n  background: #eb6100;\n  color: white;\n  font-size: 18px;\n  width: 80%;\n  height: 42px;\n  line-height: 42px;\n  text-align: center;\n  margin: 30px auto 15px auto;\n  padding: 0;\n  border: none;\n  -webkit-border-radius: 5px;\n  -moz-border-radius: 5px;\n  border-radius: 5px;\n}\n.recycle-bg .configPanel .config .input-field .isOpen {\n  height: auto;\n}\n.recycle-bg .recycle-img {\n  display: block;\n  width: 54vw;\n  height: auto;\n  position: absolute;\n  top: 5%;\n  right: 4vw;\n}\n.recycle-bg .param-div {\n  position: absolute;\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  -o-transform: scale(0.9);\n  transform: scale(0.9);\n  left: 4%;\n  color: #FFFFFF;\n  background-image: url(" + ___CSS_LOADER_URL___1___ + ");\n  background-repeat: no-repeat;\n  font-size: 12px;\n}\n.recycle-bg .param-div .config-unit {\n  text-align: left;\n  margin-left: 11px;\n  margin-top: 2vh;\n}\n.recycle-bg .param-div .config-unit .config-control {\n  margin-top: 4px;\n  font-size: 17px;\n}\n.recycle-bg .param-div .config-unit .config-control .config-input {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  display: block;\n  width: 50%;\n}\n.recycle-bg .param-div .config-unit:first-child {\n  margin-top: 0;\n}\n.recycle-bg .recycle-div {\n  position: absolute;\n  top: 66.5%;\n  right: 15px;\n  color: #FFFFFF;\n  background: rgba(6, 57, 119, 0.1);\n  min-width: 44%;\n}\n.recycle-bg .recycle-div .title {\n  font-size: 12px;\n  background: rgba(6, 57, 119, 0.1);\n  height: 27px;\n  line-height: 27px;\n}\n.recycle-bg .recycle-div .num-div .block {\n  display: inline-block;\n  border: 1px solid #063977;\n  padding: 25px 4px;\n  margin: 15px 2px;\n  font-weight: bold;\n}\n.recycle-bg .recycle-div .num-div .block:first-child {\n  margin-left: 5px;\n}\n.recycle-bg .recycle-div .num-div .block:last-child {\n  margin-right: 5px;\n}\n", ""]);
+"use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(/*! ../common/common.less */ "./src/todoList/component/common/common.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var FinalCalculate =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(FinalCalculate, _React$Component);
+
+  function FinalCalculate(props) {
+    var _this;
+
+    _classCallCheck(this, FinalCalculate);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(FinalCalculate).call(this, props));
+    _this.state = {
+      showClear: false,
+      inputParams: _this.props.inputParams,
+      isShrink: true
+    };
+    return _this;
+  }
+
+  _createClass(FinalCalculate, [{
+    key: "setClear",
+    value: function setClear() {
+      this.refs[this.props.code].value = '';
+      this.setState({
+        showClear: false
+      });
+    }
+  }, {
+    key: "hasNumber",
+    value: function hasNumber(label, specialControl, e) {
+      var inputs = Object.assign(this.state.inputParams, []);
+      var cur = inputs.filter(function (item) {
+        return item.label === label;
+      });
+      cur[0].value = this.getValidate(Number(e.target.value));
+
+      if (specialControl === 'm') {
+        var targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'p';
+        });
+        targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
+      if (specialControl === 'n') {
+        var _targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'q';
+        });
+
+        _targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
+      this.setState({
+        inputParams: inputs
+      });
+      var specialControlList = ['m', 'n', 'p', 'q'];
+
+      if (specialControl && specialControlList.indexOf(specialControl) >= 0) {
+        this.props && this.props.setControl(specialControl, e.target.value);
+      }
+    } // 如果算不出来，返回1
+
+  }, {
+    key: "getValidate",
+    value: function getValidate(val) {
+      if (isNaN(val) || val === Infinity) {
+        return 1;
+      }
+
+      return val;
+    }
+  }, {
+    key: "renderIn",
+    value: function renderIn(item) {
+      if (item.specialControl === 'p') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.P_value
+        });
+      } else if (item.specialControl === 'q') {
+        return _react2.default.createElement("input", {
+          className: "input-value",
+          onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+          type: "number",
+          placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+          value: this.props.Q_value
+        });
+      }
+
+      return _react2.default.createElement("input", {
+        className: "input-value",
+        onChange: this.hasNumber.bind(this, item.label, item.specialControl),
+        type: "number",
+        placeholder: "\u8BF7\u8F93\u5165".concat(item.label),
+        defaultValue: item.value
+      });
+    }
+  }, {
+    key: "setInput",
+    value: function setInput() {
+      var _this2 = this;
+
+      var list = [];
+      this.state.inputParams.forEach(function (item) {
+        list.push(_react2.default.createElement("div", {
+          key: item.label,
+          className: "input-option"
+        }, _react2.default.createElement("label", {
+          className: "input-label"
+        }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+          className: "input-div"
+        }, _this2.renderIn(item))));
+      });
+      return list;
+    }
+  }, {
+    key: "setOutput",
+    value: function setOutput() {
+      var list = [];
+      this.props.outputParams.forEach(function (item) {
+        if (item.ext !== 'hide') {
+          list.push(_react2.default.createElement("div", {
+            key: item.label,
+            className: "output-option"
+          }, _react2.default.createElement("label", {
+            className: "input-label"
+          }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+            className: "input-div"
+          }, _react2.default.createElement("span", null, " ", item.value, " "))));
+        }
+      });
+      return list;
+    }
+  }, {
+    key: "confirm",
+    value: function confirm() {
+      var _this3 = this;
+
+      this.state.inputParams.forEach(function (item) {
+        window.localStorage.setItem(item.label, _this3.getValidate(item.value));
+      });
+      this.props.setValue(this.state.inputParams);
+    }
+  }, {
+    key: "renderFormula",
+    value: function renderFormula() {
+      var list = [];
+      this.props.formula.forEach(function (item, key) {
+        list.push(_react2.default.createElement("p", {
+          key: key
+        }, " ", item, " "));
+      });
+      return list;
+    }
+  }, {
+    key: "toggleFormula",
+    value: function toggleFormula() {
+      this.setState({
+        isShrink: !this.state.isShrink
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement("div", {
+        className: "input-field"
+      }, _react2.default.createElement("div", {
+        className: "title"
+      }, " ", this.props.title, " "), _react2.default.createElement("div", {
+        className: "IO"
+      }, "\u8F93\u5165"), _react2.default.createElement("div", {
+        className: "result-panel"
+      }, this.setInput()), _react2.default.createElement("div", {
+        className: "result"
+      }, "\u7ED3\u679C"), _react2.default.createElement("div", {
+        className: "result-panel"
+      }, this.setOutput()), _react2.default.createElement("div", {
+        className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
+      }, _react2.default.createElement("div", {
+        className: "expand-formula",
+        onClick: this.toggleFormula.bind(this)
+      }, _react2.default.createElement("div", {
+        className: "expand-formula-text"
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+        className: "triangle"
+      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+        src: "./image/icon/up.png"
+      }) : _react2.default.createElement("img", {
+        src: "./image/icon/down.png"
+      }))), this.renderFormula()), _react2.default.createElement("div", {
+        className: "btn-div"
+      }, _react2.default.createElement("span", {
+        className: "confirm",
+        onClick: this.confirm.bind(this)
+      }, "\u8BA1\u7B97")));
+    }
+  }]);
+
+  return FinalCalculate;
+}(_react2.default.Component);
+
+exports.default = FinalCalculate;
 
 /***/ })
 

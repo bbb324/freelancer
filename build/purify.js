@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1eaf19630bc534c4ad18";
+/******/ 	var hotCurrentHash = "164a561fdd89b7cbe100";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -26235,6 +26235,22 @@ function (_React$Component) {
         return item.label === label;
       });
       cur[0].value = this.getValidate(Number(e.target.value));
+
+      if (specialControl === 'm') {
+        var targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'p';
+        });
+        targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
+      if (specialControl === 'n') {
+        var _targetItem = inputs.filter(function (item) {
+          return item.specialControl === 'q';
+        });
+
+        _targetItem[0].value = Math.round(e.target.value / 9.5 * 0.5 * 100) / 100;
+      }
+
       this.setState({
         inputParams: inputs
       });
