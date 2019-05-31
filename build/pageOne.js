@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "af46df7ca83870faee55";
+/******/ 	var hotCurrentHash = "b082bba85d602b22b026";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -793,16 +793,16 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less ***!
-  \************************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less ***!
+  \*************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/analysis/bg.png */ "./src/todoList/image/analysis/bg.png"));
 
 // Module
@@ -812,14 +812,14 @@ exports.push([module.i, ".ana-content {\n  background-image: url(" + ___CSS_LOAD
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, ".input-field {\n  font-size: 13px;\n  padding: 0 5%;\n  box-sizing: border-box;\n  margin-top: 35px;\n  margin-bottom: 15px;\n}\n.input-field .title {\n  margin-top: 15px;\n  font-size: 18px;\n  border-bottom: 2px solid #eb6100;\n  padding-bottom: 6px;\n  box-sizing: border-box;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.input-field .input-div {\n  display: inline-block;\n  height: 20px;\n  position: relative;\n}\n.input-field .input-div .clear-icon {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  right: 16px;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.input-field .input-value {\n  border: none;\n  outline: none;\n  line-height: 20px;\n  font-size: 13px;\n}\n.input-field .input-value::-webkit-input-placeholder {\n  color: #c5c8ce;\n  font-size: 13px;\n}\n.input-field:first-child {\n  margin-top: 0;\n}\n.input-unit {\n  margin: 15px 0;\n}\n.result,\n.IO {\n  text-align: left;\n  font-size: 16px;\n  color: #eb6100;\n  border-bottom: 1px solid #eb6100;\n  padding: 5px 0;\n  box-sizing: border-box;\n  margin-bottom: 10px;\n}\n.result {\n  margin-top: 25px;\n  border-bottom: 1px solid #eb6100;\n  padding: 5px 0;\n  box-sizing: border-box;\n}\n.result-panel {\n  text-align: left;\n}\n.result-panel .input-option,\n.result-panel .output-option {\n  margin-bottom: 5px;\n}\n.config-formula {\n  text-align: left;\n  font-size: 12px;\n  color: #eb6100;\n  margin-top: 20px;\n  position: relative;\n  height: 4vh;\n  overflow: hidden;\n}\n.config-formula .expand-formula {\n  height: 3.9vh;\n  line-height: 4vh;\n  font-size: 16px;\n  border-bottom: 1px solid #eb6100;\n}\n.config-formula p {\n  margin: 10px 10px 10px 0;\n}\n.config-formula .expand-formula-text {\n  display: inline-block;\n}\n.config-formula .triangle {\n  display: inline-block;\n  width: 10px;\n  height: auto;\n  margin-left: 10px;\n}\n", ""]);
 
@@ -827,14 +827,14 @@ exports.push([module.i, ".input-field {\n  font-size: 13px;\n  padding: 0 5%;\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less":
-/*!******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less ***!
-  \******************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\n.tab-div {\n  margin-top: 7px;\n  margin-left: 7px;\n  margin-right: 7px;\n}\n.tab-div .tab {\n  display: inline-block;\n  width: 110px;\n  height: 100px;\n  margin: 4px;\n  background: rgba(0, 0, 0, 0.1);\n  text-align: center;\n  font-size: 12px;\n  color: #ffffff;\n}\n.tab-div .tab .icon {\n  width: 32px;\n  height: auto;\n  display: block;\n  margin: 22px auto 15px;\n}\n", ""]);
 
@@ -842,14 +842,14 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\n.tab-div {\n  marg
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less":
-/*!*********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less ***!
-  \*********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less ***!
+  \**********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, ".toolbar-div {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  padding-top: 7px;\n  background: #FFFFFF;\n}\n.toolbar-div .toolbar {\n  width: 10.7%;\n  height: 40px;\n  display: inline-block;\n  font-size: 12px;\n  color: #3b3b3b;\n  margin: 0 11%;\n  text-align: center;\n}\n.toolbar-div .toolbar .icon {\n  width: 22px;\n  height: 22px;\n  display: block;\n  margin: 0 auto 7px;\n}\n", ""]);
 
@@ -857,16 +857,16 @@ exports.push([module.i, ".toolbar-div {\n  position: fixed;\n  bottom: 0;\n  wid
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/effect/effect-bg.png */ "./src/todoList/image/effect/effect-bg.png"));
 
 // Module
@@ -876,16 +876,16 @@ exports.push([module.i, ".effect-content {\n  background-image: url(" + ___CSS_L
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less":
-/*!*********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less ***!
-  \*********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less ***!
+  \**********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/homepageImage/bg.png */ "./src/todoList/image/homepageImage/bg.png"));
 
 // Module
@@ -895,16 +895,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less":
-/*!******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less ***!
-  \******************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/heavy/heavy-bg.png */ "./src/todoList/image/heavy/heavy-bg.png"));
 
 // Module
@@ -914,16 +914,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less":
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less ***!
-  \****************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less ***!
+  \*****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/loop/loop-bg.png */ "./src/todoList/image/loop/loop-bg.png"));
 var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../image/loop/loop-value-bg.png */ "./src/todoList/image/loop/loop-value-bg.png"));
 
@@ -934,16 +934,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/low/low.less":
-/*!**************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/low/low.less ***!
-  \**************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/low/low.less":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/low/low.less ***!
+  \***************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/low/low-bg.png */ "./src/todoList/image/low/low-bg.png"));
 
 // Module
@@ -953,16 +953,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/purify/purify-bg.png */ "./src/todoList/image/purify/purify-bg.png"));
 
 // Module
@@ -972,16 +972,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less":
-/*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less ***!
-  \**********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less ***!
+  \***********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/analysis/bg.png */ "./src/todoList/image/analysis/bg.png"));
 var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../image/recycle/rule.png */ "./src/todoList/image/recycle/rule.png"));
 
@@ -992,16 +992,16 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less":
-/*!****************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less ***!
-  \****************************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less ***!
+  \*****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/simulation/simu-bg.png */ "./src/todoList/image/simulation/simu-bg.png"));
 
 // Module
@@ -1011,10 +1011,10 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1107,10 +1107,10 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
-/*!************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
-  \************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1138,10 +1138,10 @@ module.exports = function escape(url, needQuotes) {
 
 /***/ }),
 
-/***/ "./node_modules/object-assign/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/object-assign/index.js ***!
-  \*********************************************/
+/***/ "./node_modules/_object-assign@4.1.1@object-assign/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/_object-assign@4.1.1@object-assign/index.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1240,10 +1240,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
-/***/ "./node_modules/prop-types/checkPropTypes.js":
-/*!***************************************************!*\
-  !*** ./node_modules/prop-types/checkPropTypes.js ***!
-  \***************************************************/
+/***/ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1260,7 +1260,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js");
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -1354,10 +1354,10 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
-/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1378,15 +1378,15 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "./node_modules/react-dom/cjs/react-dom.development.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.5
+/** @license React v16.8.6
  * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1403,11 +1403,11 @@ if (true) {
   (function() {
 'use strict';
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
-var scheduler = __webpack_require__(/*! scheduler */ "./node_modules/scheduler/index.js");
-var tracing = __webpack_require__(/*! scheduler/tracing */ "./node_modules/scheduler/tracing.js");
+var React = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/_object-assign@4.1.1@object-assign/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js");
+var scheduler = __webpack_require__(/*! scheduler */ "./node_modules/_scheduler@0.13.6@scheduler/index.js");
+var tracing = __webpack_require__(/*! scheduler/tracing */ "./node_modules/_scheduler@0.13.6@scheduler/tracing.js");
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -6720,15 +6720,29 @@ function isInDocument(node) {
   return node && node.ownerDocument && containsNode(node.ownerDocument.documentElement, node);
 }
 
+function isSameOriginFrame(iframe) {
+  try {
+    // Accessing the contentDocument of a HTMLIframeElement can cause the browser
+    // to throw, e.g. if it has a cross-origin src attribute.
+    // Safari will show an error in the console when the access results in "Blocked a frame with origin". e.g:
+    // iframe.contentDocument.defaultView;
+    // A safety way is to access one of the cross origin properties: Window or Location
+    // Which might result in "SecurityError" DOM Exception and it is compatible to Safari.
+    // https://html.spec.whatwg.org/multipage/browsers.html#integration-with-idl
+
+    return typeof iframe.contentWindow.location.href === 'string';
+  } catch (err) {
+    return false;
+  }
+}
+
 function getActiveElementDeep() {
   var win = window;
   var element = getActiveElement();
   while (element instanceof win.HTMLIFrameElement) {
-    // Accessing the contentDocument of a HTMLIframeElement can cause the browser
-    // to throw, e.g. if it has a cross-origin src attribute
-    try {
-      win = element.contentDocument.defaultView;
-    } catch (e) {
+    if (isSameOriginFrame(element)) {
+      win = element.contentWindow;
+    } else {
       return element;
     }
     element = getActiveElement(win.document);
@@ -12688,14 +12702,35 @@ function constructClassInstance(workInProgress, ctor, props, renderExpirationTim
   var unmaskedContext = emptyContextObject;
   var context = null;
   var contextType = ctor.contextType;
-  if (typeof contextType === 'object' && contextType !== null) {
-    {
-      if (contextType.$$typeof !== REACT_CONTEXT_TYPE && !didWarnAboutInvalidateContextType.has(ctor)) {
+
+  {
+    if ('contextType' in ctor) {
+      var isValid =
+      // Allow null for conditional declaration
+      contextType === null || contextType !== undefined && contextType.$$typeof === REACT_CONTEXT_TYPE && contextType._context === undefined; // Not a <Context.Consumer>
+
+      if (!isValid && !didWarnAboutInvalidateContextType.has(ctor)) {
         didWarnAboutInvalidateContextType.add(ctor);
-        warningWithoutStack$1(false, '%s defines an invalid contextType. ' + 'contextType should point to the Context object returned by React.createContext(). ' + 'Did you accidentally pass the Context.Provider instead?', getComponentName(ctor) || 'Component');
+
+        var addendum = '';
+        if (contextType === undefined) {
+          addendum = ' However, it is set to undefined. ' + 'This can be caused by a typo or by mixing up named and default imports. ' + 'This can also happen due to a circular dependency, so ' + 'try moving the createContext() call to a separate file.';
+        } else if (typeof contextType !== 'object') {
+          addendum = ' However, it is set to a ' + typeof contextType + '.';
+        } else if (contextType.$$typeof === REACT_PROVIDER_TYPE) {
+          addendum = ' Did you accidentally pass the Context.Provider instead?';
+        } else if (contextType._context !== undefined) {
+          // <Context.Consumer>
+          addendum = ' Did you accidentally pass the Context.Consumer instead?';
+        } else {
+          addendum = ' However, it is set to an object with keys {' + Object.keys(contextType).join(', ') + '}.';
+        }
+        warningWithoutStack$1(false, '%s defines an invalid contextType. ' + 'contextType should point to the Context object returned by React.createContext().%s', getComponentName(ctor) || 'Component', addendum);
       }
     }
+  }
 
+  if (typeof contextType === 'object' && contextType !== null) {
     context = readContext(contextType);
   } else {
     unmaskedContext = getUnmaskedContext(workInProgress, ctor, true);
@@ -14489,8 +14524,8 @@ function mountReducer(reducer, initialArg, init) {
   var queue = hook.queue = {
     last: null,
     dispatch: null,
-    eagerReducer: reducer,
-    eagerState: initialState
+    lastRenderedReducer: reducer,
+    lastRenderedState: initialState
   };
   var dispatch = queue.dispatch = dispatchAction.bind(null,
   // Flow doesn't know this is non-null, but we do.
@@ -14502,6 +14537,8 @@ function updateReducer(reducer, initialArg, init) {
   var hook = updateWorkInProgressHook();
   var queue = hook.queue;
   !(queue !== null) ? invariant(false, 'Should have a queue. This is likely a bug in React. Please file an issue.') : void 0;
+
+  queue.lastRenderedReducer = reducer;
 
   if (numberOfReRenders > 0) {
     // This is a re-render. Apply the new render phase updates to the previous
@@ -14537,8 +14574,7 @@ function updateReducer(reducer, initialArg, init) {
           hook.baseState = newState;
         }
 
-        queue.eagerReducer = reducer;
-        queue.eagerState = newState;
+        queue.lastRenderedState = newState;
 
         return [newState, _dispatch];
       }
@@ -14617,8 +14653,7 @@ function updateReducer(reducer, initialArg, init) {
     hook.baseUpdate = newBaseUpdate;
     hook.baseState = newBaseState;
 
-    queue.eagerReducer = reducer;
-    queue.eagerState = _newState;
+    queue.lastRenderedState = _newState;
   }
 
   var dispatch = queue.dispatch;
@@ -14634,8 +14669,8 @@ function mountState(initialState) {
   var queue = hook.queue = {
     last: null,
     dispatch: null,
-    eagerReducer: basicStateReducer,
-    eagerState: initialState
+    lastRenderedReducer: basicStateReducer,
+    lastRenderedState: initialState
   };
   var dispatch = queue.dispatch = dispatchAction.bind(null,
   // Flow doesn't know this is non-null, but we do.
@@ -14912,21 +14947,21 @@ function dispatchAction(fiber, queue, action) {
       // The queue is currently empty, which means we can eagerly compute the
       // next state before entering the render phase. If the new state is the
       // same as the current state, we may be able to bail out entirely.
-      var _eagerReducer = queue.eagerReducer;
-      if (_eagerReducer !== null) {
+      var _lastRenderedReducer = queue.lastRenderedReducer;
+      if (_lastRenderedReducer !== null) {
         var prevDispatcher = void 0;
         {
           prevDispatcher = ReactCurrentDispatcher$1.current;
           ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
         }
         try {
-          var currentState = queue.eagerState;
-          var _eagerState = _eagerReducer(currentState, action);
+          var currentState = queue.lastRenderedState;
+          var _eagerState = _lastRenderedReducer(currentState, action);
           // Stash the eagerly computed state, and the reducer used to compute
           // it, on the update object. If the reducer hasn't changed by the
           // time we enter the render phase, then the eager state can be used
           // without calling the reducer again.
-          _update2.eagerReducer = _eagerReducer;
+          _update2.eagerReducer = _lastRenderedReducer;
           _update2.eagerState = _eagerState;
           if (is(_eagerState, currentState)) {
             // Fast path. We can bail out without scheduling React to re-render.
@@ -22105,7 +22140,7 @@ implementation) {
 
 // TODO: this is special because it gets imported during build.
 
-var ReactVersion = '16.8.5';
+var ReactVersion = '16.8.6';
 
 // TODO: This type is shared between the reconciler and ReactDOM, but will
 // eventually be lifted out to the renderer.
@@ -22633,10 +22668,10 @@ module.exports = reactDom;
 
 /***/ }),
 
-/***/ "./node_modules/react-dom/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/react-dom/index.js ***!
-  \*****************************************/
+/***/ "./node_modules/_react-dom@16.8.6@react-dom/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/_react-dom@16.8.6@react-dom/index.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22672,21 +22707,21 @@ function checkDCE() {
 }
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "./node_modules/react-dom/cjs/react-dom.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/react/cjs/react.development.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/react/cjs/react.development.js ***!
-  \*****************************************************/
+/***/ "./node_modules/_react@16.8.6@react/cjs/react.development.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/_react@16.8.6@react/cjs/react.development.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.5
+/** @license React v16.8.6
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -22703,12 +22738,12 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/_object-assign@4.1.1@object-assign/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js");
 
 // TODO: this is special because it gets imported during build.
 
-var ReactVersion = '16.8.5';
+var ReactVersion = '16.8.6';
 
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
@@ -24591,10 +24626,10 @@ module.exports = react;
 
 /***/ }),
 
-/***/ "./node_modules/react/index.js":
-/*!*************************************!*\
-  !*** ./node_modules/react/index.js ***!
-  \*************************************/
+/***/ "./node_modules/_react@16.8.6@react/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/_react@16.8.6@react/index.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24602,21 +24637,21 @@ module.exports = react;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/_react@16.8.6@react/cjs/react.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/cjs/scheduler-tracing.development.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
-  \*********************************************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v0.13.5
+/** @license React v0.13.6
  * scheduler-tracing.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -25043,15 +25078,15 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/cjs/scheduler.development.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.5
+/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.6
  * scheduler.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -25751,14 +25786,14 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../_webpack@4.32.2@webpack/buildin/global.js */ "./node_modules/_webpack@4.32.2@webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/scheduler/index.js ***!
-  \*****************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/index.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25766,16 +25801,16 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/tracing.js":
-/*!*******************************************!*\
-  !*** ./node_modules/scheduler/tracing.js ***!
-  \*******************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/tracing.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/tracing.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25783,16 +25818,16 @@ if (false) {} else {
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/addStyles.js":
-/*!****************************************************!*\
-  !*** ./node_modules/style-loader/lib/addStyles.js ***!
-  \****************************************************/
+/***/ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25862,7 +25897,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js");
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -26198,10 +26233,10 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/urls.js":
-/*!***********************************************!*\
-  !*** ./node_modules/style-loader/lib/urls.js ***!
-  \***********************************************/
+/***/ "./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -26298,7 +26333,7 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
+/***/ "./node_modules/_webpack@4.32.2@webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
@@ -26343,7 +26378,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26369,7 +26404,7 @@ var _CalculatMode2 = _interopRequireDefault(_CalculatMode);
 
 __webpack_require__(/*! ./analysis.less */ "./src/todoList/component/analysis/analysis.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26478,49 +26513,49 @@ function (_React$Component) {
     value: function getCalculator(code, solo) {
       switch (code) {
         case 'pump':
-          return _react2.default.createElement(_CalculatMode2.default.Pump, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Pump, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         case 'cycle':
-          return _react2.default.createElement(_CalculatMode2.default.Cycle, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Cycle, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         case 'drill':
-          return _react2.default.createElement(_CalculatMode2.default.Drill, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Drill, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         case 'params':
-          return _react2.default.createElement(_CalculatMode2.default.Params, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Params, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         case 'loop':
-          return _react2.default.createElement(_CalculatMode2.default.Loop, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Loop, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         case 'flow':
-          return _react2.default.createElement(_CalculatMode2.default.Flow, {
+          return _react2["default"].createElement(_CalculatMode2["default"].Flow, {
             code: code,
             isSolo: solo,
             setValue: this.setValue.bind(this)
           });
 
         default:
-          return _react2.default.createElement("div", null, " default ");
+          return _react2["default"].createElement("div", null, " default ");
       }
     }
   }, {
@@ -26540,26 +26575,26 @@ function (_React$Component) {
       var list = [];
 
       if (this.state.singleItem !== '') {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           className: "config-unit",
           key: this.state.singleItem.code
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config-title"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-label"
-        }, " ", this.state.singleItem.label, " ")), _react2.default.createElement("div", {
+        }, " ", this.state.singleItem.label, " ")), _react2["default"].createElement("div", {
           className: "config-control"
         }, this.getCalculator(this.state.singleItem.code, 'solo'))));
       } else {
         this.state.tabs.forEach(function (item, key) {
-          list.push(_react2.default.createElement("li", {
+          list.push(_react2["default"].createElement("li", {
             className: "config-unit",
             key: key
-          }, _react2.default.createElement("div", {
+          }, _react2["default"].createElement("div", {
             className: "config-title"
-          }, _react2.default.createElement("span", {
+          }, _react2["default"].createElement("span", {
             className: "config-label"
-          }, " ", item.label, " ")), _react2.default.createElement("div", {
+          }, " ", item.label, " ")), _react2["default"].createElement("div", {
             className: "config-control"
           }, _this2.getCalculator(item.code))));
         });
@@ -26600,15 +26635,15 @@ function (_React$Component) {
   }, {
     key: "configPanel",
     value: function configPanel() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "configPanel",
         style: {
           display: this.state.showConfigPanel === true ? '' : 'none'
         }
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "config",
         ref: "configPanel"
-      }, _react2.default.createElement("img", {
+      }, _react2["default"].createElement("img", {
         className: "close",
         src: "./image/icon/close.png",
         onClick: this.close.bind(this)
@@ -26617,22 +26652,22 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "ana-content"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "shiubeng-bg"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement(_AnalysisAnimation2.default, null), _react2.default.createElement("div", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement(_AnalysisAnimation2["default"], null), _react2["default"].createElement("div", {
         className: "water-bg",
         style: {
           height: "".concat(this.state.percent, "%")
         }
-      }, _react2.default.createElement("img", {
+      }, _react2["default"].createElement("img", {
         className: "water",
         src: "./image/icon/water.png"
-      }))), _react2.default.createElement(_AnalysisConfigPanel2.default, {
+      }))), _react2["default"].createElement(_AnalysisConfigPanel2["default"], {
         dataSource: this.state.tabs,
         openSetting: this.openSetting.bind(this)
       }));
@@ -26640,9 +26675,9 @@ function (_React$Component) {
   }]);
 
   return Analysis;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Analysis;
+exports["default"] = Analysis;
 
 /***/ }),
 
@@ -26660,11 +26695,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26704,7 +26739,7 @@ function (_React$PureComponent) {
   _createClass(AnalysisAnimation, [{
     key: "render",
     value: function render() {
-      return _react2.default.createElement("img", {
+      return _react2["default"].createElement("img", {
         className: "water-tower",
         src: "./image/analysis/animate-ext-".concat(this.state.cur + 1, ".png")
       });
@@ -26735,9 +26770,9 @@ function (_React$PureComponent) {
   }]);
 
   return AnalysisAnimation;
-}(_react2.default.PureComponent);
+}(_react2["default"].PureComponent);
 
-exports.default = AnalysisAnimation;
+exports["default"] = AnalysisAnimation;
 
 /***/ }),
 
@@ -26755,7 +26790,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26769,7 +26804,7 @@ var _ToolBar2 = _interopRequireDefault(_ToolBar);
 
 __webpack_require__(/*! ./analysis.less */ "./src/todoList/component/analysis/analysis.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26812,14 +26847,14 @@ function (_React$Component) {
 
       var list = [];
       this.props.dataSource.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "analysis-tab",
           style: {
             backgroundImage: "url(../../freelancer/public/image/icon/".concat(item.imgUrl, ")")
           },
           key: key,
           onClick: _this.openSetting.bind(_this, item)
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "data-display"
         }, " ", item.value, " ")));
       });
@@ -26828,16 +26863,16 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "analysis-tabs"
       }, this.renderTab());
     }
   }]);
 
   return AnalysisConfigPanel;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = AnalysisConfigPanel;
+exports["default"] = AnalysisConfigPanel;
 
 /***/ }),
 
@@ -26851,7 +26886,7 @@ exports.default = AnalysisConfigPanel;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26863,7 +26898,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26962,7 +26997,7 @@ function (_React$Component) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -26978,54 +27013,54 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: '管套直径',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.diameter
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '活塞冲程',
         code: 'b',
         ref: 'b',
         defaultValue: this.state.chongcheng
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '缸套数',
         code: 'c',
         ref: 'c',
         defaultValue: this.state.taoshu
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '冲数',
         code: 'd',
         ref: 'd',
         defaultValue: this.state.chongshu
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '上水效率（%）',
         code: 'e',
         ref: 'e',
         defaultValue: 0.9,
         type: 'percent'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, "\u6CF5\u6392\u91CF\uFF1A", this.state.value), _react2.default.createElement("div", {
+      }, "\u6CF5\u6392\u91CF\uFF1A", this.state.value), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27033,7 +27068,7 @@ function (_React$Component) {
   }]);
 
   return Pump;
-}(_react2.default.Component); // 循环压耗
+}(_react2["default"].Component); // 循环压耗
 
 
 var Cycle =
@@ -27162,14 +27197,14 @@ function (_React$Component2) {
     value: function renderResult() {
       var list = [];
       this.state.output.forEach(function (item) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: item.label,
           className: "output-option"
-        }, _react2.default.createElement("label", {
+        }, _react2["default"].createElement("label", {
           className: "input-label"
-        }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+        }, " ", item.label, "\uFF1A "), _react2["default"].createElement("div", {
           className: "input-div"
-        }, _react2.default.createElement("span", null, " ", item.value, " "))));
+        }, _react2["default"].createElement("span", null, " ", item.value, " "))));
       });
       return list;
     }
@@ -27185,7 +27220,7 @@ function (_React$Component2) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -27225,122 +27260,122 @@ function (_React$Component2) {
     key: "render",
     value: function render() {
       console.log(this.state.P_value);
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: "\u6CF5\u6392\u91CF",
         code: 'a',
         ref: "a",
         defaultValue: this.state.initPumpValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u4E95\u6DB2\u5BC6\u5EA6",
         code: 'b',
         ref: "b",
         defaultValue: getDefaultValue('钻井液密度')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u5851\u6027\u7C98\u5EA6",
         code: 'c',
         ref: "c",
         defaultValue: getDefaultValue('塑性粘度')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u4E95\u773C\u76F4\u5F84",
         code: 'd',
         ref: "d",
         defaultValue: getDefaultValue('井眼直径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u5730\u9762\u7BA1\u6C47\u6469\u963B\u7CFB\u6570",
         code: 'e',
         ref: "e",
         defaultValue: getDefaultValue('地面管汇摩阻系数')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u5185\u5F84",
         code: 'f',
         ref: "f",
         defaultValue: getDefaultValue('钻杆内径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u52A0\u91CD\u94BB\u6746\u5185\u5F84",
         code: 'g',
         ref: "g",
         defaultValue: getDefaultValue('加重钻杆内径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u94E4\u5185\u5F84",
         code: 'h',
         ref: "h",
         defaultValue: getDefaultValue('钻铤内径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u5916\u5F84",
         code: 'i',
         ref: "i",
         defaultValue: getDefaultValue('钻杆外径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u52A0\u91CD\u94BB\u6746\u5916\u5F84",
         code: 'j',
         ref: "j",
         defaultValue: getDefaultValue('加重钻杆外径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u94E4\u5916\u5F84",
         code: 'k',
         ref: "k",
         defaultValue: getDefaultValue('钻铤外径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u63A5\u7B8D\u5916\u5F84",
         code: 'l',
         ref: "l",
         defaultValue: getDefaultValue('钻杆接箍外径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u52A0\u91CD\u94BB\u6746\u63A5\u7B8D\u5916\u5F84",
         code: 'r',
         ref: "r",
         defaultValue: getDefaultValue('加重钻杆接箍外径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u957F\u5EA6",
         code: 'm',
         ref: "m",
         defaultValue: getDefaultValue('钻杆长度'),
         onChange: this.onChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u52A0\u91CD\u94BB\u6746\u957F\u5EA6",
         code: 'n',
         ref: "n",
         defaultValue: getDefaultValue('加重钻杆长度'),
         onChange: this.onChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u94E4\u957F\u5EA6",
         code: 'o',
         ref: "o",
         defaultValue: getDefaultValue('钻铤长度')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u63A5\u7B8D\u957F\u5EA6",
         code: 'p',
         ref: "p",
         defaultValue: this.state.P_value,
         onChange: this.onChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u52A0\u91CD\u94BB\u6746\u63A5\u7B8D\u957F\u5EA6",
         code: 'q',
         ref: "q",
         defaultValue: this.state.Q_value,
         onChange: this.onChange.bind(this)
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, this.renderResult()), _react2.default.createElement("div", {
+      }, this.renderResult()), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calcluate1.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27371,7 +27406,7 @@ function (_React$Component2) {
   }]);
 
   return Cycle;
-}(_react2.default.Component); // 钻头压降
+}(_react2["default"].Component); // 钻头压降
 
 
 var Drill =
@@ -27420,7 +27455,7 @@ function (_React$Component3) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -27436,38 +27471,38 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: "\u6CF5\u538B",
         code: 'a',
         ref: "a",
         defaultValue: getDefaultValue('泵压')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u5FAA\u73AF\u538B\u8017",
         code: 'b',
         ref: "b",
         defaultValue: this.state.initCycleValue
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, "\u94BB\u5934\u538B\u964D\uFF1A", this.state.value), _react2.default.createElement("div", {
+      }, "\u94BB\u5934\u538B\u964D\uFF1A", this.state.value), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27491,7 +27526,7 @@ function (_React$Component3) {
   }]);
 
   return Drill;
-}(_react2.default.Component); // 流变参数
+}(_react2["default"].Component); // 流变参数
 
 
 var Params =
@@ -27575,7 +27610,7 @@ function (_React$Component4) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -27593,7 +27628,7 @@ function (_React$Component4) {
     value: function renderResult() {
       var list = [];
       this.state.output.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "result-panel",
           key: key
         }, item.label, "\uFF1A", item.value));
@@ -27603,36 +27638,36 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: "\u0424600",
         code: 'a',
         ref: "a",
         defaultValue: getDefaultValue('Ф600')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u0424300",
         code: 'b',
         ref: "b",
         defaultValue: getDefaultValue('Ф300')
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), this.renderResult(), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), this.renderResult(), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27640,7 +27675,7 @@ function (_React$Component4) {
   }]);
 
   return Params;
-}(_react2.default.Component); // 环空返速
+}(_react2["default"].Component); // 环空返速
 
 
 var Loop =
@@ -27691,7 +27726,7 @@ function (_React$Component5) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -27707,43 +27742,43 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: "\u6CF5\u6392\u91CF",
         code: 'a',
         ref: "a",
         defaultValue: this.state.initPumpValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u4E95\u773C\u76F4\u5F84",
         code: 'b',
         ref: "b",
         defaultValue: getDefaultValue('井眼直径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u5177\u5916\u5F84",
         code: 'c',
         ref: "c",
         defaultValue: getDefaultValue('钻具外径')
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, "\u73AF\u7A7A\u8FD4\u901F\uFF1A", this.state.value), _react2.default.createElement("div", {
+      }, "\u73AF\u7A7A\u8FD4\u901F\uFF1A", this.state.value), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27774,7 +27809,7 @@ function (_React$Component5) {
   }]);
 
   return Loop;
-}(_react2.default.Component); // 流态
+}(_react2["default"].Component); // 流态
 
 
 var Flow =
@@ -27868,7 +27903,7 @@ function (_React$Component6) {
     value: function renderFormula() {
       var list = [];
       this.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -27886,7 +27921,7 @@ function (_React$Component6) {
     value: function renderResult() {
       var list = [];
       this.state.output.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "result-panel",
           key: key
         }, item.label, "\uFF1A", item.value));
@@ -27896,66 +27931,66 @@ function (_React$Component6) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement(_Input2.default, {
+      }, "\u8F93\u5165"), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u5185\u94BB\u4E95\u6DB2\u5E73\u5747\u6D41\u901F",
         code: 'a',
         ref: 'a',
         defaultValue: getDefaultValue('钻杆内钻井液平均流速')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u5185\u5F84",
         code: 'b',
         ref: 'b',
         defaultValue: getDefaultValue('钻杆内径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u4E95\u6DB2\u5BC6\u5EA6",
         code: 'c',
         ref: 'c',
         defaultValue: getDefaultValue('钻井液密度')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u6709\u6548\u89C6\u7C98\u5EA6",
         code: 'd',
         ref: 'd',
         defaultValue: getDefaultValue('有效视粘度')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u6D41\u6027\u6307\u6570",
         code: 'e',
         ref: 'e',
         defaultValue: getDefaultValue('流性指数')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u73AF\u7A7A\u8FD4\u901F",
         code: 'f',
         ref: 'f',
         defaultValue: this.state.initLoopValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u4E95\u773C\u76F4\u5F84",
         code: 'g',
         ref: 'g',
         defaultValue: getDefaultValue('井眼直径')
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: "\u94BB\u6746\u5916\u5F84",
         code: 'h',
         ref: 'h',
         defaultValue: getDefaultValue('钻杆外径')
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C"), this.renderResult(), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C"), this.renderResult(), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27979,7 +28014,7 @@ function (_React$Component6) {
   }]);
 
   return Flow;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -28168,7 +28203,7 @@ function (_React$Component7) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -28179,7 +28214,7 @@ function (_React$Component7) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Pump: Pump,
@@ -28201,7 +28236,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./analysis.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./analysis.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -28215,13 +28250,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./analysis.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./analysis.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./analysis.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./analysis.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/analysis/analysis.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -28262,13 +28297,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ../common/common.less */ "./src/todoList/component/common/common.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -28346,7 +28381,7 @@ function (_React$Component) {
     key: "renderIn",
     value: function renderIn(item) {
       if (item.specialControl === 'p') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this, item.label, item.specialControl),
           type: "number",
@@ -28354,7 +28389,7 @@ function (_React$Component) {
           value: this.props.P_value
         });
       } else if (item.specialControl === 'q') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this, item.label, item.specialControl),
           type: "number",
@@ -28363,7 +28398,7 @@ function (_React$Component) {
         });
       }
 
-      return _react2.default.createElement("input", {
+      return _react2["default"].createElement("input", {
         className: "input-value",
         onChange: this.hasNumber.bind(this, item.label, item.specialControl),
         type: "number",
@@ -28378,12 +28413,12 @@ function (_React$Component) {
 
       var list = [];
       this.state.inputParams.forEach(function (item) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: item.label,
           className: "input-option"
-        }, _react2.default.createElement("label", {
+        }, _react2["default"].createElement("label", {
           className: "input-label"
-        }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+        }, " ", item.label, "\uFF1A "), _react2["default"].createElement("div", {
           className: "input-div"
         }, _this2.renderIn(item))));
       });
@@ -28395,14 +28430,14 @@ function (_React$Component) {
       var list = [];
       this.props.outputParams.forEach(function (item) {
         if (item.ext !== 'hide') {
-          list.push(_react2.default.createElement("div", {
+          list.push(_react2["default"].createElement("div", {
             key: item.label,
             className: "output-option"
-          }, _react2.default.createElement("label", {
+          }, _react2["default"].createElement("label", {
             className: "input-label"
-          }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+          }, " ", item.label, "\uFF1A "), _react2["default"].createElement("div", {
             className: "input-div"
-          }, _react2.default.createElement("span", null, " ", item.value, " "))));
+          }, _react2["default"].createElement("span", null, " ", item.value, " "))));
         }
       });
       return list;
@@ -28422,7 +28457,7 @@ function (_React$Component) {
     value: function renderFormula() {
       var list = [];
       this.props.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -28438,34 +28473,34 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "input-field"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "title"
-      }, " ", this.props.title, " "), _react2.default.createElement("div", {
+      }, " ", this.props.title, " "), _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement("div", {
+      }, "\u8F93\u5165"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, this.setInput()), _react2.default.createElement("div", {
+      }, this.setInput()), _react2["default"].createElement("div", {
         className: "result"
-      }, "\u7ED3\u679C"), _react2.default.createElement("div", {
+      }, "\u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, this.setOutput()), _react2.default.createElement("div", {
+      }, this.setOutput()), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "btn-div"
-      }, _react2.default.createElement("span", {
+      }, _react2["default"].createElement("span", {
         className: "confirm",
         onClick: this.confirm.bind(this)
       }, "\u8BA1\u7B97")));
@@ -28473,9 +28508,9 @@ function (_React$Component) {
   }]);
 
   return FinalCalculate;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = FinalCalculate;
+exports["default"] = FinalCalculate;
 
 /***/ }),
 
@@ -28493,13 +28528,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ../common/common.less */ "./src/todoList/component/common/common.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -28556,7 +28591,7 @@ function (_React$Component) {
     key: "setInput",
     value: function setInput() {
       if (this.props.code === 'p' || this.props.code === 'q') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this),
           type: "number",
@@ -28566,7 +28601,7 @@ function (_React$Component) {
         });
       }
 
-      return _react2.default.createElement("input", {
+      return _react2["default"].createElement("input", {
         className: "input-value",
         onChange: this.hasNumber.bind(this),
         type: "number",
@@ -28578,20 +28613,20 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "input-field-option"
-      }, _react2.default.createElement("label", {
+      }, _react2["default"].createElement("label", {
         className: "input-label"
-      }, " ", this.props.name, "\uFF1A "), _react2.default.createElement("div", {
+      }, " ", this.props.name, "\uFF1A "), _react2["default"].createElement("div", {
         className: "input-div"
       }, this.setInput()));
     }
   }]);
 
   return Input;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Input;
+exports["default"] = Input;
 
 /***/ }),
 
@@ -28609,13 +28644,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ./tabs.less */ "./src/todoList/component/common/tabs.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -28649,7 +28684,7 @@ function (_React$PureComponent) {
   _createClass(Tabs, [{
     key: "setSpan",
     value: function setSpan(item) {
-      return _react2.default.createElement("span", {
+      return _react2["default"].createElement("span", {
         className: "text-input",
         onClick: this.showConfigPanel.bind(this, item)
       });
@@ -28671,25 +28706,25 @@ function (_React$PureComponent) {
 
       var list = [];
       this.props.dataSource.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: key,
           className: "tab",
           onClick: _this.props.hasPageUrl ? _this.jump.bind(_this, item) : null
-        }, _this.props.withInput ? _this.setSpan(item) : null, _react2.default.createElement("img", {
+        }, _this.props.withInput ? _this.setSpan(item) : null, _react2["default"].createElement("img", {
           className: "icon",
           src: "./image/icon/".concat(item.value)
         }), item.label));
       });
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "tab-div"
       }, list);
     }
   }]);
 
   return Tabs;
-}(_react2.default.PureComponent);
+}(_react2["default"].PureComponent);
 
-exports.default = Tabs;
+exports["default"] = Tabs;
 
 /***/ }),
 
@@ -28707,13 +28742,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ./toolbar.less */ "./src/todoList/component/common/toolbar.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -28765,25 +28800,25 @@ function (_React$Component) {
 
       var list = [];
       this.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: key,
           className: "toolbar",
           onClick: _this2.props.navigate && _this2.props.navigate.bind(_this2, item)
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "icon",
           src: "./image/homepageImage/".concat(item.value)
         }), item.label));
       });
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "toolbar-div"
       }, list);
     }
   }]);
 
   return ToolBar;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = ToolBar;
+exports["default"] = ToolBar;
 
 /***/ }),
 
@@ -28795,7 +28830,7 @@ exports.default = ToolBar;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -28809,13 +28844,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -28850,7 +28885,7 @@ if(true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./tabs.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./tabs.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -28864,13 +28899,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./tabs.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./tabs.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./tabs.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./tabs.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/tabs.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -28905,7 +28940,7 @@ if(true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -28919,13 +28954,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -28966,7 +29001,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -28984,7 +29019,7 @@ var _EffectCalculateMode2 = _interopRequireDefault(_EffectCalculateMode);
 
 __webpack_require__(/*! ./effect.less */ "./src/todoList/component/effect/effect.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -29103,62 +29138,62 @@ function (_React$Component) {
     value: function getCalculator(code) {
       switch (code) {
         case 'power':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Power, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Power, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'nozzle-water':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Nozzle, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Nozzle, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'water-power':
-          return _react2.default.createElement(_EffectCalculateMode2.default.WaterPower, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].WaterPower, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'pressure':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Pressure, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Pressure, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'pump':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Pump, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Pump, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'drop':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Drop, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Drop, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'jet':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Jet, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Jet, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'speed':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Speed, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Speed, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'collar':
         case 'drillpipe':
-          return _react2.default.createElement(_EffectCalculateMode2.default.Loop, {
+          return _react2["default"].createElement(_EffectCalculateMode2["default"].Loop, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         default:
-          return _react2.default.createElement("div", null, " \u516C\u793A\u4E0D\u660E\u786E ");
+          return _react2["default"].createElement("div", null, " \u516C\u793A\u4E0D\u660E\u786E ");
       }
     }
   }, {
@@ -29175,11 +29210,11 @@ function (_React$Component) {
       if (formula === undefined) return null;
 
       if (typeof formula === 'string') {
-        return _react2.default.createElement("p", null, " ", formula, " ");
+        return _react2["default"].createElement("p", null, " ", formula, " ");
       } else {
         var list = [];
         formula.forEach(function (item, key) {
-          list.push(_react2.default.createElement("p", {
+          list.push(_react2["default"].createElement("p", {
             key: key
           }, " ", item, " "));
         });
@@ -29201,17 +29236,17 @@ function (_React$Component) {
 
       var list = [];
       this.state.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "config-unit",
           key: key,
           onClick: _this2.openSetting.bind(_this2, item)
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config-title"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-label"
-        }, " ", item.label, " ")), _react2.default.createElement("div", {
+        }, " ", item.label, " ")), _react2["default"].createElement("div", {
           className: "config-control"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-input",
           "data-code": item.code
         }, " ", item.value, " "))));
@@ -29263,16 +29298,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_EffectCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_EffectCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -29282,24 +29317,24 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "effect-content"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("img", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("img", {
         className: "drill",
         src: "./image/effect/drill.gif"
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "param-div"
       }, this.renderPrams()));
     }
   }]);
 
   return Effect;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Effect;
+exports["default"] = Effect;
 
 /***/ }),
 
@@ -29313,7 +29348,7 @@ exports.default = Effect;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -29325,7 +29360,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -29381,19 +29416,19 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵压',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29401,7 +29436,7 @@ function (_React$Component) {
   }]);
 
   return Power;
-}(_react2.default.Component); // 喷嘴水功率
+}(_react2["default"].Component); // 喷嘴水功率
 
 
 var Nozzle =
@@ -29437,19 +29472,19 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴压降',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29457,7 +29492,7 @@ function (_React$Component2) {
   }]);
 
   return Nozzle;
-}(_react2.default.Component); // 比水功率
+}(_react2["default"].Component); // 比水功率
 
 
 var WaterPower =
@@ -29491,20 +29526,20 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴水功率',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.initNozzleValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻头直径',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29528,7 +29563,7 @@ function (_React$Component3) {
   }]);
 
   return WaterPower;
-}(_react2.default.Component); // 钻头压降
+}(_react2["default"].Component); // 钻头压降
 
 
 var Pressure =
@@ -29561,19 +29596,19 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵压',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '循环压耗',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29581,7 +29616,7 @@ function (_React$Component4) {
   }]);
 
   return Pressure;
-}(_react2.default.Component); // 泵排量
+}(_react2["default"].Component); // 泵排量
 
 
 var Pump =
@@ -29613,31 +29648,31 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '管套直径',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '活塞冲程',
         code: 'b',
         ref: "b"
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '缸套数',
         code: 'c',
         ref: "c"
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '冲数',
         code: 'd',
         ref: "d"
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '上水效率',
         code: 'e',
         ref: "e"
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29645,7 +29680,7 @@ function (_React$Component5) {
   }]);
 
   return Pump;
-}(_react2.default.Component); // 喷嘴压降
+}(_react2["default"].Component); // 喷嘴压降
 
 
 var Drop =
@@ -29680,51 +29715,51 @@ function (_React$Component6) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴1',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴2',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴3',
         code: 'e',
         ref: 'e'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴4',
         code: 'f',
         ref: 'f'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴5',
         code: 'g',
         ref: 'g'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴6',
         code: 'h',
         ref: 'h'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴7',
         code: 'i',
         ref: 'i'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴8',
         code: 'j',
         ref: 'j'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29732,7 +29767,7 @@ function (_React$Component6) {
   }]);
 
   return Drop;
-}(_react2.default.Component); // 射流冲击力
+}(_react2["default"].Component); // 射流冲击力
 
 
 var Jet =
@@ -29766,51 +29801,51 @@ function (_React$Component7) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴1',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴2',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴3',
         code: 'e',
         ref: 'e'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴4',
         code: 'f',
         ref: 'f'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴5',
         code: 'g',
         ref: 'g'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴6',
         code: 'h',
         ref: 'h'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴7',
         code: 'i',
         ref: 'i'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴8',
         code: 'j',
         ref: 'j'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29818,7 +29853,7 @@ function (_React$Component7) {
   }]);
 
   return Jet;
-}(_react2.default.Component); // 喷射速度
+}(_react2["default"].Component); // 喷射速度
 
 
 var Speed =
@@ -29852,51 +29887,51 @@ function (_React$Component8) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴1',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴2',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴3',
         code: 'e',
         ref: 'e'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴4',
         code: 'f',
         ref: 'f'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴5',
         code: 'g',
         ref: 'g'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴6',
         code: 'h',
         ref: 'h'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴7',
         code: 'i',
         ref: 'i'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '喷嘴8',
         code: 'j',
         ref: 'j'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29904,7 +29939,7 @@ function (_React$Component8) {
   }]);
 
   return Speed;
-}(_react2.default.Component); // 环空返速
+}(_react2["default"].Component); // 环空返速
 
 
 var Loop =
@@ -29937,23 +29972,23 @@ function (_React$Component9) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具外径',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -29961,7 +29996,7 @@ function (_React$Component9) {
   }]);
 
   return Loop;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -30120,7 +30155,7 @@ function (_React$Component10) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -30131,7 +30166,7 @@ function (_React$Component10) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Power: Power,
@@ -30156,7 +30191,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./effect.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./effect.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -30170,13 +30205,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./effect.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./effect.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./effect.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./effect.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/effect/effect.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -30217,7 +30252,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -30265,7 +30300,7 @@ __webpack_require__(/*! ../analysis/analysis.less */ "./src/todoList/component/a
 
 __webpack_require__(/*! ./app.less */ "./src/todoList/component/front-page/app.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -30358,14 +30393,14 @@ function (_React$Component) {
     key: "getFrontPage",
     value: function getFrontPage() {
       if (this.state.curIndex === 0) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "front-page-content"
-        }, _react2.default.createElement("div", null, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("div", null, _react2["default"].createElement("img", {
           className: "front-page-header",
           src: "./image/homepageImage/header.png"
-        })), _react2.default.createElement("div", {
+        })), _react2["default"].createElement("div", {
           className: "tab-content"
-        }, _react2.default.createElement(_Tabs2.default, {
+        }, _react2["default"].createElement(_Tabs2["default"], {
           dataSource: this.tabs,
           pageJump: this.toPage.bind(this),
           hasPageUrl: true
@@ -30379,7 +30414,7 @@ function (_React$Component) {
     key: "getAnalysis",
     value: function getAnalysis() {
       if (this.state.curIndex === 1) {
-        return _react2.default.createElement(_Analysis2.default, {
+        return _react2["default"].createElement(_Analysis2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30391,7 +30426,7 @@ function (_React$Component) {
     key: "getPurify",
     value: function getPurify() {
       if (this.state.curIndex === 2) {
-        return _react2.default.createElement(_Purify2.default, {
+        return _react2["default"].createElement(_Purify2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30403,7 +30438,7 @@ function (_React$Component) {
     key: "getEffect",
     value: function getEffect() {
       if (this.state.curIndex === 5) {
-        return _react2.default.createElement(_Effect2.default, {
+        return _react2["default"].createElement(_Effect2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30415,7 +30450,7 @@ function (_React$Component) {
     key: "heavy",
     value: function heavy() {
       if (this.state.curIndex === 6) {
-        return _react2.default.createElement(_Heavy2.default, {
+        return _react2["default"].createElement(_Heavy2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30427,7 +30462,7 @@ function (_React$Component) {
     key: "simulation",
     value: function simulation() {
       if (this.state.curIndex === 8) {
-        return _react2.default.createElement(_Simulation2.default, {
+        return _react2["default"].createElement(_Simulation2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30439,7 +30474,7 @@ function (_React$Component) {
     key: "low",
     value: function low() {
       if (this.state.curIndex === 7) {
-        return _react2.default.createElement(_Low2.default, {
+        return _react2["default"].createElement(_Low2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30451,7 +30486,7 @@ function (_React$Component) {
     key: "loop",
     value: function loop() {
       if (this.state.curIndex === 4) {
-        return _react2.default.createElement(_Loop2.default, {
+        return _react2["default"].createElement(_Loop2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30463,7 +30498,7 @@ function (_React$Component) {
     key: "recycle",
     value: function recycle() {
       if (this.state.curIndex === 3) {
-        return _react2.default.createElement(_Recycle2.default, {
+        return _react2["default"].createElement(_Recycle2["default"], {
           navigate: this.navigate.bind(this)
         });
       }
@@ -30474,18 +30509,18 @@ function (_React$Component) {
     key: "getDefault",
     value: function getDefault() {
       if ([9].indexOf(this.state.curIndex) >= 0) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "front-page-content"
-        }, _react2.default.createElement("div", null, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("div", null, _react2["default"].createElement("img", {
           className: "front-page-header",
           src: "./image/homepageImage/header.png"
-        })), _react2.default.createElement("div", {
+        })), _react2["default"].createElement("div", {
           className: "tab-content"
-        }, _react2.default.createElement(_Tabs2.default, {
+        }, _react2["default"].createElement(_Tabs2["default"], {
           dataSource: this.tabs,
           pageJump: this.toPage.bind(this),
           hasPageUrl: true
-        })), _react2.default.createElement(_ToolBar2.default, {
+        })), _react2["default"].createElement(_ToolBar2["default"], {
           navigate: this.navigate.bind(this)
         }));
       }
@@ -30493,14 +30528,14 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", null, this.getFrontPage(), this.getAnalysis(), this.getPurify(), this.getEffect(), this.low(), this.loop(), this.recycle(), this.heavy(), this.simulation(), this.getDefault());
+      return _react2["default"].createElement("div", null, this.getFrontPage(), this.getAnalysis(), this.getPurify(), this.getEffect(), this.low(), this.loop(), this.recycle(), this.heavy(), this.simulation(), this.getDefault());
     }
   }]);
 
   return App;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = App;
+exports["default"] = App;
 
 /***/ }),
 
@@ -30512,7 +30547,7 @@ exports.default = App;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./app.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./app.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -30526,13 +30561,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./app.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./app.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./app.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./app.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/front-page/app.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -30573,7 +30608,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -30587,7 +30622,7 @@ var _HeavyCalculateMode2 = _interopRequireDefault(_HeavyCalculateMode);
 
 __webpack_require__(/*! ./heavy.less */ "./src/todoList/component/heavy/heavy.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -30694,16 +30729,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_HeavyCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_HeavyCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -30722,16 +30757,16 @@ function (_React$Component) {
     value: function renderPrams() {
       var list = [];
       this.state.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "config-unit",
           key: key
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config-title"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-label"
-        }, " ", item.label, " ")), _react2.default.createElement("div", {
+        }, " ", item.label, " ")), _react2["default"].createElement("div", {
           className: "config-control"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-input",
           "data-code": item.code
         }, " ", item.value, " "))));
@@ -30741,15 +30776,15 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "heavy-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("img", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("img", {
         className: "heavy-img",
         src: "./image/heavy/animate-".concat(this.state.cur, ".png")
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "param-div"
       }, this.renderPrams()));
     }
@@ -30779,9 +30814,9 @@ function (_React$Component) {
   }]);
 
   return Heavy;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Heavy;
+exports["default"] = Heavy;
 
 /***/ }),
 
@@ -30795,7 +30830,7 @@ exports.default = Heavy;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -30807,7 +30842,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -30872,27 +30907,27 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '环空压耗',
         code: 'loop',
         ref: 'a',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '垂深高度',
         code: 'depth',
         ref: 'b',
         onChange: this.onInputChange.bind(this),
         defaultValue: this.state.initDepthValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'liquid-density',
         ref: 'c',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -30913,7 +30948,7 @@ function (_React$Component) {
   }]);
 
   return Density;
-}(_react2.default.Component); // 垂深高度计算公式
+}(_react2["default"].Component); // 垂深高度计算公式
 
 
 var Depth =
@@ -30955,27 +30990,27 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '环空压耗',
         code: 'loop',
         ref: 'a',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '重浆密度',
         code: 'heavy-pulp-density',
         ref: 'b',
         onChange: this.onInputChange.bind(this),
         defaultValue: this.state.initDensityValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'liquid-density',
         ref: 'c',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -30994,7 +31029,7 @@ function (_React$Component2) {
   }]);
 
   return Depth;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -31106,7 +31141,7 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -31117,7 +31152,7 @@ function (_React$Component3) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Density: Density,
@@ -31135,7 +31170,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./heavy.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./heavy.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -31149,13 +31184,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./heavy.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./heavy.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./heavy.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./heavy.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/heavy/heavy.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -31196,7 +31231,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -31210,7 +31245,7 @@ var _LoopCalculateMode2 = _interopRequireDefault(_LoopCalculateMode);
 
 __webpack_require__(/*! ./loop.less */ "./src/todoList/component/loop/loop.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -31312,16 +31347,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_LoopCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_LoopCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -31338,33 +31373,33 @@ function (_React$Component) {
   }, {
     key: "renderPrams",
     value: function renderPrams() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "loop-value-div"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "value"
       }, this.state.tabs[0].value));
     }
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "loop-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("img", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("img", {
         className: "loop-img",
         src: "./image/loop/loop.gif"
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "param-div"
       }, this.renderPrams()));
     }
   }]);
 
   return Loop;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Loop;
+exports["default"] = Loop;
 
 /***/ }),
 
@@ -31378,7 +31413,7 @@ exports.default = Loop;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -31390,7 +31425,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -31445,23 +31480,23 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具外径',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -31469,7 +31504,7 @@ function (_React$Component) {
   }]);
 
   return Loop;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -31553,7 +31588,7 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -31564,7 +31599,7 @@ function (_React$Component2) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Loop: Loop,
@@ -31581,7 +31616,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./loop.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./loop.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -31595,13 +31630,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./loop.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./loop.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./loop.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./loop.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/loop/loop.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -31642,7 +31677,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -31656,7 +31691,7 @@ var _LowCalculateMode2 = _interopRequireDefault(_LowCalculateMode);
 
 __webpack_require__(/*! ./low.less */ "./src/todoList/component/low/low.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -31741,11 +31776,11 @@ function (_React$Component) {
       if (formula === undefined) return null;
 
       if (typeof formula === 'string') {
-        return _react2.default.createElement("p", null, " ", formula, " ");
+        return _react2["default"].createElement("p", null, " ", formula, " ");
       } else {
         var list = [];
         formula.forEach(function (item, key) {
-          list.push(_react2.default.createElement("p", {
+          list.push(_react2["default"].createElement("p", {
             key: key
           }, " ", item, " "));
         });
@@ -31771,16 +31806,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_LowCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_LowCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -31806,16 +31841,16 @@ function (_React$Component) {
     value: function renderPrams() {
       var list = [];
       this.state.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "config-unit",
           key: key
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config-title"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-label"
-        }, " ", item.label, " ")), _react2.default.createElement("div", {
+        }, " ", item.label, " ")), _react2["default"].createElement("div", {
           className: "config-control"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-input",
           "data-code": item.code
         }, " ", item.value, " "))));
@@ -31825,15 +31860,15 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "low-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("img", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("img", {
         className: "low-img",
         src: "./image/low/animate-".concat(this.state.cur + 1, ".png")
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "param-div"
       }, this.renderPrams()));
     }
@@ -31863,9 +31898,9 @@ function (_React$Component) {
   }]);
 
   return Low;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Low;
+exports["default"] = Low;
 
 /***/ }),
 
@@ -31879,7 +31914,7 @@ exports.default = Low;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -31891,7 +31926,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -31951,61 +31986,61 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵入堵漏浆量',
         code: 'plasma-volume',
         ref: 'a',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'diameter',
         ref: 'b',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆1外径',
         code: 'external-diameter-1',
         ref: 'c',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆1内径',
         code: 'inner-diameter-1',
         ref: 'd',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆1长度',
         code: 'length-1',
         ref: 'e',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆2外径',
         code: 'external-diameter-2',
         ref: 'f',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆2内径',
         code: 'inner-diameter-2',
         ref: 'g',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻杆2长度',
         code: 'length-2',
         ref: 'h',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '光钻杆下深',
         code: 'depth',
         ref: 'i',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '堵漏浆内外高差',
         code: 'difference',
         ref: 'j',
         onChange: this.onInputChange.bind(this)
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32013,7 +32048,7 @@ function (_React$Component) {
   }]);
 
   return Volumn;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -32146,7 +32181,7 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -32157,7 +32192,7 @@ function (_React$Component2) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Volumn: Volumn,
@@ -32174,7 +32209,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./low.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/low/low.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./low.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/low/low.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -32188,13 +32223,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./low.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/low/low.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./low.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/low/low.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./low.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/low/low.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./low.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/low/low.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -32231,7 +32266,7 @@ if(true) {
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -32243,7 +32278,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -32298,15 +32333,15 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32314,7 +32349,7 @@ function (_React$Component) {
   }]);
 
   return Viscosity;
-}(_react2.default.Component); // 塑性粘度计算公式
+}(_react2["default"].Component); // 塑性粘度计算公式
 
 
 var PlasticViscosity =
@@ -32350,19 +32385,19 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32370,7 +32405,7 @@ function (_React$Component2) {
   }]);
 
   return PlasticViscosity;
-}(_react2.default.Component); // 动切力
+}(_react2["default"].Component); // 动切力
 
 
 var YieldPoint =
@@ -32406,19 +32441,19 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32426,7 +32461,7 @@ function (_React$Component3) {
   }]);
 
   return YieldPoint;
-}(_react2.default.Component); // 动塑比
+}(_react2["default"].Component); // 动塑比
 
 
 var FreezePlastic =
@@ -32461,21 +32496,21 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '动切力(YP)',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.initYieldPointValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '塑性粘度(VP)',
         code: 'b',
         ref: 'b',
         defaultValue: this.state.initPvValue
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32505,7 +32540,7 @@ function (_React$Component4) {
   }]);
 
   return FreezePlastic;
-}(_react2.default.Component); // 环空返速
+}(_react2["default"].Component); // 环空返速
 
 
 var Loop =
@@ -32541,23 +32576,23 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具外径',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32565,7 +32600,7 @@ function (_React$Component5) {
   }]);
 
   return Loop;
-}(_react2.default.Component); // 岩屑滑落速度
+}(_react2["default"].Component); // 岩屑滑落速度
 
 
 var SlipSpeed =
@@ -32598,27 +32633,27 @@ function (_React$Component6) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '岩屑直径',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '岩屑密度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '有效视粘度',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32626,7 +32661,7 @@ function (_React$Component6) {
   }]);
 
   return SlipSpeed;
-}(_react2.default.Component); // 岩屑净上升速度
+}(_react2["default"].Component); // 岩屑净上升速度
 
 
 var RisingSpeed =
@@ -32660,20 +32695,20 @@ function (_React$Component7) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '环空返速',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.initLoopValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '岩屑滑落速度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32697,7 +32732,7 @@ function (_React$Component7) {
   }]);
 
   return RisingSpeed;
-}(_react2.default.Component); // 流性指数
+}(_react2["default"].Component); // 流性指数
 
 
 var FlowIndex =
@@ -32730,19 +32765,19 @@ function (_React$Component8) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32750,7 +32785,7 @@ function (_React$Component8) {
   }]);
 
   return FlowIndex;
-}(_react2.default.Component); // 稠度系数
+}(_react2["default"].Component); // 稠度系数
 
 
 var Coefficient =
@@ -32783,19 +32818,19 @@ function (_React$Component9) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32803,7 +32838,7 @@ function (_React$Component9) {
   }]);
 
   return Coefficient;
-}(_react2.default.Component); // 井眼净化能力
+}(_react2["default"].Component); // 井眼净化能力
 
 
 var Ability =
@@ -32837,20 +32872,20 @@ function (_React$Component10) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '岩屑净上升速度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '环空返速',
         code: 'b',
         ref: 'b',
         defaultValue: this.state.initLoopValue
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -32874,7 +32909,7 @@ function (_React$Component10) {
   }]);
 
   return Ability;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -33038,7 +33073,7 @@ function (_React$Component11) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -33049,7 +33084,7 @@ function (_React$Component11) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Viscosity: Viscosity,
@@ -33081,7 +33116,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -33095,7 +33130,7 @@ var _PurCalculateMode2 = _interopRequireDefault(_PurCalculateMode);
 
 __webpack_require__(/*! ./purify.less */ "./src/todoList/component/purify/purify.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -33226,13 +33261,13 @@ function (_React$Component) {
 
       var list = [];
       this.state.left.forEach(function (item, key) {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           key: key,
           className: "left-param",
           onClick: _this2.openSetting.bind(_this2, item)
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "title"
-        }, " ", item.label, " "), _react2.default.createElement("span", {
+        }, " ", item.label, " "), _react2["default"].createElement("span", {
           className: "value"
         }, " ", item.value, " ")));
       });
@@ -33245,13 +33280,13 @@ function (_React$Component) {
 
       var list = [];
       this.state.right.forEach(function (item, key) {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           key: key,
           className: "right-param",
           onClick: _this3.openSetting.bind(_this3, item)
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "title"
-        }, " ", item.label, " "), _react2.default.createElement("span", {
+        }, " ", item.label, " "), _react2["default"].createElement("span", {
           className: "value"
         }, " ", item.value, " ")));
       });
@@ -33271,11 +33306,11 @@ function (_React$Component) {
       if (formula === undefined) return null;
 
       if (typeof formula === 'string') {
-        return _react2.default.createElement("p", null, " ", formula, " ");
+        return _react2["default"].createElement("p", null, " ", formula, " ");
       } else {
         var list = [];
         formula.forEach(function (item, key) {
-          list.push(_react2.default.createElement("p", {
+          list.push(_react2["default"].createElement("p", {
             key: key
           }, " ", item, " "));
         });
@@ -33315,16 +33350,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_PurCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_PurCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -33341,21 +33376,21 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "purify-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("div", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("div", {
         className: "left-param-list"
-      }, _react2.default.createElement("ul", null, this.leftConfig())), _react2.default.createElement("div", {
+      }, _react2["default"].createElement("ul", null, this.leftConfig())), _react2["default"].createElement("div", {
         className: "pump-bg"
-      }, _react2.default.createElement("img", {
+      }, _react2["default"].createElement("img", {
         className: "pure-img",
         src: "./image/purify/animate-".concat(this.state.cur, ".png")
-      })), _react2.default.createElement("div", {
+      })), _react2["default"].createElement("div", {
         className: "right-param-list"
-      }, _react2.default.createElement("ul", null, this.rightConfig())));
+      }, _react2["default"].createElement("ul", null, this.rightConfig())));
     }
   }, {
     key: "componentDidMount",
@@ -33383,9 +33418,9 @@ function (_React$Component) {
   }]);
 
   return Purify;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Purify;
+exports["default"] = Purify;
 
 /***/ }),
 
@@ -33397,7 +33432,7 @@ exports.default = Purify;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -33411,13 +33446,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -33458,7 +33493,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -33472,7 +33507,7 @@ var _RecycleCalculateMode2 = _interopRequireDefault(_RecycleCalculateMode);
 
 __webpack_require__(/*! ./recycle.less */ "./src/todoList/component/recycle/recycle.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -33586,7 +33621,7 @@ function (_React$Component) {
     value: function getCalculator(code) {
       switch (code) {
         case 'pipe':
-          return _react2.default.createElement(_RecycleCalculateMode2.default.Pipe, {
+          return _react2["default"].createElement(_RecycleCalculateMode2["default"].Pipe, {
             setValue: this.setValue.bind(this),
             code: code
           });
@@ -33594,13 +33629,13 @@ function (_React$Component) {
         case 'inner-cycle':
         case 'heavy-inner-cycle':
         case 'drill-inner-cycle':
-          return _react2.default.createElement(_RecycleCalculateMode2.default.InnerCycle, {
+          return _react2["default"].createElement(_RecycleCalculateMode2["default"].InnerCycle, {
             setValue: this.setValue.bind(this),
             code: code
           });
 
         case 'drill':
-          return _react2.default.createElement(_RecycleCalculateMode2.default.Drill, {
+          return _react2["default"].createElement(_RecycleCalculateMode2["default"].Drill, {
             setValue: this.setValue.bind(this),
             code: code
           });
@@ -33610,7 +33645,7 @@ function (_React$Component) {
         case 'drill-cycle':
         case 'body-cycle-patch':
         case 'heavy-body-cycle-patch':
-          return _react2.default.createElement(_RecycleCalculateMode2.default.BodyCycle, {
+          return _react2["default"].createElement(_RecycleCalculateMode2["default"].BodyCycle, {
             setValue: this.setValue.bind(this),
             code: code
           });
@@ -33666,16 +33701,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_RecycleCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_RecycleCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -33696,17 +33731,17 @@ function (_React$Component) {
 
       var list = [];
       this.state.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           className: "config-unit",
           key: key,
           onClick: _this2.openSetting.bind(_this2, item)
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config-title"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-label"
-        }, " ", item.label, " ")), _react2.default.createElement("div", {
+        }, " ", item.label, " ")), _react2["default"].createElement("div", {
           className: "config-control"
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "config-input",
           "data-code": item.code
         }, " ", item.value, " "))));
@@ -33720,7 +33755,7 @@ function (_React$Component) {
       var list = [];
 
       for (var i in valStr) {
-        list.push(_react2.default.createElement("span", {
+        list.push(_react2["default"].createElement("span", {
           className: "block",
           key: i
         }, " ", valStr[i], " "));
@@ -33731,35 +33766,35 @@ function (_React$Component) {
   }, {
     key: "setRecycleTotal",
     value: function setRecycleTotal() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "num-div"
       }, this.getStyledNum(this.state.totalValue));
     }
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "recycle-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("img", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("img", {
         className: "recycle-img",
         src: "./image/recycle/recycle.gif"
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "param-div"
-      }, this.renderPrams()), _react2.default.createElement("div", {
+      }, this.renderPrams()), _react2["default"].createElement("div", {
         className: "recycle-div"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "title"
       }, "\u5FAA\u73AF\u603B\u538B\u8017"), this.setRecycleTotal()));
     }
   }]);
 
   return Low;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Low;
+exports["default"] = Low;
 
 /***/ }),
 
@@ -33773,7 +33808,7 @@ exports.default = Low;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -33785,7 +33820,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -33840,23 +33875,23 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '地面管汇摩阻系数',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -33864,7 +33899,7 @@ function (_React$Component) {
   }]);
 
   return Pipe;
-}(_react2.default.Component); // 钻杆内循环压耗
+}(_react2["default"].Component); // 钻杆内循环压耗
 
 
 var InnerCycle =
@@ -33897,31 +33932,31 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '塑性粘度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具长度',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具内径',
         code: 'e',
         ref: 'e'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -33929,7 +33964,7 @@ function (_React$Component2) {
   }]);
 
   return InnerCycle;
-}(_react2.default.Component); // 钻头压降
+}(_react2["default"].Component); // 钻头压降
 
 
 var Drill =
@@ -33962,19 +33997,19 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵压',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '循环压耗',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -33982,7 +34017,7 @@ function (_React$Component3) {
   }]);
 
   return Drill;
-}(_react2.default.Component); // 钻杆环空压耗
+}(_react2["default"].Component); // 钻杆环空压耗
 
 
 var BodyCycle =
@@ -34015,35 +34050,35 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '塑性粘度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具长度',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'e',
         ref: 'e'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具外径',
         code: 'f',
         ref: 'f'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -34051,7 +34086,7 @@ function (_React$Component4) {
   }]);
 
   return BodyCycle;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -34221,7 +34256,7 @@ function (_React$Component5) {
       var outputs = Object.assign(this.state.output, []);
       /*   // v1: 循环压耗
          let v1 = 7628 *  Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度')/Math.pow(this.getValue('钻杆加重钻杆钻铤内径'),4.82);
-           // v2: 环空压耗
+          // v2: 环空压耗
          let v2 = 7628 * Math.pow(this.getValue('塑性粘度'),0.2) * Math.pow(this.getValue('钻井液密度'),0.8) * Math.pow(this.getValue('泵排量'),1.8) * this.getValue('钻杆加重钻杆钻铤长度') / Math.pow((this.getValue('井眼直径')-this.getValue('钻杆加重钻杆钻铤外径')), 3) / Math.pow((this.getValue('井眼直径')+this.getValue('钻杆加重钻杆钻铤外径')), 1.8)
       */
       // v1: 钻杆内循环压耗
@@ -34301,7 +34336,7 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -34315,7 +34350,7 @@ function (_React$Component5) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Drill: Drill,
@@ -34335,7 +34370,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./recycle.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./recycle.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -34349,13 +34384,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./recycle.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./recycle.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./recycle.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./recycle.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/recycle/recycle.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -34396,7 +34431,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -34410,7 +34445,7 @@ var _SimulationCalculateMode2 = _interopRequireDefault(_SimulationCalculateMode)
 
 __webpack_require__(/*! ./simulation.less */ "./src/todoList/component/simulation/simulation.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -34515,16 +34550,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_SimulationCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_SimulationCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -34565,16 +34600,16 @@ function (_React$Component) {
   }, {
     key: "renderOption",
     value: function renderOption(item, key) {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "config-unit",
         key: key
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "config-title"
-      }, _react2.default.createElement("span", {
+      }, _react2["default"].createElement("span", {
         className: "config-label"
-      }, " ", item.label, " ")), _react2.default.createElement("div", {
+      }, " ", item.label, " ")), _react2["default"].createElement("div", {
         className: "config-control"
-      }, _react2.default.createElement("span", {
+      }, _react2["default"].createElement("span", {
         className: "config-input",
         "data-code": item.code
       }, " ", item.value, " ")));
@@ -34593,13 +34628,13 @@ function (_React$Component) {
 
       var list = [];
       this.frame.forEach(function (item) {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           key: item.label,
           onClick: _this2.setFrame.bind(_this2, item.value),
           className: _this2.state.currentFrame === item.value ? 'selected' : ''
         }, " ", item.label, " "));
       });
-      return _react2.default.createElement("ul", {
+      return _react2["default"].createElement("ul", {
         className: "frame-div"
       }, list);
     }
@@ -34611,22 +34646,22 @@ function (_React$Component) {
         'skew': ['./image/simulation/9-2.gif', './image/simulation/9-2-1.gif'],
         'even': ['./image/simulation/9-3.gif', './image/simulation/9-3-1.gif']
       };
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "simulation-div"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "model-div"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "text"
-      }, "\u6A21\u62DF\u6548\u679C"), _react2.default.createElement("img", {
+      }, "\u6A21\u62DF\u6548\u679C"), _react2["default"].createElement("img", {
         className: "simu",
         src: simu[this.state.currentFrame][0]
-      })), _react2.default.createElement("div", {
+      })), _react2["default"].createElement("div", {
         className: "sep"
-      }), _react2.default.createElement("div", {
+      }), _react2["default"].createElement("div", {
         className: "real-div"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "text"
-      }, "\u771F\u5B9E\u6548\u679C"), _react2.default.createElement("img", {
+      }, "\u771F\u5B9E\u6548\u679C"), _react2["default"].createElement("img", {
         className: "real",
         src: simu[this.state.currentFrame][1]
       })));
@@ -34634,28 +34669,28 @@ function (_React$Component) {
   }, {
     key: "simuTabs",
     value: function simuTabs() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "frame"
       }, this.getFrame(), this.getSimuImg());
     }
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "simu-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), this.simuTabs(), _react2.default.createElement("div", {
+      }, "\u8BBE\u7F6E"), this.simuTabs(), _react2["default"].createElement("div", {
         className: "param-div"
       }, this.renderPrams()));
     }
   }]);
 
   return Simulation;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Simulation;
+exports["default"] = Simulation;
 
 /***/ }),
 
@@ -34669,7 +34704,7 @@ exports.default = Simulation;
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -34681,7 +34716,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -34738,39 +34773,39 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '堵漏浆密度',
         code: 'density',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '预计水泥塞长',
         code: 'length',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '堵漏时钻井液密度',
         code: 'liquid-density',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '漏层垂深',
         code: 'depth',
         ref: 'd'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '堵漏浆方量',
         code: 'leaking-stop',
         ref: 'e'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '挤水泥方量',
         code: 'water',
         ref: 'f'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径的平方',
         code: 'diameter',
         ref: 'g'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -34778,7 +34813,7 @@ function (_React$Component) {
   }]);
 
   return Load;
-}(_react2.default.Component); // 预计水泥塞长计算公式
+}(_react2["default"].Component); // 预计水泥塞长计算公式
 
 
 var Predict =
@@ -34812,27 +34847,27 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '堵漏浆方量',
         code: 'leaking-stop',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '挤水泥方量',
         code: 'water',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径的平方',
         code: 'diameter',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '新环空静液面高度',
         code: 'height',
         ref: 'd'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -34840,7 +34875,7 @@ function (_React$Component2) {
   }]);
 
   return Predict;
-}(_react2.default.Component); // 实际水泥塞长计算公式
+}(_react2["default"].Component); // 实际水泥塞长计算公式
 
 
 var Real =
@@ -34874,27 +34909,27 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '堵漏浆方量',
         code: 'leaking-stop',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '挤水泥方量',
         code: 'water',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径的平方',
         code: 'diameter',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '新环空静液面高度',
         code: 'height',
         ref: 'd'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -34902,7 +34937,7 @@ function (_React$Component3) {
   }]);
 
   return Real;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -35035,7 +35070,7 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -35046,7 +35081,7 @@ function (_React$Component4) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Load: Load,
@@ -35065,7 +35100,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./simulation.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./simulation.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -35079,13 +35114,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./simulation.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./simulation.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./simulation.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./simulation.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/simulation/simulation.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -35232,11 +35267,11 @@ module.exports = __webpack_require__.p + "../build/image/bac25cba.simu-bg.png";
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/_react-dom@16.8.6@react-dom/index.js");
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -35248,10 +35283,10 @@ var _Analysis = __webpack_require__(/*! ./component/analysis/Analysis.jsx */ "./
 
 var _Analysis2 = _interopRequireDefault(_Analysis);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 /** * Created by junxie on 18/5/27. */
-_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
+_reactDom2["default"].render(_react2["default"].createElement(_App2["default"], null), document.getElementById('root'));
 
 /***/ })
 
