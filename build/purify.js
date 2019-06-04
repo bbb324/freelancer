@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c50e6c9e2a4b6a9f484b";
+/******/ 	var hotCurrentHash = "5189cfb2791014836d61";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -793,14 +793,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, ".input-field {\n  font-size: 13px;\n  padding: 0 5%;\n  box-sizing: border-box;\n  margin-top: 35px;\n  margin-bottom: 15px;\n}\n.input-field .title {\n  margin-top: 15px;\n  font-size: 18px;\n  border-bottom: 2px solid #eb6100;\n  padding-bottom: 6px;\n  box-sizing: border-box;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.input-field .input-div {\n  display: inline-block;\n  height: 20px;\n  position: relative;\n}\n.input-field .input-div .clear-icon {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  right: 16px;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.input-field .input-value {\n  border: none;\n  outline: none;\n  line-height: 20px;\n  font-size: 13px;\n}\n.input-field .input-value::-webkit-input-placeholder {\n  color: #c5c8ce;\n  font-size: 13px;\n}\n.input-field:first-child {\n  margin-top: 0;\n}\n.input-unit {\n  margin: 15px 0;\n}\n.result,\n.IO {\n  text-align: left;\n  font-size: 16px;\n  color: #eb6100;\n  border-bottom: 1px solid #eb6100;\n  padding: 5px 0;\n  box-sizing: border-box;\n  margin-bottom: 10px;\n}\n.result {\n  margin-top: 25px;\n  border-bottom: 1px solid #eb6100;\n  padding: 5px 0;\n  box-sizing: border-box;\n}\n.result-panel {\n  text-align: left;\n}\n.result-panel .input-option,\n.result-panel .output-option {\n  margin-bottom: 5px;\n}\n.config-formula {\n  text-align: left;\n  font-size: 12px;\n  color: #eb6100;\n  margin-top: 20px;\n  position: relative;\n  height: 4vh;\n  overflow: hidden;\n}\n.config-formula .expand-formula {\n  height: 3.9vh;\n  line-height: 4vh;\n  font-size: 16px;\n  border-bottom: 1px solid #eb6100;\n}\n.config-formula p {\n  margin: 10px 10px 10px 0;\n}\n.config-formula .expand-formula-text {\n  display: inline-block;\n}\n.config-formula .triangle {\n  display: inline-block;\n  width: 10px;\n  height: auto;\n  margin-left: 10px;\n}\n", ""]);
 
@@ -808,14 +808,14 @@ exports.push([module.i, ".input-field {\n  font-size: 13px;\n  padding: 0 5%;\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less":
-/*!*********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less ***!
-  \*********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less ***!
+  \**********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, ".toolbar-div {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  padding-top: 7px;\n  background: #FFFFFF;\n}\n.toolbar-div .toolbar {\n  width: 10.7%;\n  height: 40px;\n  display: inline-block;\n  font-size: 12px;\n  color: #3b3b3b;\n  margin: 0 11%;\n  text-align: center;\n}\n.toolbar-div .toolbar .icon {\n  width: 22px;\n  height: 22px;\n  display: block;\n  margin: 0 auto 7px;\n}\n", ""]);
 
@@ -823,16 +823,16 @@ exports.push([module.i, ".toolbar-div {\n  position: fixed;\n  bottom: 0;\n  wid
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Imports
-var urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var urlEscape = __webpack_require__(/*! ../../../../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js");
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../image/purify/purify-bg.png */ "./src/todoList/image/purify/purify-bg.png"));
 
 // Module
@@ -842,10 +842,10 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\nbody,\nhtml {\n  h
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -938,10 +938,10 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
-/*!************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
-  \************************************************************/
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/url-escape.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -969,10 +969,10 @@ module.exports = function escape(url, needQuotes) {
 
 /***/ }),
 
-/***/ "./node_modules/object-assign/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/object-assign/index.js ***!
-  \*********************************************/
+/***/ "./node_modules/_object-assign@4.1.1@object-assign/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/_object-assign@4.1.1@object-assign/index.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1071,10 +1071,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
-/***/ "./node_modules/prop-types/checkPropTypes.js":
-/*!***************************************************!*\
-  !*** ./node_modules/prop-types/checkPropTypes.js ***!
-  \***************************************************/
+/***/ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1091,7 +1091,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js");
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -1185,10 +1185,10 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
-/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1209,15 +1209,15 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "./node_modules/react-dom/cjs/react-dom.development.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.5
+/** @license React v16.8.6
  * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1234,11 +1234,11 @@ if (true) {
   (function() {
 'use strict';
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
-var scheduler = __webpack_require__(/*! scheduler */ "./node_modules/scheduler/index.js");
-var tracing = __webpack_require__(/*! scheduler/tracing */ "./node_modules/scheduler/tracing.js");
+var React = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/_object-assign@4.1.1@object-assign/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js");
+var scheduler = __webpack_require__(/*! scheduler */ "./node_modules/_scheduler@0.13.6@scheduler/index.js");
+var tracing = __webpack_require__(/*! scheduler/tracing */ "./node_modules/_scheduler@0.13.6@scheduler/tracing.js");
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -6551,15 +6551,29 @@ function isInDocument(node) {
   return node && node.ownerDocument && containsNode(node.ownerDocument.documentElement, node);
 }
 
+function isSameOriginFrame(iframe) {
+  try {
+    // Accessing the contentDocument of a HTMLIframeElement can cause the browser
+    // to throw, e.g. if it has a cross-origin src attribute.
+    // Safari will show an error in the console when the access results in "Blocked a frame with origin". e.g:
+    // iframe.contentDocument.defaultView;
+    // A safety way is to access one of the cross origin properties: Window or Location
+    // Which might result in "SecurityError" DOM Exception and it is compatible to Safari.
+    // https://html.spec.whatwg.org/multipage/browsers.html#integration-with-idl
+
+    return typeof iframe.contentWindow.location.href === 'string';
+  } catch (err) {
+    return false;
+  }
+}
+
 function getActiveElementDeep() {
   var win = window;
   var element = getActiveElement();
   while (element instanceof win.HTMLIFrameElement) {
-    // Accessing the contentDocument of a HTMLIframeElement can cause the browser
-    // to throw, e.g. if it has a cross-origin src attribute
-    try {
-      win = element.contentDocument.defaultView;
-    } catch (e) {
+    if (isSameOriginFrame(element)) {
+      win = element.contentWindow;
+    } else {
       return element;
     }
     element = getActiveElement(win.document);
@@ -12519,14 +12533,35 @@ function constructClassInstance(workInProgress, ctor, props, renderExpirationTim
   var unmaskedContext = emptyContextObject;
   var context = null;
   var contextType = ctor.contextType;
-  if (typeof contextType === 'object' && contextType !== null) {
-    {
-      if (contextType.$$typeof !== REACT_CONTEXT_TYPE && !didWarnAboutInvalidateContextType.has(ctor)) {
+
+  {
+    if ('contextType' in ctor) {
+      var isValid =
+      // Allow null for conditional declaration
+      contextType === null || contextType !== undefined && contextType.$$typeof === REACT_CONTEXT_TYPE && contextType._context === undefined; // Not a <Context.Consumer>
+
+      if (!isValid && !didWarnAboutInvalidateContextType.has(ctor)) {
         didWarnAboutInvalidateContextType.add(ctor);
-        warningWithoutStack$1(false, '%s defines an invalid contextType. ' + 'contextType should point to the Context object returned by React.createContext(). ' + 'Did you accidentally pass the Context.Provider instead?', getComponentName(ctor) || 'Component');
+
+        var addendum = '';
+        if (contextType === undefined) {
+          addendum = ' However, it is set to undefined. ' + 'This can be caused by a typo or by mixing up named and default imports. ' + 'This can also happen due to a circular dependency, so ' + 'try moving the createContext() call to a separate file.';
+        } else if (typeof contextType !== 'object') {
+          addendum = ' However, it is set to a ' + typeof contextType + '.';
+        } else if (contextType.$$typeof === REACT_PROVIDER_TYPE) {
+          addendum = ' Did you accidentally pass the Context.Provider instead?';
+        } else if (contextType._context !== undefined) {
+          // <Context.Consumer>
+          addendum = ' Did you accidentally pass the Context.Consumer instead?';
+        } else {
+          addendum = ' However, it is set to an object with keys {' + Object.keys(contextType).join(', ') + '}.';
+        }
+        warningWithoutStack$1(false, '%s defines an invalid contextType. ' + 'contextType should point to the Context object returned by React.createContext().%s', getComponentName(ctor) || 'Component', addendum);
       }
     }
+  }
 
+  if (typeof contextType === 'object' && contextType !== null) {
     context = readContext(contextType);
   } else {
     unmaskedContext = getUnmaskedContext(workInProgress, ctor, true);
@@ -14320,8 +14355,8 @@ function mountReducer(reducer, initialArg, init) {
   var queue = hook.queue = {
     last: null,
     dispatch: null,
-    eagerReducer: reducer,
-    eagerState: initialState
+    lastRenderedReducer: reducer,
+    lastRenderedState: initialState
   };
   var dispatch = queue.dispatch = dispatchAction.bind(null,
   // Flow doesn't know this is non-null, but we do.
@@ -14333,6 +14368,8 @@ function updateReducer(reducer, initialArg, init) {
   var hook = updateWorkInProgressHook();
   var queue = hook.queue;
   !(queue !== null) ? invariant(false, 'Should have a queue. This is likely a bug in React. Please file an issue.') : void 0;
+
+  queue.lastRenderedReducer = reducer;
 
   if (numberOfReRenders > 0) {
     // This is a re-render. Apply the new render phase updates to the previous
@@ -14368,8 +14405,7 @@ function updateReducer(reducer, initialArg, init) {
           hook.baseState = newState;
         }
 
-        queue.eagerReducer = reducer;
-        queue.eagerState = newState;
+        queue.lastRenderedState = newState;
 
         return [newState, _dispatch];
       }
@@ -14448,8 +14484,7 @@ function updateReducer(reducer, initialArg, init) {
     hook.baseUpdate = newBaseUpdate;
     hook.baseState = newBaseState;
 
-    queue.eagerReducer = reducer;
-    queue.eagerState = _newState;
+    queue.lastRenderedState = _newState;
   }
 
   var dispatch = queue.dispatch;
@@ -14465,8 +14500,8 @@ function mountState(initialState) {
   var queue = hook.queue = {
     last: null,
     dispatch: null,
-    eagerReducer: basicStateReducer,
-    eagerState: initialState
+    lastRenderedReducer: basicStateReducer,
+    lastRenderedState: initialState
   };
   var dispatch = queue.dispatch = dispatchAction.bind(null,
   // Flow doesn't know this is non-null, but we do.
@@ -14743,21 +14778,21 @@ function dispatchAction(fiber, queue, action) {
       // The queue is currently empty, which means we can eagerly compute the
       // next state before entering the render phase. If the new state is the
       // same as the current state, we may be able to bail out entirely.
-      var _eagerReducer = queue.eagerReducer;
-      if (_eagerReducer !== null) {
+      var _lastRenderedReducer = queue.lastRenderedReducer;
+      if (_lastRenderedReducer !== null) {
         var prevDispatcher = void 0;
         {
           prevDispatcher = ReactCurrentDispatcher$1.current;
           ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
         }
         try {
-          var currentState = queue.eagerState;
-          var _eagerState = _eagerReducer(currentState, action);
+          var currentState = queue.lastRenderedState;
+          var _eagerState = _lastRenderedReducer(currentState, action);
           // Stash the eagerly computed state, and the reducer used to compute
           // it, on the update object. If the reducer hasn't changed by the
           // time we enter the render phase, then the eager state can be used
           // without calling the reducer again.
-          _update2.eagerReducer = _eagerReducer;
+          _update2.eagerReducer = _lastRenderedReducer;
           _update2.eagerState = _eagerState;
           if (is(_eagerState, currentState)) {
             // Fast path. We can bail out without scheduling React to re-render.
@@ -21936,7 +21971,7 @@ implementation) {
 
 // TODO: this is special because it gets imported during build.
 
-var ReactVersion = '16.8.5';
+var ReactVersion = '16.8.6';
 
 // TODO: This type is shared between the reconciler and ReactDOM, but will
 // eventually be lifted out to the renderer.
@@ -22464,10 +22499,10 @@ module.exports = reactDom;
 
 /***/ }),
 
-/***/ "./node_modules/react-dom/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/react-dom/index.js ***!
-  \*****************************************/
+/***/ "./node_modules/_react-dom@16.8.6@react-dom/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/_react-dom@16.8.6@react-dom/index.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22503,21 +22538,21 @@ function checkDCE() {
 }
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "./node_modules/react-dom/cjs/react-dom.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "./node_modules/_react-dom@16.8.6@react-dom/cjs/react-dom.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/react/cjs/react.development.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/react/cjs/react.development.js ***!
-  \*****************************************************/
+/***/ "./node_modules/_react@16.8.6@react/cjs/react.development.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/_react@16.8.6@react/cjs/react.development.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.5
+/** @license React v16.8.6
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -22534,12 +22569,12 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+var _assign = __webpack_require__(/*! object-assign */ "./node_modules/_object-assign@4.1.1@object-assign/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js");
 
 // TODO: this is special because it gets imported during build.
 
-var ReactVersion = '16.8.5';
+var ReactVersion = '16.8.6';
 
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
@@ -24422,10 +24457,10 @@ module.exports = react;
 
 /***/ }),
 
-/***/ "./node_modules/react/index.js":
-/*!*************************************!*\
-  !*** ./node_modules/react/index.js ***!
-  \*************************************/
+/***/ "./node_modules/_react@16.8.6@react/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/_react@16.8.6@react/index.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24433,21 +24468,21 @@ module.exports = react;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/_react@16.8.6@react/cjs/react.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/cjs/scheduler-tracing.development.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
-  \*********************************************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v0.13.5
+/** @license React v0.13.6
  * scheduler-tracing.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -24874,15 +24909,15 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/cjs/scheduler.development.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
-  \*************************************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.5
+/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.6
  * scheduler.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -25582,14 +25617,14 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../_webpack@4.32.2@webpack/buildin/global.js */ "./node_modules/_webpack@4.32.2@webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/scheduler/index.js ***!
-  \*****************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/index.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25597,16 +25632,16 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/scheduler/tracing.js":
-/*!*******************************************!*\
-  !*** ./node_modules/scheduler/tracing.js ***!
-  \*******************************************/
+/***/ "./node_modules/_scheduler@0.13.6@scheduler/tracing.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/_scheduler@0.13.6@scheduler/tracing.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25614,16 +25649,16 @@ if (false) {} else {
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/_scheduler@0.13.6@scheduler/cjs/scheduler-tracing.development.js");
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/addStyles.js":
-/*!****************************************************!*\
-  !*** ./node_modules/style-loader/lib/addStyles.js ***!
-  \****************************************************/
+/***/ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25693,7 +25728,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js");
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -26029,10 +26064,10 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/urls.js":
-/*!***********************************************!*\
-  !*** ./node_modules/style-loader/lib/urls.js ***!
-  \***********************************************/
+/***/ "./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/_style-loader@0.23.1@style-loader/lib/urls.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -26129,7 +26164,7 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
+/***/ "./node_modules/_webpack@4.32.2@webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
@@ -26174,13 +26209,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ../common/common.less */ "./src/todoList/component/common/common.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26274,7 +26309,7 @@ function (_React$Component) {
     key: "renderIn",
     value: function renderIn(item) {
       if (item.specialControl === 'p') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this, item.label, item.specialControl),
           type: "number",
@@ -26282,7 +26317,7 @@ function (_React$Component) {
           value: this.props.P_value
         });
       } else if (item.specialControl === 'q') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this, item.label, item.specialControl),
           type: "number",
@@ -26291,7 +26326,7 @@ function (_React$Component) {
         });
       }
 
-      return _react2.default.createElement("input", {
+      return _react2["default"].createElement("input", {
         className: "input-value",
         onChange: this.hasNumber.bind(this, item.label, item.specialControl),
         type: "number",
@@ -26306,12 +26341,12 @@ function (_React$Component) {
 
       var list = [];
       this.state.inputParams.forEach(function (item) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: item.label,
           className: "input-option"
-        }, _react2.default.createElement("label", {
+        }, _react2["default"].createElement("label", {
           className: "input-label"
-        }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+        }, " ", item.label, "\uFF1A "), _react2["default"].createElement("div", {
           className: "input-div"
         }, _this2.renderIn(item))));
       });
@@ -26323,14 +26358,14 @@ function (_React$Component) {
       var list = [];
       this.props.outputParams.forEach(function (item) {
         if (item.ext !== 'hide') {
-          list.push(_react2.default.createElement("div", {
+          list.push(_react2["default"].createElement("div", {
             key: item.label,
             className: "output-option"
-          }, _react2.default.createElement("label", {
+          }, _react2["default"].createElement("label", {
             className: "input-label"
-          }, " ", item.label, "\uFF1A "), _react2.default.createElement("div", {
+          }, " ", item.label, "\uFF1A "), _react2["default"].createElement("div", {
             className: "input-div"
-          }, _react2.default.createElement("span", null, " ", item.value, " "))));
+          }, _react2["default"].createElement("span", null, " ", item.value, " "))));
         }
       });
       return list;
@@ -26350,7 +26385,7 @@ function (_React$Component) {
     value: function renderFormula() {
       var list = [];
       this.props.formula.forEach(function (item, key) {
-        list.push(_react2.default.createElement("p", {
+        list.push(_react2["default"].createElement("p", {
           key: key
         }, " ", item, " "));
       });
@@ -26366,34 +26401,34 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "input-field"
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "title"
-      }, " ", this.props.title, " "), _react2.default.createElement("div", {
+      }, " ", this.props.title, " "), _react2["default"].createElement("div", {
         className: "IO"
-      }, "\u8F93\u5165"), _react2.default.createElement("div", {
+      }, "\u8F93\u5165"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, this.setInput()), _react2.default.createElement("div", {
+      }, this.setInput()), _react2["default"].createElement("div", {
         className: "result"
-      }, "\u7ED3\u679C"), _react2.default.createElement("div", {
+      }, "\u7ED3\u679C"), _react2["default"].createElement("div", {
         className: "result-panel"
-      }, this.setOutput()), _react2.default.createElement("div", {
+      }, this.setOutput()), _react2["default"].createElement("div", {
         className: "config-formula ".concat(this.state.isShrink === true ? 'shrink' : 'isOpen')
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula",
         onClick: this.toggleFormula.bind(this)
-      }, _react2.default.createElement("div", {
+      }, _react2["default"].createElement("div", {
         className: "expand-formula-text"
-      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2.default.createElement("div", {
+      }, "\u8BA1\u7B97\u516C\u5F0F"), _react2["default"].createElement("div", {
         className: "triangle"
-      }, this.state.isShrink === true ? _react2.default.createElement("img", {
+      }, this.state.isShrink === true ? _react2["default"].createElement("img", {
         src: "./image/icon/up.png"
-      }) : _react2.default.createElement("img", {
+      }) : _react2["default"].createElement("img", {
         src: "./image/icon/down.png"
-      }))), this.renderFormula()), _react2.default.createElement("div", {
+      }))), this.renderFormula()), _react2["default"].createElement("div", {
         className: "btn-div"
-      }, _react2.default.createElement("span", {
+      }, _react2["default"].createElement("span", {
         className: "confirm",
         onClick: this.confirm.bind(this)
       }, "\u8BA1\u7B97")));
@@ -26401,9 +26436,9 @@ function (_React$Component) {
   }]);
 
   return FinalCalculate;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = FinalCalculate;
+exports["default"] = FinalCalculate;
 
 /***/ }),
 
@@ -26421,13 +26456,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ../common/common.less */ "./src/todoList/component/common/common.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26484,7 +26519,7 @@ function (_React$Component) {
     key: "setInput",
     value: function setInput() {
       if (this.props.code === 'p' || this.props.code === 'q') {
-        return _react2.default.createElement("input", {
+        return _react2["default"].createElement("input", {
           className: "input-value",
           onChange: this.hasNumber.bind(this),
           type: "number",
@@ -26494,7 +26529,7 @@ function (_React$Component) {
         });
       }
 
-      return _react2.default.createElement("input", {
+      return _react2["default"].createElement("input", {
         className: "input-value",
         onChange: this.hasNumber.bind(this),
         type: "number",
@@ -26506,20 +26541,20 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "input-field-option"
-      }, _react2.default.createElement("label", {
+      }, _react2["default"].createElement("label", {
         className: "input-label"
-      }, " ", this.props.name, "\uFF1A "), _react2.default.createElement("div", {
+      }, " ", this.props.name, "\uFF1A "), _react2["default"].createElement("div", {
         className: "input-div"
       }, this.setInput()));
     }
   }]);
 
   return Input;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Input;
+exports["default"] = Input;
 
 /***/ }),
 
@@ -26537,13 +26572,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(/*! ./toolbar.less */ "./src/todoList/component/common/toolbar.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26595,25 +26630,25 @@ function (_React$Component) {
 
       var list = [];
       this.tabs.forEach(function (item, key) {
-        list.push(_react2.default.createElement("div", {
+        list.push(_react2["default"].createElement("div", {
           key: key,
           className: "toolbar",
           onClick: _this2.props.navigate && _this2.props.navigate.bind(_this2, item)
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "icon",
           src: "./image/homepageImage/".concat(item.value)
         }), item.label));
       });
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "toolbar-div"
       }, list);
     }
   }]);
 
   return ToolBar;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = ToolBar;
+exports["default"] = ToolBar;
 
 /***/ }),
 
@@ -26625,7 +26660,7 @@ exports.default = ToolBar;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -26639,13 +26674,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./common.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./common.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/common.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -26680,7 +26715,7 @@ if(true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -26694,13 +26729,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./toolbar.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/common/toolbar.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -26737,7 +26772,7 @@ if(true) {
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26749,7 +26784,7 @@ var _FinalCalculate = __webpack_require__(/*! ../common/FinalCalculate.jsx */ ".
 
 var _FinalCalculate2 = _interopRequireDefault(_FinalCalculate);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -26804,15 +26839,15 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -26820,7 +26855,7 @@ function (_React$Component) {
   }]);
 
   return Viscosity;
-}(_react2.default.Component); // 塑性粘度计算公式
+}(_react2["default"].Component); // 塑性粘度计算公式
 
 
 var PlasticViscosity =
@@ -26856,19 +26891,19 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -26876,7 +26911,7 @@ function (_React$Component2) {
   }]);
 
   return PlasticViscosity;
-}(_react2.default.Component); // 动切力
+}(_react2["default"].Component); // 动切力
 
 
 var YieldPoint =
@@ -26912,19 +26947,19 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -26932,7 +26967,7 @@ function (_React$Component3) {
   }]);
 
   return YieldPoint;
-}(_react2.default.Component); // 动塑比
+}(_react2["default"].Component); // 动塑比
 
 
 var FreezePlastic =
@@ -26967,21 +27002,21 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '动切力(YP)',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.initYieldPointValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '塑性粘度(VP)',
         code: 'b',
         ref: 'b',
         defaultValue: this.state.initPvValue
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27011,7 +27046,7 @@ function (_React$Component4) {
   }]);
 
   return FreezePlastic;
-}(_react2.default.Component); // 环空返速
+}(_react2["default"].Component); // 环空返速
 
 
 var Loop =
@@ -27047,23 +27082,23 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '泵排量',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '井眼直径',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻具外径',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27071,7 +27106,7 @@ function (_React$Component5) {
   }]);
 
   return Loop;
-}(_react2.default.Component); // 岩屑滑落速度
+}(_react2["default"].Component); // 岩屑滑落速度
 
 
 var SlipSpeed =
@@ -27104,27 +27139,27 @@ function (_React$Component6) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '岩屑直径',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '岩屑密度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '钻井液密度',
         code: 'c',
         ref: 'c'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '有效视粘度',
         code: 'd',
         ref: 'd'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27132,7 +27167,7 @@ function (_React$Component6) {
   }]);
 
   return SlipSpeed;
-}(_react2.default.Component); // 岩屑净上升速度
+}(_react2["default"].Component); // 岩屑净上升速度
 
 
 var RisingSpeed =
@@ -27166,20 +27201,20 @@ function (_React$Component7) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '环空返速',
         code: 'a',
         ref: 'a',
         defaultValue: this.state.initLoopValue
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '岩屑滑落速度',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27203,7 +27238,7 @@ function (_React$Component7) {
   }]);
 
   return RisingSpeed;
-}(_react2.default.Component); // 流性指数
+}(_react2["default"].Component); // 流性指数
 
 
 var FlowIndex =
@@ -27236,19 +27271,19 @@ function (_React$Component8) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27256,7 +27291,7 @@ function (_React$Component8) {
   }]);
 
   return FlowIndex;
-}(_react2.default.Component); // 稠度系数
+}(_react2["default"].Component); // 稠度系数
 
 
 var Coefficient =
@@ -27289,19 +27324,19 @@ function (_React$Component9) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: 'Ф600',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: 'Ф300',
         code: 'b',
         ref: 'b'
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27309,7 +27344,7 @@ function (_React$Component9) {
   }]);
 
   return Coefficient;
-}(_react2.default.Component); // 井眼净化能力
+}(_react2["default"].Component); // 井眼净化能力
 
 
 var Ability =
@@ -27343,20 +27378,20 @@ function (_React$Component10) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "math-params"
-      }, _react2.default.createElement(_Input2.default, {
+      }, _react2["default"].createElement(_Input2["default"], {
         name: '岩屑净上升速度',
         code: 'a',
         ref: 'a'
-      }), _react2.default.createElement(_Input2.default, {
+      }), _react2["default"].createElement(_Input2["default"], {
         name: '环空返速',
         code: 'b',
         ref: 'b',
         defaultValue: this.state.initLoopValue
-      }), _react2.default.createElement("div", null, _react2.default.createElement("span", {
+      }), _react2["default"].createElement("div", null, _react2["default"].createElement("span", {
         className: "result"
-      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2.default.createElement("div", {
+      }, " \u7ED3\u679C\uFF1A ", this.state.value, " "), _react2["default"].createElement("div", {
         className: "cal-btn",
         onClick: this.calculate.bind(this)
       }, "\u8BA1\u7B97")));
@@ -27380,7 +27415,7 @@ function (_React$Component10) {
   }]);
 
   return Ability;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 var Total =
 /*#__PURE__*/
@@ -27544,7 +27579,7 @@ function (_React$Component11) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_FinalCalculate2.default, {
+      return _react2["default"].createElement(_FinalCalculate2["default"], {
         inputParams: this.state.input,
         outputParams: this.state.output,
         setValue: this.setValue.bind(this),
@@ -27555,7 +27590,7 @@ function (_React$Component11) {
   }]);
 
   return Total;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
 module.exports = {
   Viscosity: Viscosity,
@@ -27587,7 +27622,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -27601,7 +27636,7 @@ var _PurCalculateMode2 = _interopRequireDefault(_PurCalculateMode);
 
 __webpack_require__(/*! ./purify.less */ "./src/todoList/component/purify/purify.less");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -27732,13 +27767,13 @@ function (_React$Component) {
 
       var list = [];
       this.state.left.forEach(function (item, key) {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           key: key,
           className: "left-param",
           onClick: _this2.openSetting.bind(_this2, item)
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "title"
-        }, " ", item.label, " "), _react2.default.createElement("span", {
+        }, " ", item.label, " "), _react2["default"].createElement("span", {
           className: "value"
         }, " ", item.value, " ")));
       });
@@ -27751,13 +27786,13 @@ function (_React$Component) {
 
       var list = [];
       this.state.right.forEach(function (item, key) {
-        list.push(_react2.default.createElement("li", {
+        list.push(_react2["default"].createElement("li", {
           key: key,
           className: "right-param",
           onClick: _this3.openSetting.bind(_this3, item)
-        }, _react2.default.createElement("span", {
+        }, _react2["default"].createElement("span", {
           className: "title"
-        }, " ", item.label, " "), _react2.default.createElement("span", {
+        }, " ", item.label, " "), _react2["default"].createElement("span", {
           className: "value"
         }, " ", item.value, " ")));
       });
@@ -27777,11 +27812,11 @@ function (_React$Component) {
       if (formula === undefined) return null;
 
       if (typeof formula === 'string') {
-        return _react2.default.createElement("p", null, " ", formula, " ");
+        return _react2["default"].createElement("p", null, " ", formula, " ");
       } else {
         var list = [];
         formula.forEach(function (item, key) {
-          list.push(_react2.default.createElement("p", {
+          list.push(_react2["default"].createElement("p", {
             key: key
           }, " ", item, " "));
         });
@@ -27821,16 +27856,16 @@ function (_React$Component) {
     key: "configPanel",
     value: function configPanel() {
       if (this.state.showConfigPanel === true) {
-        return _react2.default.createElement("div", {
+        return _react2["default"].createElement("div", {
           className: "configPanel"
-        }, _react2.default.createElement("div", {
+        }, _react2["default"].createElement("div", {
           className: "config",
           ref: "configPanel"
-        }, _react2.default.createElement("img", {
+        }, _react2["default"].createElement("img", {
           className: "close",
           src: "./image/icon/close.png",
           onClick: this.close.bind(this)
-        }), _react2.default.createElement(_PurCalculateMode2.default.Total, {
+        }), _react2["default"].createElement(_PurCalculateMode2["default"].Total, {
           setBack: this.setBack.bind(this)
         })));
       }
@@ -27847,21 +27882,21 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement("div", {
+      return _react2["default"].createElement("div", {
         className: "purify-bg"
-      }, this.configPanel(), _react2.default.createElement("div", {
+      }, this.configPanel(), _react2["default"].createElement("div", {
         className: "open-config",
         onClick: this.showConfigPanel.bind(this)
-      }, "\u8BBE\u7F6E"), _react2.default.createElement("div", {
+      }, "\u8BBE\u7F6E"), _react2["default"].createElement("div", {
         className: "left-param-list"
-      }, _react2.default.createElement("ul", null, this.leftConfig())), _react2.default.createElement("div", {
+      }, _react2["default"].createElement("ul", null, this.leftConfig())), _react2["default"].createElement("div", {
         className: "pump-bg"
-      }, _react2.default.createElement("img", {
+      }, _react2["default"].createElement("img", {
         className: "pure-img",
         src: "./image/purify/animate-".concat(this.state.cur, ".png")
-      })), _react2.default.createElement("div", {
+      })), _react2["default"].createElement("div", {
         className: "right-param-list"
-      }, _react2.default.createElement("ul", null, this.rightConfig())));
+      }, _react2["default"].createElement("ul", null, this.rightConfig())));
     }
   }, {
     key: "componentDidMount",
@@ -27889,9 +27924,9 @@ function (_React$Component) {
   }]);
 
   return Purify;
-}(_react2.default.Component);
+}(_react2["default"].Component);
 
-exports.default = Purify;
+exports["default"] = Purify;
 
 /***/ }),
 
@@ -27903,7 +27938,7 @@ exports.default = Purify;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
+var content = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -27917,13 +27952,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/less-loader/dist/cjs.js!./purify.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
+	module.hot.accept(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../../../../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./purify.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/todoList/component/purify/purify.less");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -27971,11 +28006,11 @@ module.exports = __webpack_require__.p + "../build/image/601745b8.purify-bg.png"
 "use strict";
 
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = __webpack_require__(/*! react */ "./node_modules/_react@16.8.6@react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/_react-dom@16.8.6@react-dom/index.js");
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -27983,12 +28018,12 @@ var _Purify = __webpack_require__(/*! ./component/purify/Purify.jsx */ "./src/to
 
 var _Purify2 = _interopRequireDefault(_Purify);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 /**
  * Created by junxie on 18/5/27.
  */
-_reactDom2.default.render(_react2.default.createElement(_Purify2.default, null), document.getElementById('root'));
+_reactDom2["default"].render(_react2["default"].createElement(_Purify2["default"], null), document.getElementById('root'));
 
 /***/ })
 
